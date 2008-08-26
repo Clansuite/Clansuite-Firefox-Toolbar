@@ -1,0 +1,5 @@
+<RDF:Description about="urn:mozilla:extension:{community-toolbar@clansuite.com}">
+    <em:version>0.3</em:version>
+    <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar.xpi</em:updateLink>
+    <em:updateHash>sha1:</em:updateHash>
+</RDF:Description>

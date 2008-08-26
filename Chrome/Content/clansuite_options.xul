@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<prefwindow
+	id="clansuite-options"
+	title="Options - Clansuite Toolbar"
+	orient="vertical"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	onload="sizeToContent(); centerWindowOnScreen();"
+	persist="width height"
+	buttons="accept,cancel">
+
+	<prefpane
+			id="ClansuiteMainOptions"
+			label="Main"
+			image="chrome://clansuitetoolbar/skin/Clansuite-Toolbar-Icon-64-white.png">
+
+			<preferences>
+			    <!-- Show Toolbar Elements -->
+				<preference id="ClansuiteShowSearch" name="extensions.clansuitetoolbar.ClansuiteShowSearch" type="bool" instantApply="false" />
+				<preference id="ClansuiteShowDocumentationMenu" name="extensions.clansuitetoolbar.ClansuiteShowDocumentationMenu" type="bool" instantApply="false" />
+			    <preference id="ClansuiteShowWebserverMenu" name="extensions.clansuitetoolbar.ClansuiteShowWebserverMenu" type="bool" instantApply="false" />
+			    <preference id="ClansuiteShowBugtrackerMenu" name="extensions.clansuitetoolbar.ClansuiteShowBugtrackerMenu" type="bool" instantApply="false" />
+			    <preference id="ClansuiteShowDeveloperMenu" name="extensions.clansuitetoolbar.ClansuiteShowDeveloperMenu" type="bool" instantApply="false" />
+			     <!-- Show in Tabs or Windows -->
+			    <preference id="ClansuiteOpenTabs" name="extensions.clansuitetoolbar.ClansuiteOpenTabs" type="bool" instantApply="false" />
+				<preference id="ClansuiteOpenTabsBackground" name="extensions.clansuitetoolbar.ClansuiteOpenTabsBackground" type="bool" instantApply="false" />
+				<!-- Path to Apache Webserver -->
+				<preference id="ClansuiteApacheErrorLogFileName" name="extensions.clansuitetoolbar.ClansuiteApacheErrorLogFileName" type="string" instantApply="false" />
+				<preference id="ClansuiteApacheAccessLogFileName" name="extensions.clansuitetoolbar.ClansuiteApacheAccessLogFileName" type="string" instantApply="false" />
+				<preference id="ClansuiteWebserverWorkingDir" name="extensions.clansuitetoolbar.ClansuiteWebserverWorkingDir" type="string" instantApply="false" />
+				<preference id="ClansuiteWebserverClansuiteDir" name="extensions.clansuitetoolbar.ClansuiteWebserverClansuiteDir" type="string" instantApply="false" />
+			</preferences>
+
+			<!-- The outer box that contains the tabs along the top and the tab pages themselves. -->
+			<tabbox>
+
+			  <!-- The inner box that contains the individual tabs. In other words, this is the row of tabs. -->
+              <tabs>
+                  <!-- tab elements go here -->
+                  <tab label="Toolbar Elements" />
+                  <tab label="Paths" />
+              </tabs>
+
+              <tabpanels>
+                <!-- tabpanel elements go here // The body of a single page. -->
+                <tabpanel id="configtab">
+                    <groupbox>
+                          <caption label="Show Toolbar Elements" id="clansuiteShowElements" class="outset" style="-moz-border-radius: 20px; background-color: white" />
+                          <description>
+                              Select Elements to be shown in the Toolbar
+                            </description>
+                          <checkbox id="ClansuiteShowSearch" label="Show Search" preference="ClansuiteShowSearch" />
+
+                          <checkbox id="ClansuiteShowDocumentationMenu" label="Show Dokumentation" preference="ClansuiteShowDocumentationMenu" />
+
+                          <checkbox id="ClansuiteShowDeveloperMenu" label="Show Developer Menu" preference="ClansuiteShowDeveloperMenu" />
+
+                          <checkbox id="ClansuiteShowBugtrackerMenu" label="Show Bugtracker Menu" preference="ClansuiteShowBugtrackerMenu" />
+
+                          <checkbox id="ClansuiteShowWebserverMenu" label="Show Webserver Menu" preference="ClansuiteShowWebserverMenu" />
+
+                    </groupbox>
+
+                    <groupbox>
+                          <caption label="Open in Tabs or Windows" id="clansuiteOpenElements" class="outset" style="-moz-border-radius: 20px; background-color: white" />
+                          <description>
+                              Select if Elements should be opened in Tabs instead of Windows (default)
+                            </description>
+                          <checkbox id="ClansuiteOpenTabs" label="Open in tab" preference="ClansuiteOpenTabs" oncommand="var disabled = true; if(this.checked){disabled = false;} this.nextSibling.disabled = disabled;"/>
+
+                          <checkbox id="ClansuiteOpenTabsBackground" label="Open tabs in the background" preference="ClansuiteOpenTabsBackground" />
+
+                    </groupbox>
+                </tabpanel>
+
+                <tabpanel id="paths">
+                    <groupbox>
+                          <caption label="Set Paths" id="clansuiteShowWebserverPaths" class="outset" style="-moz-border-radius: 20px; background-color: white" />
+                          <description>
+                              Enter the Webserver Paths.
+                            </description>
+
+                            <grid>
+                              <rows>
+                                <row/>
+                                <row/>
+                                <row/>
+                                <row/>
+                                <row/>
+                                <row/>
+                                <row/>
+                                <row/>
+                              </rows>
+
+                              <columns>
+                                <column>
+                                  <label control="ClansuiteWebserverWorkingDirField" value="URL Webserver Working Dir :" />
+                                  <label control="ClansuiteWebserverClansuiteDirField" value="URL Webserver Clansuite Dir  :" />
+                                  <label control="ClansuiteApacheErrorLogFileNameField" value="Path/Filename error.log :" />
+                                  <label control="ClansuiteApacheAccessLogFileNameField" value="Path/Filename access.log :" />
+                                </column>
+                                <column width="220px">
+                                  <textbox id="ClansuiteWebserverWorkingDirField" preference="ClansuiteWebserverWorkingDir" />
+                                  <textbox id="ClansuiteWebserverClansuiteDirField"  preference="ClansuiteWebserverClansuiteDir" />
+                                  <textbox id="ClansuiteApacheErrorLogFileNameField" preference="ClansuiteApacheErrorLogFileName" />
+                                  <textbox id="ClansuiteApacheAccessLogFileNameField" preference="ClansuiteApacheAccessLogFileName" />
+                                </column>
+                                <column>
+                                  <label control="1add" value="Example: http://localhost/work/" />
+                                  <label control="2add" value="Example: http://localhost/work/clansuite/" />
+                                  <label control="3add" value="Example: c:\xampp\apache\logs\error.log" />
+                                  <label control="4add" value="Example: c:\xampp\apache\logs\access.log" />
+                                </column>
+                              </columns>
+
+                            </grid>
+
+                   </groupbox>
+                </tabpanel>
+
+              </tabpanels>
+            </tabbox>
+    </prefpane>
+</prefwindow>

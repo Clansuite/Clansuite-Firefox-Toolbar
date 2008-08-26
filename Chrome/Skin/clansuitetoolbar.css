@@ -1,0 +1,178 @@
+#Clansuite-TB-MainMenu {
+    list-style-image: url("chrome://clansuitetoolbar/skin/clansuite-80x15.png");
+}
+
+#Clansuite-TB-Combined-Search
+{
+    list-style-image: url("chrome://clansuitetoolbar/skin/search.png");
+}
+
+#Clansuite-TB-Combined-Search > .toolbarbutton-menubutton-button {
+    -moz-box-orient: horizontal;
+}
+
+#clansuite-at-gna
+{
+     background-image: url("chrome://clansuitetoolbar/skin/gna_icon.png");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+clansuite-menuitem > menuitem:hover
+{
+    color: black;
+    background: transparent;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#clansuite-menuitem
+{
+    color: black;
+    background: transparent;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#Clansuite-TB-BugtrackerMenu
+{
+    list-style-image: url("chrome://clansuitetoolbar/skin/bug.png");
+}
+
+#clansuite-at-devlinks-geshi
+{
+     background-image: url("chrome://clansuitetoolbar/skin/geshi.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-trac
+{
+     background-image: url("chrome://clansuitetoolbar/skin/trac.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-webserver-apache
+{
+     background-image: url("chrome://clansuitetoolbar/skin/none.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-phing
+{
+     background-image: url("chrome://clansuitetoolbar/skin/none.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-subversion
+{
+     background-image: url("chrome://clansuitetoolbar/skin/none.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-doctrine
+{
+     background-image: url("chrome://clansuitetoolbar/skin/doctrine.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-asciidoc
+{
+     background-image: url("chrome://clansuitetoolbar/skin/asciidoc.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-swiftmailer
+{
+     background-image: url("chrome://clansuitetoolbar/skin/none.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-dokuwiki
+{
+     background-image: url("chrome://clansuitetoolbar/skin/dokuwiki.ico");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-tortoisesvn
+{
+     background-image: url("chrome://clansuitetoolbar/skin/tortoisesvn.png");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-devlinks-smarty
+{
+     background-image: url("chrome://clansuitetoolbar/skin/smarty.png");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-projectwatchers
+{
+     background-image: url("chrome://clansuitetoolbar/skin/eye.png");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#clansuite-at-support
+{
+     background-image: url("chrome://clansuitetoolbar/skin/group_go.png");
+     background-repeat: no-repeat;
+     background-position: top left;
+     padding: 1px 1px 1px 4px;
+}
+
+#Clansuite-TB-DocumentationMenu
+{
+	list-style-image: url("chrome://clansuitetoolbar/skin/documentation.png");
+}
+
+#Clansuite-TB-DeveloperMenu
+{
+	list-style-image: url("chrome://clansuitetoolbar/skin/wrench.png");
+}
+
+#Clansuite-TB-WebserverMenu
+{
+    list-style-image: url("chrome://clansuitetoolbar/skin/server.png");
+}
+
+#Clansuite-TB-support
+{
+	list-style-image: url("chrome://clansuitetoolbar/skin/support.png");
+}
+
+#Clansuite-TB-ResizeBar {
+    background-image: url("chrome://clansuitetoolbar/skin/splitter.png");
+    min-height: 22px;
+    min-width: 9px;
+}
+
+#Clansuite-TB-ResizeSplitter {
+    background: transparent;
+    border: none !important;
+}

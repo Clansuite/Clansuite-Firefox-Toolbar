@@ -1,0 +1,36 @@
+groupbox 
+{
+	background-color: white;
+}
+.heading
+{
+    font-size: x-large !important;
+    padding-right: 5px !important;
+}
+.heading, .strong
+{
+    font-weight: bold !important;
+}	
+.link 
+{
+	color: rgb(51, 102, 255);
+	cursor: pointer !important;
+}
+.link:hover
+{
+    color: #ff0000 !important;
+}
+
+#clansuiteVersion 
+{
+	color: #888;
+	font-weight: bold;
+	margin-left: 0px;
+}
+
+#clansuiteIcon 
+{
+	margin-top: 0px;
+	width: 64px;
+	height: 64px;
+}
