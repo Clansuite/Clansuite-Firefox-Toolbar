@@ -2,7 +2,7 @@
 @REM   | Clansuite Toolbar Build-Script w32 |
 @REM   | by Jens-Andre Koch (jakoch@web.de) |
 @REM   | for clansuite.com                  |
-@REM   | LICENCE: BSD                    <3 |
+@REM   | LICENCE: GNU/GPLv2 or any later <3 |
 @REM   `------------------------------------'
 @REM SVN: $Id: build.bat 2330 2008-08-01 15:40:13Z vain $
 
