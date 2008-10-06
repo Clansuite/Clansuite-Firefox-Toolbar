@@ -21,7 +21,7 @@
 
             <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_openToolbarButton(this)">
             <menupopup>
-                <menuitem label="Clansuite Website" accesskey="c"
+                <menuitem label="Website" accesskey="c"
                         tooltiptext="Navigate to Clansuite.com"
                         oncommand="Clansuite_LoadURL('http://www.clansuite.com/')"
                         image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico"
@@ -29,59 +29,51 @@
 
                 <menuseparator />
 
-                <menuitem label="Clansuite Forum" accesskey="f"
+                <menuitem label="Forum" accesskey="f"
                         tooltiptext="Navigate to Clansuite Forum"
                         oncommand="Clansuite_LoadURL('http://forum.clansuite.com/')"
                         image="chrome://clansuitetoolbar/skin/user_comment.png"
                         class="menuitem-iconic" />
 
-                <menuitem label="Clansuite Downloads" accesskey="d"
+                <menuitem label="Downloads" accesskey="d"
                         tooltiptext="Navigate to  Clansuite Downloads"
                         oncommand="Clansuite_LoadURL('http://download.gna.org/clansuite/')"
                         image="chrome://clansuitetoolbar/skin/disk.png"
                         class="menuitem-iconic" />
 
-                <menu label="Support &amp; Kontakt" value="sub" id="clansuite-at-support">
-                <menupopup >
-                    <menuitem label="Support Forum"
-                            tooltiptext="Support"
-                            oncommand="Clansuite_LoadURL('http://forum.clansuite.com/index.php?board=4.0')"
-                            image="chrome://clansuitetoolbar/skin/user_comment.png"
-                            class="menuitem-iconic" />
+                <menuitem label="Kontakt &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                    <menuitem label="Teamspeak (clansuite.com)"
-                            tooltiptext="Support"
-                            oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8767?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
-                            image="chrome://clansuitetoolbar/skin/teamspeak.png"
-                            class="menuitem-iconic" />
+                <menuitem label="Teamspeak"
+                        tooltiptext="Teamspeal Support"
+                        oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8767?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
+                        image="chrome://clansuitetoolbar/skin/teamspeak.png"
+                        class="menuitem-iconic" />
 
-                    <!--
-                    <menuitem label="Jabber Support Konferenz"
-                            tooltiptext="Support"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/#downloads')" />
+                <!--
+                <menuitem label="Jabber Support Konferenz"
+                        tooltiptext="Support"
+                        oncommand="Clansuite_LoadURL('http://www.clansuite.com/#downloads')" />
+                -->
 
+                <menuitem label="Users Mailingliste"
+                        tooltiptext="Mailingliste: Clansuite Developers"
+                        oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-user/')"
+                        image="chrome://clansuitetoolbar/skin/email_go.png"
+                        class="menuitem-iconic" />
 
-                    <menuitem label="Entwickler Mailingliste"
-                            tooltiptext="Entwickler Mailingliste"
-                            href="mailto:clansuite-dev@gna.org"
-                            image="chrome://clansuitetoolbar/skin/email.png"
-                            class="menuitem-iconic" />
-                    -->
+                <menuitem label="IRC: #clansuite @ Qnet"
+                        tooltiptext="IRC Support"
+                        oncommand="Clansuite_LoadURL('irc://de.quakenet.org/clansuite')"
+                        image="chrome://clansuitetoolbar/skin/mirc.png"
+                        class="menuitem-iconic" />
 
-                    <menuitem label="#clansuite @ quakenet"
-                            tooltiptext="Support"
-                            oncommand="Clansuite_LoadURL('irc://de.quakenet.org/clansuite')"
-                            image="chrome://clansuitetoolbar/skin/mirc.png"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
+                <!--
                 <menuitem label="Freunde einladen..."
                         tooltiptext="Link an Freund senden"
                         oncommand="clansuitetoolbar_sendlink()"
                         image="chrome://clansuitetoolbar/skin/heart.png"
                         class="menuitem-iconic" />
+                -->
 
                 <menuseparator />
 
@@ -119,103 +111,103 @@
                 <vbox id="Clansuite-TB-ResizeBar" />
             </splitter>
 
-        <!-- Suche -->
-                <toolbarbutton id="Clansuite-TB-Combined-Search" type="menu" label="Suche" tooltiptext="Kombinierte Suche" onmouseover="Clansuite_openToolbarButton(this)">
-                    <menupopup>
+            <!-- Suche -->
+            <toolbarbutton id="Clansuite-TB-Combined-Search" type="menu" label="Suche" tooltiptext="Kombinierte Suche" onmouseover="Clansuite_openToolbarButton(this)">
+                <menupopup>
 
-                        <menuitem label="Clansuite-Forum" class="menuitem-iconic"
-                            tooltiptext="Suche im Clansuite-Forum"
-                            oncommand="Clansuite_Search(event, 'clansuite_forum'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                    <menuitem label="Clansuite-Forum" class="menuitem-iconic"
+                        tooltiptext="Suche im Clansuite-Forum"
+                        oncommand="Clansuite_Search(event, 'clansuite_forum'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
-                        <menuitem label="Clansuite-Bugtracker" class="menuitem-iconic"
-                            tooltiptext="Suche im Clansuite-Forum"
-                            oncommand="Clansuite_Search(event, 'clansuite_bugtracker'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                    <menuitem label="Clansuite-Bugtracker" class="menuitem-iconic"
+                        tooltiptext="Suche im Clansuite-Forum"
+                        oncommand="Clansuite_Search(event, 'clansuite_bugtracker'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
-                        <menuitem label="Clansuite-Wiki" class="menuitem-iconic"
-                            tooltiptext="Suche im Clansuite-Dokuwiki"
-                            oncommand="Clansuite_Search(event, 'clansuite_dokuwiki'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                    <menuitem label="Clansuite-Wiki" class="menuitem-iconic"
+                        tooltiptext="Suche im Clansuite-Dokuwiki"
+                        oncommand="Clansuite_Search(event, 'clansuite_dokuwiki'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
-                        <!--
-                        <menuitem label="Suche in phpdoc API" class="menuitem-iconic"
-                            tooltiptext="Suche in phpdoc API"
-                            oncommand="Clansuite_Search(event, 'clansuite_phpdoc'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/documentation-quick.png" />
-                        -->
-                        <menuseparator />
+                    <!--
+                    <menuitem label="Suche in phpdoc API" class="menuitem-iconic"
+                        tooltiptext="Suche in phpdoc API"
+                        oncommand="Clansuite_Search(event, 'clansuite_phpdoc'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/documentation-quick.png" />
+                    -->
+                    <menuseparator />
 
-                        <menuitem label="Smarty-Forum" class="menuitem-iconic"
-                            tooltiptext="Suche im Smarty-Forum"
-                            oncommand="Clansuite_Search(event, 'smarty_forum'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/smarty.png" />
+                    <menuitem label="Smarty-Forum" class="menuitem-iconic"
+                        tooltiptext="Suche im Smarty-Forum"
+                        oncommand="Clansuite_Search(event, 'smarty_forum'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/smarty.png" />
 
-                        <menuitem label="Smarty-Documentation" class="menuitem-iconic"
-                            tooltiptext="Suche in der Smarty-Documentation"
-                            oncommand="Clansuite_Search(event, 'smarty_docs'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/smarty.png" />
+                    <menuitem label="Smarty-Documentation" class="menuitem-iconic"
+                        tooltiptext="Suche in der Smarty-Documentation"
+                        oncommand="Clansuite_Search(event, 'smarty_docs'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/smarty.png" />
 
-                        <menuseparator />
+                    <menuseparator />
 
-                        <menuitem label="PHP-Documentation" class="menuitem-iconic"
-                            tooltiptext="Suche in der PHP-Documentation"
-                            oncommand="Clansuite_Search(event, 'php_manual'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/php.png" />
+                    <menuitem label="PHP-Documentation" class="menuitem-iconic"
+                        tooltiptext="Suche in der PHP-Documentation"
+                        oncommand="Clansuite_Search(event, 'php_manual'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/php.png" />
 
-                        <menuitem label="PHP-SPL-Documentation" class="menuitem-iconic"
-                            tooltiptext="Suche in der PHP-SPL-Documentation"
-                            oncommand="Clansuite_Search(event, 'php_spl_manual'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/php.png" />
+                    <menuitem label="PHP-SPL-Documentation" class="menuitem-iconic"
+                        tooltiptext="Suche in der PHP-SPL-Documentation"
+                        oncommand="Clansuite_Search(event, 'php_spl_manual'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/php.png" />
 
-                        <menuseparator />
+                    <menuseparator />
 
-                        <menuitem label="SelfHTML Befehlsreferenz" class="menuitem-iconic"
-                            tooltiptext="Suche in der Selfhtml-Befehlsreferenz"
-                            oncommand="Clansuite_Search(event, 'selfhtml_search'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/selfhtml.png" />
+                    <menuitem label="SelfHTML Befehlsreferenz" class="menuitem-iconic"
+                        tooltiptext="Suche in der Selfhtml-Befehlsreferenz"
+                        oncommand="Clansuite_Search(event, 'selfhtml_search'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/selfhtml.png" />
 
-                        <menuitem label="SelfHTML(CSS) Befehlsreferenz" class="menuitem-iconic"
-                            tooltiptext="Suche in der SelfHTML(CSS)-Befehlsreferenz"
-                            oncommand="Clansuite_Search(event, 'selfhtml_css_search'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/selfhtml.png" />
+                    <menuitem label="SelfHTML(CSS) Befehlsreferenz" class="menuitem-iconic"
+                        tooltiptext="Suche in der SelfHTML(CSS)-Befehlsreferenz"
+                        oncommand="Clansuite_Search(event, 'selfhtml_css_search'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/selfhtml.png" />
 
-                        <menuseparator />
+                    <menuseparator />
 
-                        <menuitem label="Google-Suche" class="menuitem-iconic"
-                            tooltiptext="Suche via Google"
-                            oncommand="Clansuite_Search(event, 'google'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/google.png" />
+                    <menuitem label="Google-Suche" class="menuitem-iconic"
+                        tooltiptext="Suche via Google"
+                        oncommand="Clansuite_Search(event, 'google'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/google.png" />
 
-                        <menuitem label="Yahoo!-Suche" class="menuitem-iconic"
-                            tooltiptext="Suche via Yahoo"
-                            oncommand="Clansuite_Search(event, 'yahoo'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/yahoo.png" />
+                    <menuitem label="Yahoo!-Suche" class="menuitem-iconic"
+                        tooltiptext="Suche via Yahoo"
+                        oncommand="Clansuite_Search(event, 'yahoo'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/yahoo.png" />
 
-                        <menuitem label="Wikipedia-Suche (de)" class="menuitem-iconic"
-                            tooltiptext="Suche in Wikipedia"
-                            oncommand="Clansuite_Search(event, 'wikipedia'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/wikipedia.png" />
+                    <menuitem label="Wikipedia-Suche (de)" class="menuitem-iconic"
+                        tooltiptext="Suche in Wikipedia"
+                        oncommand="Clansuite_Search(event, 'wikipedia'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/wikipedia.png" />
 
-                        <menuseparator />
+                    <menuseparator />
 
-                        <menuitem label="Google-Codesuche" class="menuitem-iconic"
-                            tooltiptext="Suche via Google"
-                            oncommand="Clansuite_Search(event, 'google_code'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/google.png" />
+                    <menuitem label="Google-Codesuche" class="menuitem-iconic"
+                        tooltiptext="Suche via Google"
+                        oncommand="Clansuite_Search(event, 'google_code'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/google.png" />
 
-                        <menuitem label="Koders-Codesuche" class="menuitem-iconic"
-                            tooltiptext="Suche via Koders"
-                            oncommand="Clansuite_Search(event, 'koders_code'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/koders.png" />
+                    <menuitem label="Koders-Codesuche" class="menuitem-iconic"
+                        tooltiptext="Suche via Koders"
+                        oncommand="Clansuite_Search(event, 'koders_code'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/koders.png" />
 
-                        <menuitem label="Krugle-Codesuche" class="menuitem-iconic"
-                            tooltiptext="Suche via Krugle"
-                            oncommand="Clansuite_Search(event, 'krugle_code'); event.stopPropagation();"
-                            image="chrome://clansuitetoolbar/skin/krugle.png" />
+                    <menuitem label="Krugle-Codesuche" class="menuitem-iconic"
+                        tooltiptext="Suche via Krugle"
+                        oncommand="Clansuite_Search(event, 'krugle_code'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/krugle.png" />
 
-                    </menupopup>
-                </toolbarbutton>
+                </menupopup>
+            </toolbarbutton>
 
             <!-- Dokumentation -->
             <toolbarbutton label="Dokumentation" id="Clansuite-TB-DocumentationMenu" type="menu" tooltiptext="Documentation Menu" onmouseover="Clansuite_openToolbarButton(this)">
@@ -228,6 +220,8 @@
                                 class="menuitem-iconic" />
 
             <menuseparator />
+            
+            <menuitem label="Users" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                 <menuitem label="Install-Guide"
                                 tooltiptext="Show the Quick-Guide"
@@ -242,24 +236,31 @@
                                 class="menuitem-iconic" />
 
             <menuseparator />
-
-            <menuitem label="Developer-Manual"
+            
+                <menuitem label="Developers" id="clansuite-menuitem" class="clansuite-menuitem" />
+    
+                <menuitem label="Developer-Manual"
                                 tooltiptext="Show the Clansuite Developer Manual"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/manual')"
                                 image="chrome://clansuitetoolbar/skin/documentation-manual.png"
                                 class="menuitem-iconic" />
 
-            <menuitem label="Clansuite XRef"
+            <menuseparator />
+
+                <menuitem label="API" id="clansuite-menuitem" class="clansuite-menuitem" />
+    
+                <menuitem label="Clansuite XRef"
                                 tooltiptext="Show the Clansuite Cross Reference"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpxref')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
-
-            <menuitem label="Clansuite phpDoc"
+    
+                <menuitem label="Clansuite phpDoc"
                                 tooltiptext="Show the Clansuite phpDocumentation"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpdoc')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
+                                
             </menupopup>
             </toolbarbutton>
 
@@ -311,7 +312,17 @@
                             image="chrome://clansuitetoolbar/skin/email_go.png"
                             class="menuitem-iconic" />
 
+                     <menuitem label="Mailingliste: Clansuite Users"
+                            tooltiptext="Mailingliste: Clansuite Developers"
+                            oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-user/')"
+                            image="chrome://clansuitetoolbar/skin/email_go.png"
+                            class="menuitem-iconic" />
 
+                     <menuitem label="Mailingliste: Clansuite Tickets"
+                            tooltiptext="Mailingliste: Clansuite Developers"
+                            oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-tickets/')"
+                            image="chrome://clansuitetoolbar/skin/email_go.png"
+                            class="menuitem-iconic" />
 
                     <menuseparator />
 
@@ -427,7 +438,7 @@
                             class="menuitem-iconic" />
                 </menupopup>
                 </menu>
-                            
+
                 <menu label="GeSHi" value="sub" id="clansuite-at-devlinks-geshi">
                 <menupopup>
                 <menuitem label="GeSHi Documentation"
@@ -550,7 +561,66 @@
                 </menupopup>
             </toolbarbutton>
 
-        <!-- Bugtracker -->
+            <!-- httpd -->
+            <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <menupopup>
+            
+                        <menuitem label="Database" id="clansuite-menuitem" class="clansuite-menuitem" />
+                        
+                        <menuitem label="phpMyAdmin"
+                                tooltiptext="phpMyAdmin - MySQL Management"
+                                oncommand="Clansuite_LoadURL('http://localhost/phpmyadmin/')"
+                                image="chrome://clansuitetoolbar/skin/database.png"
+                                class="menuitem-iconic" />
+
+                        <menuseparator />
+                        
+                        <menuitem label="Webserver" id="clansuite-menuitem" class="clansuite-menuitem" />
+            
+                        <menuitem label="Working Dir"
+                                tooltiptext="Webserver Working Dir"
+                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverWorkingDir')"
+                                image="chrome://clansuitetoolbar/skin/folder.png"
+                                class="menuitem-iconic" />
+
+                        <menuitem label="Clansuite Dir"
+                                tooltiptext="Clansuite Working Dir"
+                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverClansuiteDir')"
+                                image="chrome://clansuitetoolbar/skin/folder.png"
+                                class="menuitem-iconic" />
+
+                        <menuseparator />                        
+
+                        <menuitem label="Server-Status"
+                                tooltiptext="Webserver Server-Status"
+                                oncommand="Clansuite_LoadURL('http://localhost/server-status/')"
+                                image="chrome://clansuitetoolbar/skin/server_chart.png"
+                                class="menuitem-iconic" />
+
+                        <menuitem label="Server-Info"
+                                tooltiptext="Webserver Server-Info"
+                                oncommand="Clansuite_LoadURL('http://localhost/server-info/')"
+                                image="chrome://clansuitetoolbar/skin/server_chart.png"
+                                class="menuitem-iconic" />
+
+                        <menuseparator />
+
+                        <menuitem label="Clansuite - ErrorLog"
+                                tooltiptext="www.clansuite-dev.com-error.log"
+                                oncommand="Clansuite_OpenWithNotepad('errorlog')"
+                                image="chrome://clansuitetoolbar/skin/server_chart.png"
+                                class="menuitem-iconic" />
+
+                        <menuitem label="Clansuite - AccessLog"
+                                tooltiptext="www.clansuite-dev.com-access.log"
+                                oncommand="Clansuite_OpenWithNotepad('accesslog')"
+                                image="chrome://clansuitetoolbar/skin/server_chart.png"
+                                class="menuitem-iconic" />
+
+                </menupopup>
+            </toolbarbutton>
+
+            <!-- Bugtracker -->
             <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_openToolbarButton(this)">
                 <menupopup>
 
@@ -575,8 +645,8 @@
                 </menupopup>
             </toolbarbutton>
 
-            <!-- httpd -->
-            <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <!-- goto -->
+            <toolbarbutton id="Clansuite-TB-ClansuiteGoto" type="menu" tooltiptext="Clansuite Goto Menu" onmouseover="Clansuite_openToolbarButton(this)">
                 <menupopup>
                     <menuitem label="Frontend @ localhost"
                             tooltiptext="Navigate to Mainpage on Localhost"
@@ -606,59 +676,13 @@
 
                 <menuseparator />
 
-                <menu label="Apache Webserver" value="sub" id="clansuite-at-webserver-apache">
-                    <menupopup >
-                        <menuitem label="/localhost/work/"
-                                tooltiptext="Webserver Working Dir"
-                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverWorkingDir')"
-                                image="chrome://clansuitetoolbar/skin/folder.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="Converter"
+                            tooltiptext="Navigate to Converter on Localhost"
+                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/converter')"
+                            image="chrome://clansuitetoolbar/skin/bullet_orange.png"
+                            class="menuitem-iconic" />
 
-                        <menuitem label="/localhost/work/clansuite/"
-                                tooltiptext="Clansuite Webserver Working Dir"
-                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverClansuiteDir')"
-                                image="chrome://clansuitetoolbar/skin/folder.png"
-                                class="menuitem-iconic" />
-
-                        <menuseparator />
-
-                        <menuitem label="phpMyAdmin"
-                                tooltiptext="phpMyAdmin - MySQL Management"
-                                oncommand="Clansuite_LoadURL('http://localhost/phpmyadmin/')"
-                                image="chrome://clansuitetoolbar/skin/database.png"
-                                class="menuitem-iconic" />
-
-                        <menuseparator />
-
-                        <menuitem label="Server-Status"
-                                tooltiptext="Webserver Server-Status"
-                                oncommand="Clansuite_LoadURL('http://localhost/server-status/')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
-
-                        <menuitem label="Server-Info"
-                                tooltiptext="Webserver Server-Info"
-                                oncommand="Clansuite_LoadURL('http://localhost/server-info/')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
-
-                        <menuseparator />
-
-                        <menuitem label="Clansuite - ErrorLog"
-                                tooltiptext="www.clansuite-dev.com-error.log"
-                                oncommand="Clansuite_OpenWithNotepad('errorlog')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
-
-                        <menuitem label="Clansuite - AccessLog"
-                                tooltiptext="www.clansuite-dev.com-access.log"
-                                oncommand="Clansuite_OpenWithNotepad('accesslog')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
-
-                    </menupopup>
-                </menu>
-                </menupopup>
+            </menupopup>
             </toolbarbutton>
 
             <toolbarspring />

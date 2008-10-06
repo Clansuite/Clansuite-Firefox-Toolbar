@@ -138,14 +138,6 @@ clansuite-menuitem > menuitem:hover
      padding: 1px 1px 1px 4px;
 }
 
-#clansuite-at-support
-{
-     background-image: url("chrome://clansuitetoolbar/skin/group_go.png");
-     background-repeat: no-repeat;
-     background-position: top left;
-     padding: 1px 1px 1px 4px;
-}
-
 #Clansuite-TB-DocumentationMenu
 {
 	list-style-image: url("chrome://clansuitetoolbar/skin/documentation.png");
@@ -159,6 +151,11 @@ clansuite-menuitem > menuitem:hover
 #Clansuite-TB-WebserverMenu
 {
     list-style-image: url("chrome://clansuitetoolbar/skin/server.png");
+}
+
+#Clansuite-TB-ClansuiteGoto
+{
+    list-style-image: url("chrome://clansuitetoolbar/skin/clansuite-goto.png");
 }
 
 #Clansuite-TB-support
