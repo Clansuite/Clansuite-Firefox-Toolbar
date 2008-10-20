@@ -21,7 +21,7 @@
 
             <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_openToolbarButton(this)">
             <menupopup>
-                <menuitem label="Website" accesskey="c"
+                <menuitem label="Clansuite Website" accesskey="c"
                         tooltiptext="Navigate to Clansuite.com"
                         oncommand="Clansuite_LoadURL('http://www.clansuite.com/')"
                         image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico"
@@ -29,13 +29,13 @@
 
                 <menuseparator />
 
-                <menuitem label="Forum" accesskey="f"
+                <menuitem label="Clansuite Forum" accesskey="f"
                         tooltiptext="Navigate to Clansuite Forum"
                         oncommand="Clansuite_LoadURL('http://forum.clansuite.com/')"
                         image="chrome://clansuitetoolbar/skin/user_comment.png"
                         class="menuitem-iconic" />
 
-                <menuitem label="Downloads" accesskey="d"
+                <menuitem label="Clansuite Downloads" accesskey="d"
                         tooltiptext="Navigate to  Clansuite Downloads"
                         oncommand="Clansuite_LoadURL('http://download.gna.org/clansuite/')"
                         image="chrome://clansuitetoolbar/skin/disk.png"
@@ -55,9 +55,9 @@
                         oncommand="Clansuite_LoadURL('http://www.clansuite.com/#downloads')" />
                 -->
 
-                <menuitem label="Users Mailingliste"
+                <menuitem label="User-Mailingliste"
                         tooltiptext="Mailingliste: Clansuite Developers"
-                        oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-user/')"
+                        oncommand="Clansuite_LoadURL('https://mail.gna.org/listinfo/clansuite-user/')"
                         image="chrome://clansuitetoolbar/skin/email_go.png"
                         class="menuitem-iconic" />
 
@@ -294,7 +294,7 @@
 
                     <menuseparator />
 
-                    <menuitem label="Mailinglists"
+                    <menuitem label="Mailinglists Overview"
                             tooltiptext="Mailingliste: Mailinglists Overview"
                             oncommand="Clansuite_LoadURL('https://gna.org/mail/?group=clansuite')"
                             image="chrome://clansuitetoolbar/skin/email_go.png"
