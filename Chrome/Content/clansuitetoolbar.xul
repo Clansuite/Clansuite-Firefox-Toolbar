@@ -45,7 +45,7 @@
 
                 <menuitem label="Teamspeak"
                         tooltiptext="Teamspeal Support"
-                        oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8767?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
+                        oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8000?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
                         image="chrome://clansuitetoolbar/skin/teamspeak.png"
                         class="menuitem-iconic" />
 
