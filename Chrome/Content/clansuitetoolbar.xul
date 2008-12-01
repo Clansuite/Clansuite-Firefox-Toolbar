@@ -41,7 +41,7 @@
                         image="chrome://clansuitetoolbar/skin/disk.png"
                         class="menuitem-iconic" />
 
-                <menuitem label="Kontakt &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
+                <menuitem label="Contact &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                 <menuitem label="Teamspeak"
                         tooltiptext="Teamspeal Support"

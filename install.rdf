@@ -12,7 +12,7 @@
                    em:id="community-toolbar@clansuite.com"
                    em:name="Clansuite Community Toolbar"
                    em:version="0.2"
-                   em:creator="Jens-Andre Koch"
+                   em:creator="Jens-André Koch"
                    em:description="Provides Quick-Access-Links to the projects website, forum, documentation and rss newsfeed."
                    em:homepageURL="http://www.clansuite.com/toolbar/"
                    em:iconURL="chrome://clansuitetoolbar/skin/Clansuite-Favicon-32.ico"

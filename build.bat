@@ -1,6 +1,6 @@
 @REM   ,------------------------------------.
 @REM   | Clansuite Toolbar Build-Script w32 |
-@REM   | by Jens-Andre Koch (jakoch@web.de) |
+@REM   | by Jens-André Koch (jakoch@web.de) |
 @REM   | for clansuite.com                  |
 @REM   | LICENCE: GNU/GPLv2 or any later <3 |
 @REM   `------------------------------------'

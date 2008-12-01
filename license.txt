@@ -4,7 +4,7 @@ Version: MPL 1.1/GPL 2.0/LGPL 2.1
 The Original Code is Clansuite Community Toolbar
 http://www.clansuite.com/toolbar
 
-The Initial Developer of the Original Code is Jens-Andre Koch.
+The Initial Developer of the Original Code is Jens-André Koch.
 Portions created by the Initial Developer are Copyright (C) 2007-onwards.
 All Rights Reserved.
 

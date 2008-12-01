@@ -1,7 +1,7 @@
 #!/bin/sh
 #   ,------------------------------------.
 #   | Clansuite Toolbar Build-Script     |
-#   | by Jens-Andre Koch (jakoch@web.de) |
+#   | by Jens-André Koch (jakoch@web.de) |
 #   | for clansuite.com                  |
 #   | LICENCE: GNU/GPLv2 or any later <3 |
 #   `------------------------------------'
