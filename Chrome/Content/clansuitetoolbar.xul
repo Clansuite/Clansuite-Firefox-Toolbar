@@ -220,7 +220,7 @@
                                 class="menuitem-iconic" />
 
             <menuseparator />
-            
+
             <menuitem label="Users" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                 <menuitem label="Install-Guide"
@@ -236,9 +236,9 @@
                                 class="menuitem-iconic" />
 
             <menuseparator />
-            
+
                 <menuitem label="Developers" id="clansuite-menuitem" class="clansuite-menuitem" />
-    
+
                 <menuitem label="Developer-Manual"
                                 tooltiptext="Show the Clansuite Developer Manual"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/manual')"
@@ -248,19 +248,19 @@
             <menuseparator />
 
                 <menuitem label="API" id="clansuite-menuitem" class="clansuite-menuitem" />
-    
+
                 <menuitem label="Clansuite XRef"
                                 tooltiptext="Show the Clansuite Cross Reference"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpxref')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
-    
+
                 <menuitem label="Clansuite phpDoc"
                                 tooltiptext="Show the Clansuite phpDocumentation"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpdoc')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
-                                
+
             </menupopup>
             </toolbarbutton>
 
@@ -358,6 +358,13 @@
                             image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
                 </menupopup>
                 </menu>
+
+            <menuseparator />
+
+            <menuitem label="Clansuite IRC Logs"
+                            tooltiptext="IRC-Logs of #clansuite @ Quakenet"
+                            oncommand="Clansuite_LoadURL('http://irclogs.clansuite.com')"
+                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
 
             <menuseparator />
 
@@ -564,9 +571,9 @@
             <!-- httpd -->
             <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_openToolbarButton(this)">
             <menupopup>
-            
+
                         <menuitem label="Database" id="clansuite-menuitem" class="clansuite-menuitem" />
-                        
+
                         <menuitem label="phpMyAdmin"
                                 tooltiptext="phpMyAdmin - MySQL Management"
                                 oncommand="Clansuite_LoadURL('http://localhost/phpmyadmin/')"
@@ -574,9 +581,9 @@
                                 class="menuitem-iconic" />
 
                         <menuseparator />
-                        
+
                         <menuitem label="Webserver" id="clansuite-menuitem" class="clansuite-menuitem" />
-            
+
                         <menuitem label="Working Dir"
                                 tooltiptext="Webserver Working Dir"
                                 oncommand="Clansuite_LoadURL_type('ClansuiteWebserverWorkingDir')"
@@ -589,7 +596,7 @@
                                 image="chrome://clansuitetoolbar/skin/folder.png"
                                 class="menuitem-iconic" />
 
-                        <menuseparator />                        
+                        <menuseparator />
 
                         <menuitem label="Server-Status"
                                 tooltiptext="Webserver Server-Status"
