@@ -365,6 +365,11 @@
                             tooltiptext="IRC-Logs of #clansuite @ Quakenet"
                             oncommand="Clansuite_LoadURL('http://irclogs.clansuite.com')"
                             image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
+                            
+             <menuitem label="Clansuite Pastebin"
+                            tooltiptext="Clansuite Pastebin"
+                            oncommand="Clansuite_LoadURL('http://paste.clansuite.com')"
+                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
 
             <menuseparator />
 
@@ -661,9 +666,9 @@
                             image="chrome://clansuitetoolbar/skin/bullet_green.png"
                             class="menuitem-iconic" />
 
-                    <menuitem label="Admin Control Panel"
-                            tooltiptext="Navigate to AdminControlPanel on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/?mod=admin')"
+                    <menuitem label="Control Center"
+                            tooltiptext="Navigate to Clansuite Control Center on Localhost"
+                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/?mod=controlcenter')"
                             image="chrome://clansuitetoolbar/skin/bullet_red.png"
                             class="menuitem-iconic" />
 
