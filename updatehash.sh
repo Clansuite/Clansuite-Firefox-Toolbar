@@ -8,6 +8,8 @@
 #
 # Quick and dirty script to update the sha1 value
 # of the update.rdf, after the toolbar was build.
+# If you build the toolbar under w32 use HashTab
+# for the generation of hashes.
 
 # 1. get hashvalue of clansuite_toolbar.xpi
 

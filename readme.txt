@@ -1,11 +1,31 @@
+                            _________________________
+                            C  L  A  N  S  U  I  T  E
+
+
+### Clansuite Community Toolbar
+
 This is the official Clansuite Community Toolbar for the Mozilla Firefox Webbrowser.
 
-#### Version History:
+### Version History:
 
 v0.1 - 10.10.2007
 v0.2 - 08.05.2008
 
 ### Changelog:
+
+08.01.2009:
+- added link for pastebin
+
+25.12.2008:
+- added link for IRCLogs
+
+06.10.2008:
+- Änderungen: Es wurde aufgeräumt.
+* Ungenutzte Menüpunkte entfernt (zB Freunde einladen).
+* Einige Fehlbenennungen der Menüpunkt und Mouseovers, die durch Copy'n'Paste entstanden waren, wurden berichtigt.
+* Der Menüpunkt "httpd" wurde verändert: Die direkten Links auf das lokale Clansuite sind nun unter dem Menüpunkt "go to" erreichbar. Unter "httpd" verbleiben die Links für Datenbank und Webserververzeichnisse und -dienste.
+* "httpd": Umbenennung der Links "/localhost/work" => "Working Dir" und "/localhost/work/clansuite" => "Clansuite Dir". Beide sind relativ zu den eingestellten Pfaden unter "Options".
+* Menüpunkt "go to enthält nun auch den Link zum Converter. Zum Release-Zeitpunkt dieser Toolbar ist er jedoch noch nicht verfügbar.
 
 08.05.2008:
 - added SPL-Doc to Search
