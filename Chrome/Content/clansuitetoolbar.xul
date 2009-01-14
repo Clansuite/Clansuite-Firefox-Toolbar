@@ -308,19 +308,19 @@
 
                     <menuitem label="Mailingliste: Clansuite Developers"
                             tooltiptext="Mailingliste: Clansuite Developers"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-dev/')"
+                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-dev/')"
                             image="chrome://clansuitetoolbar/skin/email_go.png"
                             class="menuitem-iconic" />
 
                      <menuitem label="Mailingliste: Clansuite Users"
                             tooltiptext="Mailingliste: Clansuite Developers"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-user/')"
+                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-user/')"
                             image="chrome://clansuitetoolbar/skin/email_go.png"
                             class="menuitem-iconic" />
 
                      <menuitem label="Mailingliste: Clansuite Tickets"
                             tooltiptext="Mailingliste: Clansuite Developers"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/private/clansuite-tickets/')"
+                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-tickets/')"
                             image="chrome://clansuitetoolbar/skin/email_go.png"
                             class="menuitem-iconic" />
 
