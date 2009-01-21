@@ -1,6 +1,19 @@
                             _________________________
                             C  L  A  N  S  U  I  T  E
 
+## Neue Version veröffentlichen
+
+1. Änderung am Sourcecode vorgenommen
+2. Versionnummer in install.rdf erhöhen
+(Frage: Muss man hier erneut Mccoy über install.rdf laufen lassen?)
+3. Builden
+4. clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionummer}.xpi umbenennen
+5. sha1 Hash der clansuite-toolbar-v{Versionummer}.xpi ermitteln
+6. sha1 Hash in die update.xml eintragen
+7. update.xml in update.rdf umbenennen
+8. mccoy die update.rdf signieren lassen
+9. updateInfo-v{Versionummer}.xhtml mit aktuellen Infos zur Version füllen
+10. Hochladen: update.rdf, clansuite-toolbar-v{Versionnummer}.xpi, updateInfo-v{Versionummer}.xhtml
 
 ### Clansuite Community Toolbar
 
@@ -10,8 +23,13 @@ This is the official Clansuite Community Toolbar for the Mozilla Firefox Webbrow
 
 v0.1 - 10.10.2007
 v0.2 - 08.05.2008
+v0.3 - 16.10.2008
+v0.4 - 21.01.2009
 
 ### Changelog:
+
+21.01.2009
+- added autoupdate feature (v0.4)
 
 08.01.2009:
 - added link for pastebin

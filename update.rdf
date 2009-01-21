@@ -1,5 +1,35 @@
-<RDF:Description about="urn:mozilla:extension:{community-toolbar@clansuite.com}">
-    <em:version>0.3</em:version>
-    <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar.xpi</em:updateLink>
-    <em:updateHash>sha1:</em:updateHash>
-</RDF:Description>
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Seq RDF:about="rdf:#$ptWcM2">
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.3"/>
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.3"
+                   em:version="0.3">
+    <em:targetApplication RDF:resource="rdf:#$ttWcM2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:community-toolbar@clansuite.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAHmRdNwPjImc5wS78pbSv6X9ptuQT1Al12cyWmQ7Vi3JAqF63f20u+XOCxmVcozG8+ZyJANPuwvRGGoHTgLFBMnwB41LINAPeEj7fIugGwHHREt+Ax8SDRedYImwDST8g6FN6ENQS+zDorntgQzsqy/iZ+EO9RpFnJjpRe26OP4i">
+    <em:updates RDF:resource="rdf:#$ptWcM2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$CtWcM2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.4.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v04.xhtml"
+                   em:updateHash="sha1:A02786E6D41668CD7869C7AA4ADCF125366741A3" />
+  <RDF:Description RDF:about="rdf:#$ttWcM2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v03.xhtml"
+                   em:updateHash="sha1:B99E86F932DB8C414BDD51CD4BC6F47223436C53" />
+  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"
+                   em:version="0.4">
+    <em:targetApplication RDF:resource="rdf:#$CtWcM2"/>
+  </RDF:Description>
+</RDF:RDF>

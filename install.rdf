@@ -2,17 +2,16 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:extension:file:"
-                   em:package="content/" />
-  <RDF:Description RDF:about="rdf:#$QZC2E1"
+  <RDF:Description RDF:about="rdf:#$Z8QG73"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="1.5"
+                   em:minVersion="2.0"
                    em:maxVersion="3.0.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="community-toolbar@clansuite.com"
+                   em:version="0.3"
+                   em:type="2"
                    em:name="Clansuite Community Toolbar"
-                   em:version="0.2"
-                   em:creator="Jens-André Koch"
+                   em:creator="Jens-AndrÃ© Koch"
                    em:description="Provides Quick-Access-Links to the projects website, forum, documentation and rss newsfeed."
                    em:homepageURL="http://www.clansuite.com/toolbar/"
                    em:iconURL="chrome://clansuitetoolbar/skin/Clansuite-Favicon-32.ico"
@@ -20,7 +19,6 @@
                    em:aboutURL="chrome://clansuitetoolbar/content/clansuite_about.xul"
                    em:updateURL="http://www.clansuite.com/toolbar/update.rdf"
                    em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDteCzWQCmu+3ZQiAnLgbI7FxBh9ZVPrfNYcLw99z0dxaoAv/WGZRStrqvjZK1g2jreOh6LJfK4sdDXkdJqkkAsdUejzU2UrRvyGWYcW/9CBJMmNVlWzRsW3aMyID71NJX8bz+fiWHgGl98u4EpZ/D3ZrK5COX1KzH6Eti3f6CKuwIDAQAB">
-    <em:targetApplication RDF:resource="rdf:#$QZC2E1"/>
-    <em:file RDF:resource="urn:mozilla:extension:file:"/>
+    <em:targetApplication RDF:resource="rdf:#$Z8QG73"/>
   </RDF:Description>
 </RDF:RDF>
