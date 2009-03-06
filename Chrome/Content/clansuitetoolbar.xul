@@ -350,12 +350,14 @@
                     <menuitem label="Clansuite @ Ohloh.com"
                             tooltiptext="Hauptseite Ohloh"
                             oncommand="Clansuite_LoadURL('http://www.ohloh.net/projects/5526')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
+                            image="chrome://clansuitetoolbar/skin/magnifier.png"
+                            class="menuitem-iconic" />
 
                     <menuitem label="Clansuite @ CIA.vc"
                             tooltiptext="Hauptseite CIA.vc Broadcasting"
                             oncommand="Clansuite_LoadURL('http://cia.vc/stats/project/clansuite')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
+                            image="chrome://clansuitetoolbar/skin/magnifier.png"
+                            class="menuitem-iconic" />
                 </menupopup>
                 </menu>
 
@@ -364,16 +366,20 @@
             <menuitem label="Clansuite IRC Logs"
                             tooltiptext="IRC-Logs of #clansuite @ Quakenet"
                             oncommand="Clansuite_LoadURL('http://irclogs.clansuite.com')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
-                            
-             <menuitem label="Clansuite Pastebin"
+                            image="chrome://clansuitetoolbar/skin/magnifier.png"
+                            class="menuitem-iconic" />
+
+            <menuitem label="Clansuite Pastebin"
                             tooltiptext="Clansuite Pastebin"
                             oncommand="Clansuite_LoadURL('http://paste.clansuite.com')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png" class="menuitem-iconic" />
+                            image="chrome://clansuitetoolbar/skin/magnifier.png"
+                            class="menuitem-iconic" />
 
             <menuseparator />
 
             <menuitem label="Clansuite Libraries" id="clansuite-menuitem" class="clansuite-menuitem" />
+
+            <!-- <menuitem label=" Render Engines" id="clansuite-menuitem" class="clansuite-menuitem" /> -->
 
             <menu label="Smarty" value="sub" id="clansuite-at-devlinks-smarty">
                 <menupopup >
@@ -396,7 +402,31 @@
                             image="chrome://clansuitetoolbar/skin/smarty.png"
                             class="menuitem-iconic" />
                 </menupopup>
-                </menu>
+            </menu>
+
+            <menu label="PHPTAL" value="sub" id="clansuite-at-devlinks-smarty">
+                <menupopup >
+
+                <menuitem label="PHPTAL Website"
+                            tooltiptext="Navigate to Smarty Website"
+                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/')"
+                            image="chrome://clansuitetoolbar/skin/phptal.ico"
+                            class="menuitem-iconic" />
+
+                <menuitem label="PHPTAL Documentation (de)"
+                            tooltiptext="Navigate to PHPTAL Documentation (de)"
+                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/de/')"
+                            image="chrome://clansuitetoolbar/skin/phptal.ico"
+                            class="menuitem-iconic" />
+
+                <menuitem label="PHPTAL Documentation (en)"
+                            tooltiptext="Navigate to PHPTAL Documentation (en)"
+                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/en/')"
+                            image="chrome://clansuitetoolbar/skin/phptal.ico"
+                            class="menuitem-iconic" />
+
+                </menupopup>
+            </menu>
 
             <menu label="Doctrine" value="sub" id="clansuite-at-devlinks-doctrine">
                 <menupopup>
@@ -426,7 +456,7 @@
                             class="menuitem-iconic" />
 
                 </menupopup>
-                </menu>
+            </menu>
 
                 <menu label="Swiftmailer" value="sub" id="clansuite-at-devlinks-swiftmailer">
                 <menupopup>
