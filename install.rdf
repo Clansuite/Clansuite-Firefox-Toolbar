@@ -8,7 +8,7 @@
                    em:maxVersion="3.0.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="community-toolbar@clansuite.com"
-                   em:version="0.3"
+                   em:version="0.5"
                    em:type="2"
                    em:name="Clansuite Community Toolbar"
                    em:creator="Jens-André Koch"

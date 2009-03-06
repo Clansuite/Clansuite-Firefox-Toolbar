@@ -8,6 +8,7 @@
       <RDF:Seq>
         <RDF:li resource="community-toolbar@clansuite.com:0.3"/>
         <RDF:li resource="community-toolbar@clansuite.com:0.4"/>
+        <RDF:li resource="community-toolbar@clansuite.com:0.5"/>
       </RDF:Seq>
     </em:updates>
   <em:signature>___ POPULATED BY McCoy ___</em:signature>
@@ -40,5 +41,19 @@
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
+       
+       <RDF:Description about="community-toolbar@clansuite.com:0.5">
+            <em:version>0.5</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>2.0</em:minVersion>
+                <em:maxVersion>3.0.*</em:maxVersion>
+               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.5.xpi</em:updateLink>
+               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v05.xhtml</em:updateInfoURL>
+                <em:updateHash>sha1:E4F30CB3E0F19AF7AF674DBFA6224549E8BB91169</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>         
 
 </RDF:RDF>
