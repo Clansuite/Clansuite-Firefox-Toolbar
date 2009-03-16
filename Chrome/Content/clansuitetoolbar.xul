@@ -22,7 +22,7 @@
             <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_openToolbarButton(this)">
             <menupopup>
                 <menuitem label="Clansuite Website" accesskey="c"
-                        tooltiptext="Navigate to Clansuite.com"
+                        tooltiptext="Navigate to the official Clansuite Website (http://www.clansuite.com)"
                         oncommand="Clansuite_LoadURL('http://www.clansuite.com/')"
                         image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico"
                         class="menuitem-iconic" />
@@ -44,7 +44,7 @@
                 <menuitem label="Contact &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                 <menuitem label="Teamspeak"
-                        tooltiptext="Teamspeal Support"
+                        tooltiptext="Contact the Clansuite Support directly via Teamspeak"
                         oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8000?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
                         image="chrome://clansuitetoolbar/skin/teamspeak.png"
                         class="menuitem-iconic" />
@@ -56,13 +56,13 @@
                 -->
 
                 <menuitem label="User-Mailingliste"
-                        tooltiptext="Mailingliste: Clansuite Developers"
+                        tooltiptext="Mailingliste: Clansuite User"
                         oncommand="Clansuite_LoadURL('https://mail.gna.org/listinfo/clansuite-user/')"
                         image="chrome://clansuitetoolbar/skin/email_go.png"
                         class="menuitem-iconic" />
 
                 <menuitem label="IRC: #clansuite @ Qnet"
-                        tooltiptext="IRC Support"
+                        tooltiptext="Get IRC Support in Quakenet's Channel #clansuite"
                         oncommand="Clansuite_LoadURL('irc://de.quakenet.org/clansuite')"
                         image="chrome://clansuitetoolbar/skin/mirc.png"
                         class="menuitem-iconic" />
