@@ -342,9 +342,9 @@ function ClansuiteDefaultPreferences(pref)
     <!-- Show Toolbar Elements -->
     preferences['ClansuiteShowSearch']              = true;
     preferences['ClansuiteShowDocumentationMenu']   = true;
-    preferences['ClansuiteShowDeveloperMenu']       = false;
-    preferences['ClansuiteShowBugtrackerMenu']      = false;
-    preferences['ClansuiteShowWebserverMenu']       = false;
+    preferences['ClansuiteShowDeveloperMenu']       = true;
+    preferences['ClansuiteShowBugtrackerMenu']      = true;
+    preferences['ClansuiteShowWebserverMenu']       = true;
 
     <!-- Show in Tabs or Windows -->
     preferences['ClansuiteOpenTabs']                = true;
