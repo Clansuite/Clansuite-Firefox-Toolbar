@@ -5,10 +5,10 @@
   <RDF:Description RDF:about="rdf:#$Z8QG73"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="2.0"
-                   em:maxVersion="3.0.*" />
+                   em:maxVersion="3.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="community-toolbar@clansuite.com"
-                   em:version="0.5"
+                   em:version="0.6"
                    em:type="2"
                    em:name="Clansuite Community Toolbar"
                    em:creator="Jens-André Koch"
