@@ -592,7 +592,7 @@
                             class="menuitem-iconic" />
 
                 <menuitem label="Trac Manual"
-                            tooltiptext="Navigate to Dokuwiki Manual"
+                            tooltiptext="Navigate to Trac Manual"
                             oncommand="Clansuite_LoadURL('http://trac.edgewall.org/wiki/TracGuide')"
                             image="chrome://clansuitetoolbar/skin/trac.ico"
                             class="menuitem-iconic" />
@@ -666,17 +666,19 @@
             <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_openToolbarButton(this)">
                 <menupopup>
 
-                    <menuitem label="All Tasks"
-                            tooltiptext="Navigate to task overview in the bugtracker"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/18')"
-                            image="chrome://clansuitetoolbar/skin/exclamation.png"
-                            class="menuitem-iconic" />
-
-                    <menuitem label="Your Tasks"
+                    <menuitem label="My Tasks"
                             tooltiptext="Navigate to the tasks assigned to you in the bugtracker"
                             oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/7')"
                             image="chrome://clansuitetoolbar/skin/exclamation.png"
                             class="menuitem-iconic" />
+                            
+                    <menuseparator />       
+
+                    <menuitem label="All Tasks"
+                            tooltiptext="Navigate to task overview in the bugtracker"
+                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/18')"
+                            image="chrome://clansuitetoolbar/skin/exclamation.png"
+                            class="menuitem-iconic" />                    
 
                     <menuitem label="Roadmap"
                             tooltiptext="Navigate to Bugtracker Roadmap"

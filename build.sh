@@ -35,7 +35,7 @@ CHROME_PROVIDERS=  # which chrome providers we have (space-separated list)
 CLEAN_UP=          # delete the jar / "files" when done?       (1/0)
 ROOT_FILES=        # put these files in root of xpi (space separated list of leaf filenames)
 ROOT_DIRS=         # ...and these directories       (space separated list)
-BEFORE_BUILD=      # run this before building       (bash command)
+BEFORE_BUILD=      ./update_builddate.sh # run this before building       (bash command)
 AFTER_BUILD=       # ...and this after the build    (bash command)
 
 if [ -z $1 ]; then

@@ -83,18 +83,8 @@
                             </description>
 
                             <grid>
-                              <rows>
-                                <row/>
-                                <row/>
-                                <row/>
-                                <row/>
-                                <row/>
-                                <row/>
-                                <row/>
-                                <row/>
-                              </rows>
 
-                              <columns>
+                               <columns>
                                 <column>
                                   <label control="ClansuiteWebserverWorkingDirField" value="URL Webserver Working Dir :" />
                                   <label control="ClansuiteWebserverClansuiteDirField" value="URL Webserver Clansuite Dir  :" />
@@ -112,6 +102,30 @@
                                   <label control="2add" value="Example: http://localhost/work/clansuite/" />
                                   <label control="3add" value="Example: c:\xampp\apache\logs\error.log" />
                                   <label control="4add" value="Example: c:\xampp\apache\logs\access.log" />
+                                </column>
+                              </columns>
+
+                            </grid>
+
+                   </groupbox>
+                </tabpanel>
+
+                <tabpanel id="language">
+                    <groupbox>
+                          <caption label="Set Language" id="clansuiteShowLanguage" class="outset" style="-moz-border-radius: 20px; background-color: white" />
+                          <description>
+                              Enter prefered Language.
+                            </description>
+
+                            <grid>
+
+                              <columns>
+                                <column>
+                                  <label control="ClansuiteToolbarLanguage" value="Language of the Documentation" />
+                                </column>
+                                <column width="220px">
+                                  <textbox id="ClansuiteWebserverWorkingDirField" preference="ClansuiteWebserverWorkingDir" />
+                                  <textbox id="ClansuiteWebserverClansuiteDirField"  preference="ClansuiteWebserverClansuiteDir" />
                                 </column>
                               </columns>
 
