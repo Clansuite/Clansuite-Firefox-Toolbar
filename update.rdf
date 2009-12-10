@@ -2,58 +2,70 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$9YgDy3"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="2.0"
-                   em:maxVersion="3.0.*"
-                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi"
-                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v03.xhtml"
-                   em:updateHash="sha1:B99E86F932DB8C414BDD51CD4BC6F47223436C53" />
-  <RDF:Seq RDF:about="rdf:#$5YgDy3">
-    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.3"/>
-    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"/>
-    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.5"/>
-    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.6"/>
-  </RDF:Seq>
   <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.3"
                    em:version="0.3">
-    <em:targetApplication RDF:resource="rdf:#$9YgDy3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"
-                   em:version="0.4">
-    <em:targetApplication RDF:resource="rdf:#$iYgDy3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:community-toolbar@clansuite.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBABfsPeyRN9B00Y3KALL8XhuBb2FE5S0FTe4sIIFV0pxxpZoKe5Nl/BCXg4Ykeg405tRWJrowKgK7UmV+Ta6HkTis9hH8XjK8GsqrdCqR90iICd3+HSOA7AZN9DF580o0s48fpubfFuWSYLeXqK9OMYHcVI3NEIsiKAo3qO9IOIBI">
-    <em:updates RDF:resource="rdf:#$5YgDy3"/>
+    <em:targetApplication RDF:resource="rdf:#$qBTRS2"/>
   </RDF:Description>
   <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.5"
                    em:version="0.5">
-    <em:targetApplication RDF:resource="rdf:#$rYgDy3"/>
+    <em:targetApplication RDF:resource="rdf:#$IBTRS2"/>
   </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$AYgDy3"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="2.0"
-                   em:maxVersion="3.*"
-                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.6.xpi"
-                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v06.xhtml"
-                   em:updateHash="sha1:D811225853BAE6D2E9508D751C74346B008A6840" />
-  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.6"
-                   em:version="0.6">
-    <em:targetApplication RDF:resource="rdf:#$AYgDy3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$rYgDy3"
+  <RDF:Description RDF:about="rdf:#$IBTRS2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="2.0"
                    em:maxVersion="3.0.*"
                    em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.5.xpi"
                    em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v05.xhtml"
                    em:updateHash="sha1:E4F30CB3E0F19AF7AF674DBFA6224549E8BB91169" />
-  <RDF:Description RDF:about="rdf:#$iYgDy3"
+  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.6"
+                   em:version="0.6">
+    <em:targetApplication RDF:resource="rdf:#$RBTRS2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$.BTRS2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.7.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v07.xhtml"
+                   em:updateHash="sha1:CCD7AAA8AAE01CA1D5986786353BBCE89F282FD5" />
+  <RDF:Seq RDF:about="rdf:#$mBTRS2">
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.3"/>
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"/>
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.5"/>
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.6"/>
+    <RDF:li RDF:resource="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.7"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.7"
+                   em:version="0.7">
+    <em:targetApplication RDF:resource="rdf:#$.BTRS2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$zBTRS2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="2.0"
                    em:maxVersion="3.0.*"
                    em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.4.xpi"
                    em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v04.xhtml"
                    em:updateHash="sha1:A02786E6D41668CD7869C7AA4ADCF125366741A3" />
+  <RDF:Description RDF:about="rdf:#$RBTRS2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.6.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v06.xhtml"
+                   em:updateHash="sha1:D811225853BAE6D2E9508D751C74346B008A6840" />
+  <RDF:Description RDF:about="file:///D:/xampplite/htdocs/work/clansuite/toolbar/trunk/community-toolbar@clansuite.com:0.4"
+                   em:version="0.4">
+    <em:targetApplication RDF:resource="rdf:#$zBTRS2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$qBTRS2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v03.xhtml"
+                   em:updateHash="sha1:B99E86F932DB8C414BDD51CD4BC6F47223436C53" />
+  <RDF:Description RDF:about="urn:mozilla:extension:community-toolbar@clansuite.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAMRLNxQg9A4tkcsZ4vFHCl5BYrBed0cG8jyJ0Z4nwmFgZjQfuQ1bCZlebwurwPeZol3dxSZsjJjVOqOo80j0RgxQPTk5OoMGYkZ57mcXDT8Bb6nKythToU2n+zn6zrWVk/9yqkLZCLkaHk9lCn5gmaFYXM4P5Z3IGcgmIot0nMip">
+    <em:updates RDF:resource="rdf:#$mBTRS2"/>
+  </RDF:Description>
 </RDF:RDF>
