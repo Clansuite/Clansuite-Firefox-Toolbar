@@ -1,4 +1,3 @@
-<?php
    /**
     * Clansuite - just an eSports CMS
     * Jens-André Koch © 2005 - onwards
@@ -32,6 +31,26 @@
     *
     * @version    SVN: $Id$
     */
+
+/**
+ * Clansuite_LoadDocumentationURL() function loads the specified URL appended by the language tag in the browser.
+ */
+function Clansuite_LoadDocumentationURL(URL)
+{
+    var lang = ClansuiteGetPreferences("ClansuiteToolbarLanguage");
+    var URLLANG = URL + "/"+ lang +"/";
+    Clansuite_LoadURL(URLLANG);
+}
+
+/**
+ * Clansuite_LoadGotoURL() function loads the specified URL prepended by the vhost settings in the browser.
+ */
+function Clansuite_LoadGotoURL(URL)
+{
+    var vhost = ClansuiteGetPreferences("ClansuiteVhost");
+    var VHOSTURL = vhost + URL;
+    Clansuite_LoadURL(VHOSTURL);
+}
 
 /**
  * Clansuite_LoadURL() function loads the specified URL in the browser.
@@ -71,26 +90,11 @@ function Clansuite_LoadURL(URL)
     }
 }
 
-function Clansuite_LoadURL_type(type)
-{
-    switch (type)
-    {
-        case "ClansuiteWebserverWorkingDir":
-            var URL = [ClansuiteGetPreferences("ClansuiteWebserverWorkingDir")];
-            break;
-
-        case "ClansuiteWebserverClansuiteDir":
-            var URL = [ClansuiteGetPreferences("ClansuiteWebserverClansuiteDir")];
-            break;
-    }
-  Clansuite_LoadURL(URL);
-}
-
 /**
  * Opens a toolbar button automatically if another toolbar button is open on the toolbar
  * Credits for this function go to Chris Pedrick and his webdevtoolbar.
  */
-function Clansuite_openToolbarButton(currentToolbarButton)
+function Clansuite_OpenToolbarButton(currentToolbarButton)
 {
     // If the toolbar button is set and is not open
     if(currentToolbarButton && !currentToolbarButton.open)
@@ -160,6 +164,9 @@ function Clansuite_Search(event, type)
     var URL = "";
     var isEmpty = false;
 
+    // Get the language
+    var language = ClansuiteGetPreferences("ClansuiteToolbarLanguage");
+
     // Get a handle to our search terms box
     var searchTermsBox = document.getElementById("Clansuite-TB-SearchTerms");
 
@@ -212,27 +219,27 @@ function Clansuite_Search(event, type)
 
             // Build up the URL for a php manual search
         case "php_manual":
-            if(isEmpty) { URL = "http://de.php.net/"; }
-            else        { URL = "http://de.php.net/" + searchTerms; }
+            if(isEmpty) { URL = "http://"+language+".php.net/"; }
+            else        { URL = "http://"+language+".php.net/" + searchTerms; }
             break;
 
             // Build up the URL for a php standard library search
         case "php_spl_manual":
             if(isEmpty) { URL = "http://www.php.net/~helly/php/ext/spl/"; }
             //else        { URL = "http://de.php.net/manual/de/book.spl.php" + searchTerms; }
-            else        { URL = "http://de.php.net/manual/de/book.spl.php"; }
+            else        { URL = "http://"+language+".php.net/manual/de/book.spl.php"; }
             break;
 
             // Build up the URL for a selfhtml search
         case "selfhtml_search":
-            if(isEmpty) { URL = "http://de.selfhtml.org/"; }
-            else        { URL = "http://de.selfhtml.org/navigation/suche/index.htm?Suchanfrage=" + searchTerms; }
+            if(isEmpty) { URL = "http://"+language+".selfhtml.org/"; }
+            else        { URL = "http://"+language+".selfhtml.org/navigation/suche/index.htm?Suchanfrage=" + searchTerms; }
             break;
 
             // Build up the URL for a selfhtml css search
         case "selfhtml_css_search":
-            if(isEmpty) { URL = "http://de.selfhtml.org/css/"; }
-            else        { URL = "http://de.selfhtml.org/navigation/suche/index.htm?Suchanfrage=" + searchTerms; }
+            if(isEmpty) { URL = "http://"+language+".selfhtml.org/css/"; }
+            else        { URL = "http://"+language+".selfhtml.org/navigation/suche/index.htm?Suchanfrage=" + searchTerms; }
             break;
 
             // Build up the URL for a google search
@@ -249,8 +256,8 @@ function Clansuite_Search(event, type)
 
             // Build up the URL for a wikipedia search
         case "wikipedia":
-            if(isEmpty) { URL = "http://de.wikipedia.org/"; }
-            else        { URL = "http://de.wikipedia.org/wiki/search?p=" + searchTerms; }
+            if(isEmpty) { URL = "http://"+language+".wikipedia.org/"; }
+            else        { URL = "http://"+language+".wikipedia.org/wiki/search?p=" + searchTerms; }
             break;
 
             // Build up the URL for a google code search
@@ -362,11 +369,11 @@ function Clansuite_Populate()
 
 function Clansuite_Popup(url)
 {
-// window.onbeforeunload = null;
-var winl = (screen.width / 2) - 400;
-prop = 'height=400,width=400,top=100,left='+winl+',scrollbars=no,resizable=yes,toolbar=no,location=no,status=no'
-Window = window.open(url,'ClansuiteAbout',prop);
-Window.focus();
+    // window.onbeforeunload = null;
+    var winl = (screen.width / 2) - 400;
+    prop = 'height=400,width=400,top=100,left='+winl+',scrollbars=no,resizable=yes,toolbar=no,location=no,status=no'
+    Window = window.open(url,'ClansuiteAbout',prop);
+    Window.focus();
 }
 
 // Show/Hide Elements
@@ -387,9 +394,16 @@ function ClansuiteDefaultPreferences(pref)
 
     <!-- Paths to Apache Webserver -->
     preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
-	preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
-	preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
-	preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
+    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
+    preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
+    preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
+    preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
+
+    <!-- Vhost -->
+    preferences['ClansuiteVhost']                   = "http://www.clansuite-dev.com/";
+
+    <!-- Language -->
+    preferences['ClansuiteToolbarLanguage']         = "de";
 
     return preferences[pref];
 }
@@ -459,14 +473,6 @@ var myPrefObserver =
             case "ClansuiteShowWebserverMenu":
                 toggleWebserverMenu();
                 break;
-            /**
-            case "ClansuiteOpenTabs":
-                toggleTabOptionStatus();
-                break;
-
-            case "ClansuiteOpenTabsBackground":
-                break;
-                **/
         }
     }
 }
@@ -546,10 +552,3 @@ function toggleWebserverMenu()
 {
     toggleDisplay('ClansuiteShowWebserverMenu', 'Clansuite-TB-WebserverMenu');
 }
-
-
-// Show Hide End
-
-// Start RSS Reader
-
-// End RSS Reader

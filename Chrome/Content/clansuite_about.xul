@@ -4,45 +4,45 @@
 <dialog id="clansuite-about-dialog"
         title="About - Clansuite Toolbar"
         orient="vertical"
-        onload="window.sizeToContent();"
+        onload="sizeToContent();"
         buttons="none"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<!-- Javascript -->
+    <!-- Javascript -->
     <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/clansuitetoolbar.js" />
     <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/events.js" />
 
-	<groupbox align="center" orient="horizontal">
-		<vbox>
-    		<hbox>
+    <groupbox align="center" orient="horizontal">
+        <vbox>
+            <hbox>
 
-    		    <vbox>
-    		        <description class="heading">Clansuite Community Toolbar</description>
+                <vbox>
+                    <description class="heading">Clansuite Community Toolbar</description>
 
                     <separator class="thin" style="background-color: #CCC; margin: 5px; height: 2px;"/>
 
                     <hbox>
                         <vbox>
                             <label value="Homepage der Clansuite-Symbolleiste" class="strong"/>
-                            <description onclick="window.opener.Clansuite_LoadURL('http://www.clansuite.com/toolbar'); window.close();" class="link">http://www.clansuite.com/toolbar</description>
+                            <description onclick="window.opener.Clansuite_LoadURL('http://www.clansuite.com/toolbar/'); window.close();" class="link">http://www.clansuite.com/toolbar</description>
                         </vbox>
-			            <vbox>
-			                 <label value="Licence" class="strong"/>
-			                 <description onclick="window.opener.Clansuite_LoadURL('http://www.gnu.org/licenses/gpl.html'); window.close();" class="link">GNU General Public License</description>
+                        <vbox>
+                             <label value="Licence" class="strong"/>
+                             <description onclick="window.opener.Clansuite_LoadURL('http://www.gnu.org/licenses/gpl.html'); window.close();" class="link">GNU General Public License</description>
                         </vbox>
-			            <vbox>
-			                 <label value="Autor" class="strong"/>
-			                 <description onclick="window.opener.Clansuite_LoadURL('http://www.jens-andre-koch.de'); window.close();" class="link">Jens-Andr&#0233; Koch</description>
-			            </vbox>
+                        <vbox>
+                             <label value="Autor" class="strong"/>
+                             <description onclick="window.opener.Clansuite_LoadURL('http://www.jens-andre-koch.de/'); window.close();" class="link">Jens-Andr&#0233; Koch</description>
+                        </vbox>
                     </hbox>
-			    </vbox>
+                </vbox>
 
                 <vbox>
                     <label id="ClansuiteToolbarVersion" class="strong" value="Version"/>
-                    <description class="clansuiteVersion">0.6</description>
+                    <description class="clansuiteVersion">0.7</description>
 
                     <label id="ClansuiteToolbarReleaseDate" class="strong" value="Released"/>
-                    <description class="clansuiteVersion">22062009</description>
+                    <description class="clansuiteVersion">11.12.2009</description>
                 </vbox>
 
                 <spacer flex="1"/>
@@ -50,21 +50,21 @@
                     <image src="chrome://clansuitetoolbar/skin/Clansuite-Toolbar-Icon-64-white.png" id="clansuiteIcon"/>
                     <spacer flex="1"/>
                 </vbox>
-    		</hbox>
+            </hbox>
         </vbox>
 
-		<spring flex="1"/>
+        <spring flex="1"/>
 
-	</groupbox>
+    </groupbox>
 
 
-	<hbox>
-		<spacer flex="1"/>
-		<button label="Hmmkay!"
-		        oncommand="window.close();"
-		        image="chrome://clansuitetoolbar/skin/face-wink.png"
-		        orient="vertical"
-		        />
-		<spacer flex="1"/>
-	</hbox>
+    <hbox>
+        <spacer flex="1"/>
+        <button label="Hmmkay!"
+                oncommand="window.close();"
+                image="chrome://clansuitetoolbar/skin/face-wink.png"
+                orient="vertical"
+                />
+        <spacer flex="1"/>
+    </hbox>
 </dialog>

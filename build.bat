@@ -23,7 +23,7 @@ del clansuite_toolbar.xpi
 @REM -x!*.sh = exclude *.sh (the make file)
 @REM -x!*.xhtml = exclude *.xhtml (the update description file for display in FF)
 @REM * all files/dirs
-set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf"
+set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf -x!locale"
 %pathto7zip% a -tzip -r -mx=9 clansuite_toolbar-v.xpi %excludes% *
 
 pause

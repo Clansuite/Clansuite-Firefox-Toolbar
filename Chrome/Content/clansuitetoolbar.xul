@@ -19,7 +19,7 @@
                     hidden="false" persist="hidden">
 
 
-            <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
             <menupopup>
                 <menuitem label="Clansuite Website" accesskey="c"
                         tooltiptext="Navigate to the official Clansuite Website (http://www.clansuite.com)"
@@ -112,7 +112,7 @@
             </splitter>
 
             <!-- Search -->
-            <toolbarbutton id="Clansuite-TB-Combined-Search" type="menu" label="Search" tooltiptext="Kombinierte Suche" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton id="Clansuite-TB-Combined-Search" type="menu" label="Search" tooltiptext="Kombinierte Suche" onmouseover="Clansuite_OpenToolbarButton(this)">
                 <menupopup>
 
                     <menuitem label="Clansuite-Forum" class="menuitem-iconic"
@@ -210,7 +210,7 @@
             </toolbarbutton>
 
             <!-- Dokumentation -->
-            <toolbarbutton label="Dokumentation" id="Clansuite-TB-DocumentationMenu" type="menu" tooltiptext="Documentation Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton label="Dokumentation" id="Clansuite-TB-DocumentationMenu" type="menu" tooltiptext="Documentation Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
             <menupopup>
 
                 <menuitem label="Overview"
@@ -225,13 +225,13 @@
 
                 <menuitem label="Install-Guide"
                                 tooltiptext="Show the Quick-Guide"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/user/quickguide')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/quickguide')"
                                 image="chrome://clansuitetoolbar/skin/report.png"
                                 class="menuitem-iconic" />
 
                 <menuitem label="User-Manual"
                                 tooltiptext="Show the Clansuite User-Manual"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/user/manual')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/manual')"
                                 image="chrome://clansuitetoolbar/skin/report_user.png"
                                 class="menuitem-iconic" />
 
@@ -241,7 +241,7 @@
 
                 <menuitem label="Developer-Manual"
                                 tooltiptext="Show the Clansuite Developer Manual"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/manual')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/developer/manual')"
                                 image="chrome://clansuitetoolbar/skin/documentation-manual.png"
                                 class="menuitem-iconic" />
 
@@ -267,7 +267,7 @@
             <toolbarseparator />
 
             <!-- Developer Links -->
-            <toolbarbutton label="Developer Links" id="Clansuite-TB-DeveloperMenu" type="menu" tooltiptext="Developer Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton label="Developer Links" id="Clansuite-TB-DeveloperMenu" type="menu" tooltiptext="Developer Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
 
             <menupopup>
             <menu label="Clansuite @ GNA!" value="sub" id="clansuite-at-gna">
@@ -401,6 +401,13 @@
                             oncommand="Clansuite_LoadURL('http://www.smarty.net/manual/de/')"
                             image="chrome://clansuitetoolbar/skin/smarty.png"
                             class="menuitem-iconic" />
+
+                <menuitem label="Smarty Dev Mailingliste"
+                            tooltiptext="Navigate to Smarty Dev Mailingliste"
+                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/smarty-developers/')"
+                            image="chrome://clansuitetoolbar/skin/smarty.png"
+                            class="menuitem-iconic" />
+
                 </menupopup>
             </menu>
 
@@ -433,25 +440,25 @@
 
                 <menuitem label="PHPDoctrine Website"
                             tooltiptext="Navigate to Doctrine Website"
-                            oncommand="Clansuite_LoadURL('http://www.phpdoctrine.org')"
+                            oncommand="Clansuite_LoadURL('http://www.phpdoctrine.org/')"
                             image="chrome://clansuitetoolbar/skin/doctrine.ico"
                             class="menuitem-iconic" />
 
                 <menuitem label="PHPDoctrine Manual"
                             tooltiptext="Navigate to Doctrine Manual"
-                            oncommand="Clansuite_LoadURL('http://www.phpdoctrine.org/documentation')"
+                            oncommand="Clansuite_LoadURL('http://www.phpdoctrine.org/documentation/')"
                             image="chrome://clansuitetoolbar/skin/doctrine.ico"
                             class="menuitem-iconic" />
 
                 <menuitem label="PHPDoctrine User Mailingliste"
                             tooltiptext="Navigate to Doctrine Users Mailingliste"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-user')"
+                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-user/')"
                             image="chrome://clansuitetoolbar/skin/doctrine.ico"
                             class="menuitem-iconic" />
 
                 <menuitem label="PHPDoctrine Dev Mailingliste"
                             tooltiptext="Navigate to Doctrine Dev Mailingliste"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-dev')"
+                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-dev/')"
                             image="chrome://clansuitetoolbar/skin/doctrine.ico"
                             class="menuitem-iconic" />
 
@@ -529,13 +536,13 @@
 
                 <menuitem label="AsciiDoc CheatSheet"
                             tooltiptext="Navigate to AsciiDoc CheatSheet"
-                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc')"
+                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc/')"
                             image="chrome://clansuitetoolbar/skin/asciidoc.ico"
                             class="menuitem-iconic" />
 
                 <menuitem label="AsciiDoc Compact CheatSheet"
                             tooltiptext="Navigate to AsciiDoc Compact CheatSheet"
-                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc-compact')"
+                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc-compact/')"
                             image="chrome://clansuitetoolbar/skin/asciidoc.ico"
                             class="menuitem-iconic" />
 
@@ -564,7 +571,7 @@
 
                 <menuitem label="TortoiseSVN Mailingliste"
                             tooltiptext="Navigate to TortoiseSVN Mailinglist"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/tortoisesvn/topics')"
+                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/tortoisesvn/topics/')"
                             image="chrome://clansuitetoolbar/skin/tortoisesvn.png"
                             class="menuitem-iconic" />
 
@@ -587,13 +594,13 @@
 
                  <menuitem label="Trac Website"
                             tooltiptext="Navigate to Trac Website"
-                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org')"
+                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org/')"
                             image="chrome://clansuitetoolbar/skin/trac.ico"
                             class="menuitem-iconic" />
 
                 <menuitem label="Trac Manual"
                             tooltiptext="Navigate to Trac Manual"
-                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org/wiki/TracGuide')"
+                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org/wiki/TracGuide/')"
                             image="chrome://clansuitetoolbar/skin/trac.ico"
                             class="menuitem-iconic" />
 
@@ -604,7 +611,7 @@
             </toolbarbutton>
 
             <!-- httpd -->
-            <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
             <menupopup>
 
                         <menuitem label="Database" id="clansuite-menuitem" class="clansuite-menuitem" />
@@ -663,7 +670,7 @@
             </toolbarbutton>
 
             <!-- Bugtracker -->
-            <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
                 <menupopup>
 
                     <menuitem label="My Tasks"
@@ -671,24 +678,24 @@
                             oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/7')"
                             image="chrome://clansuitetoolbar/skin/exclamation.png"
                             class="menuitem-iconic" />
-                            
-                    <menuseparator />       
+
+                    <menuseparator />
 
                     <menuitem label="All Tasks"
                             tooltiptext="Navigate to task overview in the bugtracker"
                             oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/18')"
                             image="chrome://clansuitetoolbar/skin/exclamation.png"
-                            class="menuitem-iconic" />                    
+                            class="menuitem-iconic" />
 
                     <menuitem label="Roadmap"
                             tooltiptext="Navigate to Bugtracker Roadmap"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/roadmap')"
+                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/roadmap/')"
                             image="chrome://clansuitetoolbar/skin/flag_green.png"
                             class="menuitem-iconic" />
 
                      <menuitem label="New Ticket"
                             tooltiptext="Navigate to Bugtracker to create a new ticket"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/newticket')"
+                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/newticket/')"
                             image="chrome://clansuitetoolbar/skin/bug.png"
                             class="menuitem-iconic" />
 
@@ -696,17 +703,17 @@
             </toolbarbutton>
 
             <!-- goto -->
-            <toolbarbutton id="Clansuite-TB-ClansuiteGoto" type="menu" tooltiptext="Clansuite Goto Menu" onmouseover="Clansuite_openToolbarButton(this)">
+            <toolbarbutton id="Clansuite-TB-ClansuiteGoto" type="menu" tooltiptext="Clansuite Goto Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
                 <menupopup>
                     <menuitem label="Frontend @ localhost"
                             tooltiptext="Navigate to Mainpage on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/')"
+                            oncommand="Clansuite_LoadGotoURL('/')"
                             image="chrome://clansuitetoolbar/skin/bullet_green.png"
                             class="menuitem-iconic" />
 
                     <menuitem label="Control Center"
                             tooltiptext="Navigate to Clansuite Control Center on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/?mod=controlcenter')"
+                            oncommand="Clansuite_LoadGotoURL('/?mod=controlcenter')"
                             image="chrome://clansuitetoolbar/skin/bullet_red.png"
                             class="menuitem-iconic" />
 
@@ -714,13 +721,13 @@
 
                     <menuitem label="Installation"
                             tooltiptext="Navigate to Installer on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/installation/')"
+                            oncommand="Clansuite_LoadGotoURL('/installation/')"
                             image="chrome://clansuitetoolbar/skin/bullet_blue.png"
                             class="menuitem-iconic" />
 
                     <menuitem label="Web-Installation"
                             tooltiptext="Navigate to Web-Installer on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/installation/webinstaller/webinstaller.php')"
+                            oncommand="Clansuite_LoadGotoURL('/installation/webinstaller/webinstaller.php')"
                             image="chrome://clansuitetoolbar/skin/bullet_yellow.png"
                             class="menuitem-iconic" />
 
@@ -728,7 +735,7 @@
 
                     <menuitem label="Converter"
                             tooltiptext="Navigate to Converter on Localhost"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite-dev.com/converter')"
+                            oncommand="Clansuite_LoadGotoURL('/converter')"
                             image="chrome://clansuitetoolbar/skin/bullet_orange.png"
                             class="menuitem-iconic" />
 

@@ -11,10 +11,7 @@
 	persist="width height"
 	buttons="accept,cancel">
 
-	<prefpane
-			id="ClansuiteMainOptions"
-			label="Main"
-			image="chrome://clansuitetoolbar/skin/Clansuite-Toolbar-Icon-64-white.png">
+	<prefpane id="ClansuiteMainOptions" label="Main">
 
 			<preferences>
 			    <!-- Show Toolbar Elements -->
@@ -31,6 +28,10 @@
 				<preference id="ClansuiteApacheAccessLogFileName" name="extensions.clansuitetoolbar.ClansuiteApacheAccessLogFileName" type="string" instantApply="false" />
 				<preference id="ClansuiteWebserverWorkingDir" name="extensions.clansuitetoolbar.ClansuiteWebserverWorkingDir" type="string" instantApply="false" />
 				<preference id="ClansuiteWebserverClansuiteDir" name="extensions.clansuitetoolbar.ClansuiteWebserverClansuiteDir" type="string" instantApply="false" />
+				<!-- VHost -->
+				<preference id="ClansuiteVhost" name="extensions.clansuitetoolbar.ClansuiteVhost" type="string" instantApply="false" />
+				<!-- Language -->
+				<preference id="ClansuiteToolbarLanguage" name="extensions.clansuitetoolbar.ClansuiteToolbarLanguage" type="string" instantApply="false" />
 			</preferences>
 
 			<!-- The outer box that contains the tabs along the top and the tab pages themselves. -->
@@ -41,6 +42,7 @@
                   <!-- tab elements go here -->
                   <tab label="Toolbar Elements" />
                   <tab label="Paths" />
+                  <tab label="Language" />
               </tabs>
 
               <tabpanels>
@@ -86,22 +88,25 @@
 
                                <columns>
                                 <column>
+                                  <label control="ClansuiteVhostField" value="Virtual Host Name :" />
                                   <label control="ClansuiteWebserverWorkingDirField" value="URL Webserver Working Dir :" />
                                   <label control="ClansuiteWebserverClansuiteDirField" value="URL Webserver Clansuite Dir  :" />
                                   <label control="ClansuiteApacheErrorLogFileNameField" value="Path/Filename error.log :" />
                                   <label control="ClansuiteApacheAccessLogFileNameField" value="Path/Filename access.log :" />
                                 </column>
                                 <column width="220px">
+                                  <textbox id="ClansuiteVhostField" preference="ClansuiteVhost" />
                                   <textbox id="ClansuiteWebserverWorkingDirField" preference="ClansuiteWebserverWorkingDir" />
                                   <textbox id="ClansuiteWebserverClansuiteDirField"  preference="ClansuiteWebserverClansuiteDir" />
                                   <textbox id="ClansuiteApacheErrorLogFileNameField" preference="ClansuiteApacheErrorLogFileName" />
                                   <textbox id="ClansuiteApacheAccessLogFileNameField" preference="ClansuiteApacheAccessLogFileName" />
                                 </column>
                                 <column>
-                                  <label control="1add" value="Example: http://localhost/work/" />
-                                  <label control="2add" value="Example: http://localhost/work/clansuite/" />
-                                  <label control="3add" value="Example: c:\xampp\apache\logs\error.log" />
-                                  <label control="4add" value="Example: c:\xampp\apache\logs\access.log" />
+                                  <label control="1add" value="Example: http://www.clansuite-dev.com/" />
+                                  <label control="2add" value="Example: http://localhost/work/" />
+                                  <label control="3add" value="Example: http://localhost/work/clansuite/" />
+                                  <label control="4add" value="Example: c:\xampp\apache\logs\error.log" />
+                                  <label control="5add" value="Example: c:\xampp\apache\logs\access.log" />
                                 </column>
                               </columns>
 
@@ -121,11 +126,13 @@
 
                               <columns>
                                 <column>
-                                  <label control="ClansuiteToolbarLanguage" value="Language of the Documentation" />
+                                  <label control="ClansuiteToolbarLanguageField" value="Language of the Documentation" />
                                 </column>
                                 <column width="220px">
-                                  <textbox id="ClansuiteWebserverWorkingDirField" preference="ClansuiteWebserverWorkingDir" />
-                                  <textbox id="ClansuiteWebserverClansuiteDirField"  preference="ClansuiteWebserverClansuiteDir" />
+                                  <textbox id="ClansuiteToolbarLanguageField" preference="ClansuiteToolbarLanguage" />
+                                </column>
+                                <column>
+                                  <label control="1add" value="Example: de" />
                                 </column>
                               </columns>
 
