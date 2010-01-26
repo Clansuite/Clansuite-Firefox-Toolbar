@@ -257,7 +257,7 @@ function Clansuite_Search(event, type)
             // Build up the URL for a wikipedia search
         case "wikipedia":
             if(isEmpty) { URL = "http://"+language+".wikipedia.org/"; }
-            else        { URL = "http://"+language+".wikipedia.org/wiki/search?p=" + searchTerms; }
+            else        { URL = "http://"+language+".wikipedia.org/w/index.php?title=Spezial%3ASuche&redirs=1&fulltext=Search&ns0=1&search=" + searchTerms; }
             break;
 
             // Build up the URL for a google code search
