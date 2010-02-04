@@ -27,8 +27,15 @@ v0.3 - 16.10.2008
 v0.4 - 21.01.2009
 v0.5 - /
 v0.6 - 22.06.2009
+v0.7 - 04.02.2010
 
 ### Changelog:
+
+04.02.2010
+- updated toolbar urls
+- updated icon teamspeak.png
+- fixed middle mousebutton bugs
+- fixed tab-in-background bug
 
 22.06.2009
 - added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.
