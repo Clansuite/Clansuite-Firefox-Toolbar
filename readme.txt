@@ -11,7 +11,7 @@
 5.  sha1 Hash der clansuite-toolbar-v{Versionummer}.xpi ermitteln
 6.  sha1 Hash in die update.xml eintragen
 7.  update.xml in update.rdf umbenennen
-8.  mccoy die update.rdf signieren lassen
+8.  Mit McCoy (https://developer.mozilla.org/en/McCoy) die update.rdf signieren lassen
 9.  updateInfo-v{Versionummer}.xhtml mit aktuellen Infos zur Version füllen
 10. Hochladen: update.rdf, clansuite-toolbar-v{Versionnummer}.xpi, updateInfo-v{Versionummer}.xhtml
 
