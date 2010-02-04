@@ -36,6 +36,7 @@ v0.7 - 04.02.2010
 - updated icon teamspeak.png
 - fixed middle mousebutton bugs
 - fixed tab-in-background bug
+- fixed default value bug
 
 22.06.2009
 - added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.
