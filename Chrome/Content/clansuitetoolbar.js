@@ -75,7 +75,7 @@ function Clansuite_LoadURL(URL)
         // If the open tabs in background preference is set to true
         if(ClansuiteGetPreferences("ClansuiteOpenTabsBackground"))
         {
-            parentWindow.getBrowser().loadOneTab(URL, null, null, null, true, false);
+            parentWindow.getBrowser().loadOneTab(URL, null, null, null, false, false);
         }
         else
         {
