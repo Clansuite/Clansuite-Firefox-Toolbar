@@ -32,6 +32,8 @@
     * @version    SVN: $Id$
     */
 
+var preferences = new Array();
+
 /**
  * Clansuite_LoadDocumentationURL() function loads the specified URL appended by the language tag in the browser.
  */
@@ -75,7 +77,7 @@ function Clansuite_LoadURL(URL)
         // If the open tabs in background preference is set to true
         if(ClansuiteGetPreferences("ClansuiteOpenTabsBackground"))
         {
-            parentWindow.getBrowser().loadOneTab(URL, null, null, null, false, false);
+            parentWindow.getBrowser().loadOneTab(URL, null, null, null, true, false);
         }
         else
         {
@@ -257,7 +259,7 @@ function Clansuite_Search(event, type)
             // Build up the URL for a wikipedia search
         case "wikipedia":
             if(isEmpty) { URL = "http://"+language+".wikipedia.org/"; }
-            else        { URL = "http://"+language+".wikipedia.org/w/index.php?title=Spezial%3ASuche&redirs=1&fulltext=Search&ns0=1&search=" + searchTerms; }
+            else        { URL = "http://"+language+".wikipedia.org/wiki/search?p=" + searchTerms; }
             break;
 
             // Build up the URL for a google code search
@@ -376,11 +378,9 @@ function Clansuite_Popup(url)
     Window.focus();
 }
 
-// Show/Hide Elements
-function ClansuiteDefaultPreferences(pref)
+// Generate default prefs
+function generateClansuitePrefs()
 {
-    preferences = [];
-
     <!-- Show Toolbar Elements -->
     preferences['ClansuiteShowSearch']              = true;
     preferences['ClansuiteShowDocumentationMenu']   = true;
@@ -394,7 +394,6 @@ function ClansuiteDefaultPreferences(pref)
 
     <!-- Paths to Apache Webserver -->
     preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
-    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
     preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
     preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
     preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
@@ -404,8 +403,22 @@ function ClansuiteDefaultPreferences(pref)
 
     <!-- Language -->
     preferences['ClansuiteToolbarLanguage']         = "de";
+}
 
+// Show/Hide Elements
+function ClansuiteDefaultPreferences(pref)
+{
     return preferences[pref];
+}
+
+function checkDefaults()
+{
+
+    for(var pref in preferences)
+    {
+        //alert(pref);
+        ClansuiteGetPreferences(pref);
+    }
 }
 
 function ClansuiteGetPreferences(pref)
@@ -428,8 +441,15 @@ function ClansuiteGetPreferences(pref)
     else
     {
         retValue = ClansuiteDefaultPreferences(pref);
+        alert(pref + ":" + retValue);
+        if (retValue === true || retValue === false)
+            prefs.setBoolPref(pref, retValue);
+        else if (!isNaN(retValue) && (retValue%1)==0)
+            prefs.setIntPref(pref, retValue);
+        else
+            prefs.setCharPref(pref, retValue);
     }
-    return retValue
+    return retValue;
 }
 
 var myPrefObserver =
@@ -480,6 +500,8 @@ myPrefObserver.register();
 
 function loadUserSettings()
 {
+    generateClansuitePrefs();
+    checkDefaults();
     toggleSearch();
     toggleDocumentationMenu();
     toggleDeveloperMenu();
