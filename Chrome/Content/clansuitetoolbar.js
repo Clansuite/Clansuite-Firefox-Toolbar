@@ -40,7 +40,7 @@ var preferences = new Array();
 function Clansuite_LoadDocumentationURL(URL)
 {
     var lang = ClansuiteGetPreferences("ClansuiteToolbarLanguage");
-    var URLLANG = URL + "/"+ lang +"/";
+    var URLLANG = URL.replace(/\/$/,'') + "/"+ lang +"/";
     Clansuite_LoadURL(URLLANG);
 }
 
@@ -50,7 +50,7 @@ function Clansuite_LoadDocumentationURL(URL)
 function Clansuite_LoadGotoURL(URL)
 {
     var vhost = ClansuiteGetPreferences("ClansuiteVhost");
-    var VHOSTURL = vhost + URL;
+    var VHOSTURL = vhost.replace(/\/$/,'') + URL;
     Clansuite_LoadURL(VHOSTURL);
 }
 

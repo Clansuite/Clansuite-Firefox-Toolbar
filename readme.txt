@@ -37,6 +37,7 @@ v0.7 - 04.02.2010
 - fixed middle mousebutton bugs
 - fixed tab-in-background bug
 - fixed default value bug
+- fixed webserver path problem with trailing slashes
 
 22.06.2009
 - added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.
