@@ -1,5 +1,38 @@
-                            _________________________
-                            C  L  A  N  S  U  I  T  E
+   /**
+    * Clansuite - just an eSports CMS
+    * Jens-André Koch © 2005 - onwards
+    * http://www.clansuite.com/
+    *
+    * This file is part of "Clansuite - just an eSports CMS".
+    *
+    * LICENSE:
+    *
+    *    This program is free software; you can redistribute it and/or modify
+    *    it under the terms of the GNU General Public License as published by
+    *    the Free Software Foundation; either version 2 of the License, or
+    *    (at your option) any later version.
+    *
+    *    This program is distributed in the hope that it will be useful,
+    *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    *    GNU General Public License for more details.
+    *
+    *    You should have received a copy of the GNU General Public License
+    *    along with this program; if not, write to the Free Software
+    *    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+    *
+    * @license    GNU/GPL v2 or (at your option) any later version, see "/doc/LICENSE".
+    *
+    * @author     Jens-André Koch <vain@clansuite.com>
+    * @copyright  Jens-André Koch (2005 - onwards)
+    *
+    * @link       http://www.clansuite.com
+    * @link       http://gna.org/projects/clansuite
+    *
+    * @version    SVN: $Id: clansuitetoolbar.js 3824 2009-12-10 07:12:33Z vain $
+    
+                                _________________________
+                                C  L  A  N  S  U  I  T  E
 
 ## Neue Version veröffentlichen
 
@@ -27,17 +60,21 @@ v0.3 - 16.10.2008
 v0.4 - 21.01.2009
 v0.5 - /
 v0.6 - 22.06.2009
-v0.7 - 04.02.2010
+v0.7 - /
+v0.8 - 05.02.2010
 
 ### Changelog:
 
 04.02.2010
+- added working- & clansuite-dir jumptos
 - updated toolbar urls
 - updated icon teamspeak.png
+- updated trac urls
 - fixed middle mousebutton bugs
 - fixed tab-in-background bug
 - fixed default value bug
 - fixed webserver path problem with trailing slashes
+- minor cleanups
 
 22.06.2009
 - added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.

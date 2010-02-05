@@ -703,14 +703,14 @@
                         <menuitem label="Working Dir"
                                 tooltiptext="Webserver Working Dir"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverWorkingDir')"
+                                oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverWorkingDir')"
                                 image="chrome://clansuitetoolbar/skin/folder.png"
                                 class="menuitem-iconic" />
 
                         <menuitem label="Clansuite Dir"
                                 tooltiptext="Clansuite Working Dir"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL_type('ClansuiteWebserverClansuiteDir')"
+                                oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverClansuiteDir')"
                                 image="chrome://clansuitetoolbar/skin/folder.png"
                                 class="menuitem-iconic" />
 
@@ -754,7 +754,7 @@
                     <menuitem label="My Tasks"
                             tooltiptext="Navigate to the tasks assigned to you in the bugtracker"
                             onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/7')"
+                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/7')"
                             image="chrome://clansuitetoolbar/skin/exclamation.png"
                             class="menuitem-iconic" />
 
@@ -763,21 +763,21 @@
                     <menuitem label="All Tasks"
                             tooltiptext="Navigate to task overview in the bugtracker"
                             onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/report/18')"
+                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/18')"
                             image="chrome://clansuitetoolbar/skin/exclamation.png"
                             class="menuitem-iconic" />
 
                     <menuitem label="Roadmap"
                             tooltiptext="Navigate to Bugtracker Roadmap"
                             onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/roadmap/')"
+                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/roadmap/')"
                             image="chrome://clansuitetoolbar/skin/flag_green.png"
                             class="menuitem-iconic" />
 
                      <menuitem label="New Ticket"
                             tooltiptext="Navigate to Bugtracker to create a new ticket"
                             onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.clansuite.com/trac/newticket/')"
+                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/newticket/')"
                             image="chrome://clansuitetoolbar/skin/bug.png"
                             class="menuitem-iconic" />
 
@@ -789,13 +789,15 @@
                 <menupopup>
                     <menuitem label="Frontend @ localhost"
                             tooltiptext="Navigate to Mainpage on Localhost"
-                            oncommand="Clansuite_LoadGotoURL('/')"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/', 'ClansuiteVhost')"
                             image="chrome://clansuitetoolbar/skin/bullet_green.png"
                             class="menuitem-iconic" />
 
                     <menuitem label="Control Center"
                             tooltiptext="Navigate to Clansuite Control Center on Localhost"
-                            oncommand="Clansuite_LoadGotoURL('/?mod=controlcenter')"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/index.php?mod=controlcenter', 'ClansuiteVhost')"
                             image="chrome://clansuitetoolbar/skin/bullet_red.png"
                             class="menuitem-iconic" />
 
@@ -803,13 +805,15 @@
 
                     <menuitem label="Installation"
                             tooltiptext="Navigate to Installer on Localhost"
-                            oncommand="Clansuite_LoadGotoURL('/installation/')"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/installation/','ClansuiteVhost')"
                             image="chrome://clansuitetoolbar/skin/bullet_blue.png"
                             class="menuitem-iconic" />
 
                     <menuitem label="Web-Installation"
                             tooltiptext="Navigate to Web-Installer on Localhost"
-                            oncommand="Clansuite_LoadGotoURL('/installation/webinstaller/webinstaller.php')"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/installation/webinstaller/webinstaller.php','ClansuiteVhost')"
                             image="chrome://clansuitetoolbar/skin/bullet_yellow.png"
                             class="menuitem-iconic" />
 
@@ -817,7 +821,8 @@
 
                     <menuitem label="Converter"
                             tooltiptext="Navigate to Converter on Localhost"
-                            oncommand="Clansuite_LoadGotoURL('/converter')"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/converter','ClansuiteVhost')"
                             image="chrome://clansuitetoolbar/skin/bullet_orange.png"
                             class="menuitem-iconic" />
 

@@ -35,6 +35,92 @@
 var preferences = new Array();
 
 /**
+* First method that is called after plugin-load
+*/
+function loadUserSettings()
+{
+    generateClansuitePrefs();
+    checkDefaults();
+    toggleSearch();
+    toggleDocumentationMenu();
+    toggleDeveloperMenu();
+    toggleBugtrackerMenu();
+    toggleWebserverMenu();
+}
+
+/**
+* Set default preferences as global variable
+*/
+function generateClansuitePrefs()
+{
+    <!-- Show Toolbar Elements -->
+    preferences['ClansuiteShowSearch']              = true;
+    preferences['ClansuiteShowDocumentationMenu']   = true;
+    preferences['ClansuiteShowDeveloperMenu']       = true;
+    preferences['ClansuiteShowBugtrackerMenu']      = true;
+    preferences['ClansuiteShowWebserverMenu']       = true;
+
+    <!-- Show in Tabs or Windows -->
+    preferences['ClansuiteOpenTabs']                = true;
+    preferences['ClansuiteOpenTabsBackground']      = true;
+
+    <!-- Paths to Apache Webserver -->
+    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
+    preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
+    preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
+    preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
+
+    <!-- Vhost -->
+    preferences['ClansuiteVhost']                   = "http://www.clansuite-dev.com/";
+
+    <!-- Language -->
+    preferences['ClansuiteToolbarLanguage']         = "de";
+}
+
+/**
+* Set all default preferences on startup - add non-existing ones
+*/
+function setDefaults()
+{
+    for(var pref in preferences)
+    {
+        ClansuiteGetPreferences(pref);
+    }
+}
+
+/**
+* Get one preference-value
+*/
+function ClansuiteGetPreferences(pref)
+{
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+            getService(Components.interfaces.nsIPrefService);
+    prefs = prefs.getBranch("extensions.clansuitetoolbar.");
+
+    var retValue;
+    if(prefs.prefHasUserValue(pref))
+    {
+        if (prefs.getPrefType(pref) == prefs.PREF_BOOL)
+            retValue = prefs.getBoolPref(pref);
+        else if (prefs.getPrefType(pref) == prefs.PREF_INT)
+            retValue = prefs.getIntPref(pref);
+        else if (prefs.getPrefType(pref) == prefs.PREF_STRING)
+            retValue = prefs.getCharPref(pref);
+    }
+    else
+    {
+        retValue = preferences[pref];
+        if (retValue === true || retValue === false)
+            prefs.setBoolPref(pref, retValue);
+        else if (!isNaN(retValue) && (retValue%1)==0)
+            prefs.setIntPref(pref, retValue);
+        else
+            prefs.setCharPref(pref, retValue);
+    }
+    return retValue;
+}
+
+/**
  * Clansuite_LoadDocumentationURL() function loads the specified URL appended by the language tag in the browser.
  */
 function Clansuite_LoadDocumentationURL(URL)
@@ -47,9 +133,9 @@ function Clansuite_LoadDocumentationURL(URL)
 /**
  * Clansuite_LoadGotoURL() function loads the specified URL prepended by the vhost settings in the browser.
  */
-function Clansuite_LoadGotoURL(URL)
+function Clansuite_LoadGotoURL(URL, pref)
 {
-    var vhost = ClansuiteGetPreferences("ClansuiteVhost");
+    var vhost = ClansuiteGetPreferences(pref);
     var VHOSTURL = vhost.replace(/\/$/,'') + URL;
     Clansuite_LoadURL(VHOSTURL);
 }
@@ -378,80 +464,6 @@ function Clansuite_Popup(url)
     Window.focus();
 }
 
-// Generate default prefs
-function generateClansuitePrefs()
-{
-    <!-- Show Toolbar Elements -->
-    preferences['ClansuiteShowSearch']              = true;
-    preferences['ClansuiteShowDocumentationMenu']   = true;
-    preferences['ClansuiteShowDeveloperMenu']       = true;
-    preferences['ClansuiteShowBugtrackerMenu']      = true;
-    preferences['ClansuiteShowWebserverMenu']       = true;
-
-    <!-- Show in Tabs or Windows -->
-    preferences['ClansuiteOpenTabs']                = true;
-    preferences['ClansuiteOpenTabsBackground']      = true;
-
-    <!-- Paths to Apache Webserver -->
-    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
-    preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
-    preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
-    preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
-
-    <!-- Vhost -->
-    preferences['ClansuiteVhost']                   = "http://www.clansuite-dev.com/";
-
-    <!-- Language -->
-    preferences['ClansuiteToolbarLanguage']         = "de";
-}
-
-// Show/Hide Elements
-function ClansuiteDefaultPreferences(pref)
-{
-    return preferences[pref];
-}
-
-function checkDefaults()
-{
-
-    for(var pref in preferences)
-    {
-        //alert(pref);
-        ClansuiteGetPreferences(pref);
-    }
-}
-
-function ClansuiteGetPreferences(pref)
-{
-    var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-            getService(Components.interfaces.nsIPrefService);
-    prefs = prefs.getBranch("extensions.clansuitetoolbar.");
-
-    var retValue;
-    if(prefs.prefHasUserValue(pref))
-    {
-//      alert('the user has set this one');
-        if (prefs.getPrefType(pref) == prefs.PREF_BOOL)
-            retValue = prefs.getBoolPref(pref);
-        else if (prefs.getPrefType(pref) == prefs.PREF_INT)
-            retValue = prefs.getIntPref(pref);
-        else if (prefs.getPrefType(pref) == prefs.PREF_STRING)
-            retValue = prefs.getCharPref(pref);
-    }
-    else
-    {
-        retValue = ClansuiteDefaultPreferences(pref);
-        alert(pref + ":" + retValue);
-        if (retValue === true || retValue === false)
-            prefs.setBoolPref(pref, retValue);
-        else if (!isNaN(retValue) && (retValue%1)==0)
-            prefs.setIntPref(pref, retValue);
-        else
-            prefs.setCharPref(pref, retValue);
-    }
-    return retValue;
-}
-
 var myPrefObserver =
 {
     register: function()
@@ -497,17 +509,6 @@ var myPrefObserver =
     }
 }
 myPrefObserver.register();
-
-function loadUserSettings()
-{
-    generateClansuitePrefs();
-    checkDefaults();
-    toggleSearch();
-    toggleDocumentationMenu();
-    toggleDeveloperMenu();
-    toggleBugtrackerMenu();
-    toggleWebserverMenu();
-}
 
 /**
  * toggle the display of a certain Element, if config(pref) says so
