@@ -65,10 +65,10 @@ function generateClansuitePrefs()
     preferences['ClansuiteOpenTabsBackground']      = true;
 
     <!-- Paths to Apache Webserver -->
-    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/work/";
-    preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/work/clansuite/";
-    preferences['ClansuiteApacheErrorLogFileName']  = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-error.log";
-    preferences['ClansuiteApacheAccessLogFileName'] = "c:\\xampp\\apache\\logs\\www.clansuite-dev.com-access.log";
+    preferences['ClansuiteWebserverWorkingDir']     = "http://localhost/";
+    preferences['ClansuiteWebserverClansuiteDir']   = "http://localhost/clansuite/";
+    preferences['ClansuiteApacheErrorLogFileName']  = "C:\\Clansuite\\xampplite\\apache\\logs\\access.log";
+    preferences['ClansuiteApacheAccessLogFileName'] = "C:\\Clansuite\\xampplite\\apache\\logs\\error.log";
 
     <!-- Vhost -->
     preferences['ClansuiteVhost']                   = "http://www.clansuite-dev.com/";
