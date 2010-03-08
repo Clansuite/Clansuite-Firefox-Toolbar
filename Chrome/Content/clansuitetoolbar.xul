@@ -49,7 +49,7 @@
                 <menuitem label="Teamspeak"
                         tooltiptext="Contact the Clansuite Support directly via Teamspeak"
                         onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('teamspeak://clansuite.com:8000?channel=Clansuite%20Admins?subchannel=Clansuite%20Support')"
+                        oncommand="Clansuite_LoadURL('ts3server://clansuite.com:9987/')"
                         image="chrome://clansuitetoolbar/skin/teamspeak.png"
                         class="menuitem-iconic" />
 
