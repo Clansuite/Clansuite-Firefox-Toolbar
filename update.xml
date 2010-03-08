@@ -11,6 +11,7 @@
         <RDF:li resource="community-toolbar@clansuite.com:0.5"/>
         <RDF:li resource="community-toolbar@clansuite.com:0.6"/>
         <RDF:li resource="community-toolbar@clansuite.com:0.7"/>
+        <RDF:li resource="community-toolbar@clansuite.com:0.8"/>
       </RDF:Seq>
     </em:updates>
   <em:signature>___ POPULATED BY McCoy ___</em:signature>
@@ -82,6 +83,20 @@
                <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.7.xpi</em:updateLink>
                <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v07.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:CCD7AAA8AAE01CA1D5986786353BBCE89F282FD5</em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+       </RDF:Description>
+       
+       <RDF:Description about="community-toolbar@clansuite.com:0.8">
+            <em:version>0.8</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>2.0</em:minVersion>
+                <em:maxVersion>3.*</em:maxVersion>
+               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.8.xpi</em:updateLink>
+               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v08.xhtml</em:updateInfoURL>
+                <em:updateHash>sha1:b567130a97b0255e539f81d3809a376773fc1304</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
        </RDF:Description>

@@ -1,146 +1,126 @@
-   /**
-    * Clansuite - just an eSports CMS
-    * Jens-André Koch © 2005 - onwards
-    * http://www.clansuite.com/
-    *
-    * This file is part of "Clansuite - just an eSports CMS".
-    *
-    * LICENSE:
-    *
-    *    This program is free software; you can redistribute it and/or modify
-    *    it under the terms of the GNU General Public License as published by
-    *    the Free Software Foundation; either version 2 of the License, or
-    *    (at your option) any later version.
-    *
-    *    This program is distributed in the hope that it will be useful,
-    *    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    *    GNU General Public License for more details.
-    *
-    *    You should have received a copy of the GNU General Public License
-    *    along with this program; if not, write to the Free Software
-    *    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-    *
-    * @license    GNU/GPL v2 or (at your option) any later version, see "/doc/LICENSE".
-    *
-    * @author     Jens-André Koch <vain@clansuite.com>
-    * @copyright  Jens-André Koch (2005 - onwards)
-    *
-    * @link       http://www.clansuite.com
-    * @link       http://gna.org/projects/clansuite
-    *
-    * @version    SVN: $Id: clansuitetoolbar.js 3824 2009-12-10 07:12:33Z vain $
-    
                                 _________________________
                                 C  L  A  N  S  U  I  T  E
 
-## Neue Version veröffentlichen
 
-1.  Änderung am Sourcecode vorgenommen
-2.  Versionnummer in "install.rdf" und "/chrome/content/clansuite_about.xul" (Zeile 40 ff.) erhöhen
-    (Frage: Muss man hier erneut Mccoy über install.rdf laufen lassen?)
-3.  Builden mittels build.bat
-4.  clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionummer}.xpi umbenennen
-5.  sha1 Hash der clansuite-toolbar-v{Versionummer}.xpi ermitteln
-6.  sha1 Hash in die update.xml eintragen
-7.  update.xml in update.rdf umbenennen
-8.  Mit McCoy (https://developer.mozilla.org/en/McCoy) die update.rdf signieren lassen
-9.  updateInfo-v{Versionummer}.xhtml mit aktuellen Infos zur Version füllen
-10. Hochladen: update.rdf, clansuite-toolbar-v{Versionnummer}.xpi, updateInfo-v{Versionummer}.xhtml
+    ### Neue Version veröffentlichen
 
-### Clansuite Community Toolbar
+    Ausgangspunkt: Es wurde eine Änderung am Sourcecode vorgenommen.
 
-This is the official Clansuite Community Toolbar for the Mozilla Firefox Webbrowser.
+    1.  Versionnummer in "install.rdf" und "/chrome/content/clansuite_about.xul" (Zeile 40 ff.) erhöhen
+    2.  Mit McCoy das Kommando "Install" auf install.rdf ausführen
+    3.  Builden mittels build.bat
+    4.  clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionsnummer}.xpi umbenennen
+    5.  sha1 Hash der clansuite-toolbar-v{Versionsnummer}.xpi ermitteln
+    6.  sha1 Hash in die update.xml eintragen
+    7.  update.xml in update.rdf umbenennen
+    8.  Mit McCoy das Kommando "Sign" auf update.rdf ausführen
+    9.  updateInfo-v{Versionsnummer}.xhtml (Achtung: ohne Punkt) mit aktuellen Infos zur Version füllen
+    10. Veröffentlichung durch 
+        a) Hochladen der Dateien
+            update.rdf
+            clansuite-toolbar-v{Versionnummer}.xpi
+            updateInfo-v{Versionummer}.xhtml
+        b) Absetzen einer Info über Clansuite Google News
 
-### Version History:
+    Hinweise:
 
-v0.1 - 10.10.2007
-v0.2 - 08.05.2008
-v0.3 - 16.10.2008
-v0.4 - 21.01.2009
-v0.5 - /
-v0.6 - 22.06.2009
-v0.7 - /
-v0.8 - 05.02.2010
+    a) {Versionsnummer}     ist ein Platzhalter für die Versionsnummer im Format major.minor (z.B. "0.7").
+    b) McCoy                https://developer.mozilla.org/en/McCoy
+    c) HashCheck            http://code.kliu.org/hashcheck/downloads/HashCheckInstall-latest.exe
 
-### Changelog:
+    ### Clansuite Community Toolbar
 
-04.02.2010
-- added working- & clansuite-dir jumptos
-- updated toolbar urls
-- updated icon teamspeak.png
-- updated trac urls
-- fixed middle mousebutton bugs
-- fixed tab-in-background bug
-- fixed default value bug
-- fixed webserver path problem with trailing slashes
-- minor cleanups
+    This is the official Clansuite Community Toolbar for the Mozilla Firefox Webbrowser.
 
-22.06.2009
-- added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.
-- fixed the Firefox 3.* version compatibility issue
+    ### Version History:
 
-21.01.2009
-- added autoupdate feature (v0.4)
+    v0.1 - 10.10.2007
+    v0.2 - 08.05.2008
+    v0.3 - 16.10.2008
+    v0.4 - 21.01.2009
+    v0.5 - /
+    v0.6 - 22.06.2009
+    v0.7 - /
+    v0.8 - 05.02.2010
 
-08.01.2009:
-- added link for pastebin
+    ### Changelog:
 
-25.12.2008:
-- added link for IRCLogs
+    v0.8 - 05.02.2010 (Autor: Florian Wolf)
+    - added working- & clansuite-dir jumptos
+    - updated toolbar urls
+    - updated icon teamspeak.png
+    - updated trac urls
+    - fixed middle mousebutton bugs
+    - fixed tab-in-background bug
+    - fixed default value bug
+    - fixed webserver path problem with trailing slashes
+    - minor cleanups
 
-06.10.2008:
-- Änderungen: Es wurde aufgeräumt.
-* Ungenutzte Menüpunkte entfernt (zB Freunde einladen).
-* Einige Fehlbenennungen der Menüpunkt und Mouseovers, die durch Copy'n'Paste entstanden waren, wurden berichtigt.
-* Der Menüpunkt "httpd" wurde verändert: Die direkten Links auf das lokale Clansuite sind nun unter dem Menüpunkt "go to" erreichbar. Unter "httpd" verbleiben die Links für Datenbank und Webserververzeichnisse und -dienste.
-* "httpd": Umbenennung der Links "/localhost/work" => "Working Dir" und "/localhost/work/clansuite" => "Clansuite Dir". Beide sind relativ zu den eingestellten Pfaden unter "Options".
-* Menüpunkt "go to enthält nun auch den Link zum Converter. Zum Release-Zeitpunkt dieser Toolbar ist er jedoch noch nicht verfügbar.
+    22.06.2009
+    - added link "Bugtracker" > "Your Tasks". providing a quick link to the trac tasks assigned to a logged in developer.
+    - fixed the Firefox 3.* version compatibility issue
 
-08.05.2008:
-- added SPL-Doc to Search
-- added Config Dialog to set Webserver-Path
+    21.01.2009
+    - added autoupdate feature (v0.4)
 
-21.01.2008:
-- added new feature to options dialog:
-  select if new pages should open in tab or window
-  with suboption to open tabs in the background or directly focus them
+    08.01.2009:
+    - added link for pastebin
 
-15.01.2008:
-- removed toolbaritem tags
-- added comments to menu entries
-- added openToolbarButton when mouseover
+    25.12.2008:
+    - added link for IRCLogs
 
-10.01.2008:
-- added phpdoctrine website and manual links
+    06.10.2008:
+    - Änderungen: Es wurde aufgeräumt.
+    * Ungenutzte Menüpunkte entfernt (zB Freunde einladen).
+    * Einige Fehlbenennungen der Menüpunkt und Mouseovers, die durch Copy'n'Paste entstanden waren, wurden berichtigt.
+    * Der Menüpunkt "httpd" wurde verändert: Die direkten Links auf das lokale Clansuite sind nun unter dem Menüpunkt "go to" erreichbar. Unter "httpd" verbleiben die Links für Datenbank und Webserververzeichnisse und -dienste.
+    * "httpd": Umbenennung der Links "/localhost/work" => "Working Dir" und "/localhost/work/clansuite" => "Clansuite Dir". Beide sind relativ zu den eingestellten Pfaden unter "Options".
+    * Menüpunkt "go to enthält nun auch den Link zum Converter. Zum Release-Zeitpunkt dieser Toolbar ist er jedoch noch nicht verfügbar.
 
-17.12.2007:
-- fixes for bugtracker links
-- added directory linkt to clansuite to httpd apache webserver menu
-- added selfhtml css link/search
+    08.05.2008:
+    - added SPL-Doc to Search
+    - added Config Dialog to set Webserver-Path
 
-16.12.2007:
-- added direct link to clansuite on localhost
-- fixed links and naming of bugtracker menu links
+    21.01.2008:
+    - added new feature to options dialog:
+      select if new pages should open in tab or window
+      with suboption to open tabs in the background or directly focus them
 
-26.11.2007:
-- Path to 7zip fixed in the Buildscript
+    15.01.2008:
+    - removed toolbaritem tags
+    - added comments to menu entries
+    - added openToolbarButton when mouseover
 
-09.11.2007:
-- Buildscript was added
+    10.01.2008:
+    - added phpdoctrine website and manual links
 
-03.11.2007:
-- SelfHTML Search added
+    17.12.2007:
+    - fixes for bugtracker links
+    - added directory linkt to clansuite to httpd apache webserver menu
+    - added selfhtml css link/search
 
-01.11.2007 & 29.10.2007:
-- Codesearch for Google, Krugle, Koders added
+    16.12.2007:
+    - added direct link to clansuite on localhost
+    - fixed links and naming of bugtracker menu links
 
-28.10.2007:
-- Initial SVN Commit
+    26.11.2007:
+    - Path to 7zip fixed in the Buildscript
 
-10.10.2007:
-- Version 0.1 finished
-- First Release
+    09.11.2007:
+    - Buildscript was added
 
-01.10.2007
-- Started Development of the Clansuite Toolbar
+    03.11.2007:
+    - SelfHTML Search added
+
+    01.11.2007 & 29.10.2007:
+    - Codesearch for Google, Krugle, Koders added
+
+    28.10.2007:
+    - Initial SVN Commit
+
+    10.10.2007:
+    - Version 0.1 finished
+    - First Release
+
+    01.10.2007
+    - Started Development of the Clansuite Toolbar

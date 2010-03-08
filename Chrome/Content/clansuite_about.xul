@@ -39,10 +39,10 @@
 
                 <vbox>
                     <label id="ClansuiteToolbarVersion" class="strong" value="Version"/>
-                    <description class="clansuiteVersion">0.7</description>
+                    <description class="clansuiteVersion">0.8</description>
 
                     <label id="ClansuiteToolbarReleaseDate" class="strong" value="Released"/>
-                    <description class="clansuiteVersion">11.12.2009</description>
+                    <description class="clansuiteVersion">08.03.2010</description>
                 </vbox>
 
                 <spacer flex="1"/>
