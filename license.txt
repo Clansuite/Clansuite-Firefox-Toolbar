@@ -1,7 +1,7 @@
 ***** BEGIN LICENSE BLOCK *****
 Version: MPL 1.1/GPL 2.0/LGPL 2.1
 
-The Original Code is Clansuite Community Toolbar
+The Original Code is Clansuite Developer Toolbar
 http://www.clansuite.com/toolbar
 
 The Initial Developer of the Original Code is Jens-André Koch.

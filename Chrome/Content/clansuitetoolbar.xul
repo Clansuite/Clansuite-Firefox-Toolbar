@@ -253,14 +253,14 @@
                 <menuitem label="Install-Guide"
                                 tooltiptext="Show the Quick-Guide"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/quickguide')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/quickguide/')"
                                 image="chrome://clansuitetoolbar/skin/report.png"
                                 class="menuitem-iconic" />
 
                 <menuitem label="User-Manual"
                                 tooltiptext="Show the Clansuite User-Manual"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/manual')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/manual/')"
                                 image="chrome://clansuitetoolbar/skin/report_user.png"
                                 class="menuitem-iconic" />
 
@@ -271,7 +271,7 @@
                 <menuitem label="Developer-Manual"
                                 tooltiptext="Show the Clansuite Developer Manual"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/developer/manual')"
+                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/developer/manual/')"
                                 image="chrome://clansuitetoolbar/skin/documentation-manual.png"
                                 class="menuitem-iconic" />
 
@@ -279,21 +279,14 @@
 
                 <menuitem label="API" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                <menuitem label="Clansuite XRef"
-                                tooltiptext="Show the Clansuite Cross Reference"
+                <menuitem label="Clansuite Doxygen"
+                                tooltiptext="Show the Clansuite Application Programming Interface (API)"
                                 onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpxref')"
+                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/doxygen/')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
 
-                <menuitem label="Clansuite phpDoc"
-                                tooltiptext="Show the Clansuite phpDocumentation"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpdoc')"
-                                image="chrome://clansuitetoolbar/skin/documentation-classes.png"
-                                class="menuitem-iconic" />
-
-            </menupopup>
+              </menupopup>
             </toolbarbutton>
 
             <toolbarseparator />

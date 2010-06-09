@@ -28,9 +28,9 @@
     b) McCoy                https://developer.mozilla.org/en/McCoy
     c) HashCheck            http://code.kliu.org/hashcheck/downloads/HashCheckInstall-latest.exe
 
-    ### Clansuite Community Toolbar
+    ### Clansuite Developer Toolbar
 
-    This is the official Clansuite Community Toolbar for the Mozilla Firefox Webbrowser.
+    This is the official Clansuite Developer Toolbar for the Mozilla Firefox Webbrowser.
 
     ### Version History:
 
