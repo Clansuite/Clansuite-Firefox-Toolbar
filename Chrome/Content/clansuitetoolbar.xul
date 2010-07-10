@@ -286,7 +286,14 @@
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
 
-              </menupopup>
+                <menuitem label="Clansuite phpDoc"
+                                tooltiptext="Show the Clansuite phpDocumentation"
+                                onclick="checkForMiddleClick(this, event)"
+                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpdoc/')"
+                                image="chrome://clansuitetoolbar/skin/documentation-classes.png"
+                                class="menuitem-iconic" />
+
+            </menupopup>
             </toolbarbutton>
 
             <toolbarseparator />
