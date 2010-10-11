@@ -232,6 +232,12 @@
                         oncommand="Clansuite_Search(event, 'krugle_code'); event.stopPropagation();"
                         image="chrome://clansuitetoolbar/skin/krugle.png" />
 
+                    <menuitem label="GitHub-Codesuche" class="menuitem-iconic"
+                        tooltiptext="Search with GitHub"
+                        onclick="checkForMiddleClick(this, event)"
+                        oncommand="Clansuite_Search(event, 'github_code'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/git.ico" />
+
                 </menupopup>
             </toolbarbutton>
 

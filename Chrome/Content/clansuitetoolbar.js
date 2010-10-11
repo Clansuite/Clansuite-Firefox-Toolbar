@@ -366,6 +366,12 @@ function Clansuite_Search(event, type)
             else        { URL = "http://www.krugle.com/kse/files?lang=php&query=" + searchTerms; }
             break;
 
+            // Build up the URL for a github code search
+        case "github_code":
+            if(isEmpty) { URL = "http://github.com/search/"; }
+            else        { URL = "http://github.com/search?type=Everything&language=php&repo=&langOverride=&x=9&y=10&start_value=1&q=" + searchTerms; }
+            break;
+
         default:
             if(isEmpty) { URL = "http://www.clansuite.com/"; }
             else        { URL = "http://www.google.com/search?q=" + searchTerms; }
