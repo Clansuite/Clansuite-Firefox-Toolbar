@@ -832,6 +832,13 @@
                             image="chrome://clansuitetoolbar/skin/bullet_orange.png"
                             class="menuitem-iconic" />
 
+                    <menuitem label="Tests"
+                            tooltiptext="Navigate to Tests on Localhost"
+                            onclick="checkForMiddleClick(this, event)"
+                            oncommand="Clansuite_LoadGotoURL('/tests','ClansuiteVhost')"
+                            image="chrome://clansuitetoolbar/skin/bullet_orange.png"
+                            class="menuitem-iconic" />
+
             </menupopup>
             </toolbarbutton>
 
