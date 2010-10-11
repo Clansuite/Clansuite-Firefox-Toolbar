@@ -45,6 +45,10 @@
 
     ### Changelog:
 
+    v0.9 - xx.yy.zz
+    - addded github to code search
+    - removed phpxref from documentation menu
+
     v0.8 - 05.02.2010 (Autor: Florian Wolf)
     - added working- & clansuite-dir jumptos
     - updated toolbar urls
