@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <!-- Clansuite Toolbar -->
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>community-toolbar@clansuite.com</em:id>
+    <em:version>0.9</em:version>
+    <em:type>2</em:type>
+
+    <!-- Target Application: Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>4.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+   <em:localized>
+      <Description>
+        <em:locale>de</em:locale>
+        <em:name>Clansuite Toolbar</em:name>
+        <em:description>Die Toolbar bietet einen Schnellzugriff auf die Projektwebseite, das Forum und die Dokumentation.</em:description>
+      </Description>
+    </em:localized>
+
+   <em:name>Clansuite Toolbar</em:name>
+   <em:description>Provides quick-access to the projects website, forum, documentation.</em:description>
+   <em:creator>Jens-André Koch</em:creator>   
+   <em:homepageURL>http://www.clansuite.com/toolbar/</em:homepageURL>
+   <em:updateURL>http://www.clansuite.com/toolbar/update.rdf</em:updateURL>
+   <em:iconURL>chrome://clansuitetoolbar/skin/Clansuite-Favicon-32.ico</em:iconURL>
+   <em:icon64URL>chrome://clansuitetoolbar/skin/Clansuite-Toolbar-Icon-64-white.png</em:icon64URL>
+   <em:optionsURL>chrome://clansuitetoolbar/content/clansuite_options.xul</em:optionsURL>
+   <em:aboutURL>chrome://clansuitetoolbar/content/clansuite_about.xul</em:aboutURL>
+   <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDK1sTPlghVKGy+NDjdWCW/0773HGSoF6IyRDgUpRQVc9p88E5Ss+xYv0oyipVFQtSjQkYdP6kLUWZQx/UOoEu4u34gCWslEtE80bkKS0Q9MBqy1H1QI6niqrSjj7Y3QTsqMULlsYw9niPuyg9jSH9q0KdPzrIngl44b+YTzjvxwIDAQAB"
+
+    </Description>
+</RDF>

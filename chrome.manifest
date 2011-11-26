@@ -1,7 +1,8 @@
-content clansuitetoolbar chrome/content/
-overlay chrome://browser/content/browser.xul chrome://clansuitetoolbar/content/clansuitetoolbar.xul
+content  clansuitetoolbar                 chrome/content/
+skin     clansuitetoolbar   classic/1.0   chrome/skin/
 
-skin clansuitetoolbar classic/1.0 chrome/skin/
+locale   clansuitetoolbar   de-DE         chrome/locale/de-DE/
+locale   clansuitetoolbar   en-US         chrome/locale/en-US/
 
-locale clansuitetoolbar en-US chrome/locale/en-US/
-locale clansuitetoolbar de-DE chrome/locale/de-DE/
+overlay chrome://browser/content/browser.xul           chrome://clansuitetoolbar/content/clansuitetoolbar.xul
+style   chrome://global/content/customizeToolbar.xul   chrome://clansuitetoolbar/skin/clansuitetoolbar.css

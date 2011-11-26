@@ -1,0 +1,16 @@
+<!ENTITY toolbar.toolbarname                "Clansuite Toolbar"> 
+<!ENTITY search.label                       "Suche:">
+<!ENTITY searchbutton.label                 "Suche">
+<!ENTITY searchbutton.tooltip               "Kombinierte Suche">
+<!ENTITY menuitem.website.tooltip           "Navigiere zur offiziellen Clansuite Website (http://clansuite.com)">
+<!ENTITY menuitem.forum.tooltip             "Navigiere zum Clansuite Forum">
+<!ENTITY menuitem.downloads.tooltip         "Navigiere zu  Clansuite Downloads">
+<!ENTITY menuitem.contactsupport.label      "Kontakt &amp; Support">
+<!ENTITY menuitem.teamspeak.tooltip         "Kontaktiere den Clansuite Support direkt via Teamspeak">
+<!ENTITY menuitem.usermailinglist.label     "User-Mailingliste">
+<!ENTITY menuitem.usermailinglist.tooltip   "Mailingliste: Clansuite User">
+<!ENTITY menuitem.irc.tooltip               "Get IRC Support in Quakenet's Channel #clansuite">
+<!ENTITY menuitem.invitefriends.label       "Lade einen Freund ein...">
+<!ENTITY menuitem.invitefriends.tooltip     "Sende Link an Freund">
+<!ENTITY menuitem.options.label             "Einstellungen">
+<!ENTITY menuitem.options.tooltip           "Konfiguriere die Toolbar">

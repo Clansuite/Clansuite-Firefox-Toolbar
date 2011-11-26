@@ -1,0 +1,27 @@
+<!ENTITY prefwindow.title           "Clansuite Toolbar preferences">
+<!ENTITY pane1.title                "Clansuite Toolbar preferences">
+
+<!ENTITY tabs.elements              "Toolbar Elements">
+<!ENTITY tabs.paths                 "Paths">
+<!ENTITY tabs.language              "Language">
+
+<!ENTITY clansuiteShowElements.label            "Show Toolbar Elements">
+<!ENTITY clansuiteShowElements.description      "Select Elements to be shown in the Toolbar">
+<!ENTITY ClansuiteShowSearch.label              "Show Search">
+<!ENTITY ClansuiteShowDocumentationMenu.label   "Show Documentation">
+<!ENTITY ClansuiteShowDeveloperMenu.label       "Show Developer Menu">
+<!ENTITY ClansuiteShowBugtrackerMenu.label      "Show Bugtracker Menu">
+<!ENTITY ClansuiteShowWebserverMenu.label       "Show Webserver Menu">
+
+<!ENTITY clansuiteOpenElements.label            "Open in Tabs or Windows">
+<!ENTITY clansuiteOpenElements.description      "Select if Elements should be opened in Tabs instead of Windows (default)">
+
+<!ENTITY ClansuiteOpenTabs.label                "Open in tab">
+<!ENTITY ClansuiteOpenTabsBackground.label      "Open tabs in the background">
+
+<!ENTITY clansuiteShowWebserverPaths.label         "Set Paths">
+<!ENTITY clansuiteShowWebserverPaths.description   "Enter the Webserver Paths">
+
+<!ENTITY clansuiteShowLanguage.label               "Set Language">
+<!ENTITY clansuiteShowLanguage.description         "Enter prefered Language.">
+<!ENTITY ClansuiteToolbarLanguageField.label       "Language of the Documentation">

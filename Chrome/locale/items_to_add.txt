@@ -1,0 +1,1 @@
+<!ENTITY item.name "Translation">

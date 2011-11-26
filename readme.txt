@@ -1,38 +1,38 @@
-                                _________________________
+ï»¿                                _________________________
                                 C  L  A  N  S  U  I  T  E
 
-
-    ### Neue Version veröffentlichen
-
-    Ausgangspunkt: Es wurde eine Änderung am Sourcecode vorgenommen.
-
-    1.  Versionnummer in "install.rdf" und "/chrome/content/clansuite_about.xul" (Zeile 40 ff.) erhöhen
-    2.  Mit McCoy das Kommando "Install" auf install.rdf ausführen
-    3.  Builden mittels build.bat
-    4.  clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionsnummer}.xpi umbenennen
-    5.  sha1 Hash der clansuite-toolbar-v{Versionsnummer}.xpi ermitteln
-    6.  sha1 Hash in die update.xml eintragen
-    7.  update.xml in update.rdf umbenennen
-    8.  Mit McCoy das Kommando "Sign" auf update.rdf ausführen
-    9.  updateInfo-v{Versionsnummer}.xhtml (Achtung: ohne Punkt) mit aktuellen Infos zur Version füllen
-    10. Veröffentlichung durch 
-        a) Hochladen der Dateien
-            update.rdf
-            clansuite-toolbar-v{Versionnummer}.xpi
-            updateInfo-v{Versionummer}.xhtml
-        b) Absetzen einer Info über Clansuite Google News
-
-    Hinweise:
-
-    a) {Versionsnummer}     ist ein Platzhalter für die Versionsnummer im Format major.minor (z.B. "0.7").
-    b) McCoy                https://developer.mozilla.org/en/McCoy
-    c) HashCheck            http://code.kliu.org/hashcheck/downloads/HashCheckInstall-latest.exe
 
     ### Clansuite Developer Toolbar
 
     This is the official Clansuite Developer Toolbar for the Mozilla Firefox Webbrowser.
 
-    ### Version History:
+    ### Eine neue Version verÃ¶ffentlichen
+
+    Ausgangspunkt: Es wurde eine Ã„nderung am Sourcecode vorgenommen.
+
+    1.  Versionnummer in "install.rdf" und "/chrome/content/clansuite_about.xul" (Zeile 40 ff.) erhÃ¶hen
+    2.  Mit McCoy das Kommando "Install" auf install.rdf ausfÃ¼hren
+    3.  Builden mittels build.bat
+    4.  clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionsnummer}.xpi umbenennen
+    5.  sha1 Hash der clansuite-toolbar-v{Versionsnummer}.xpi ermitteln
+    6.  sha1 Hash in die update.xml eintragen
+    7.  update.xml in update.rdf umbenennen
+    8.  Mit McCoy das Kommando "Sign" auf update.rdf ausfÃ¼hren
+    9.  updateInfo-v{Versionsnummer}.xhtml (Achtung: ohne Punkt) mit aktuellen Infos zur Version fÃ¼llen
+    10. VerÃ¶ffentlichung durch
+        a) Hochladen der Dateien
+            update.rdf
+            clansuite-toolbar-v{Versionnummer}.xpi
+            updateInfo-v{Versionummer}.xhtml
+        b) Absetzen einer Info Ã¼ber Clansuite Google News
+
+    Hinweise:
+
+    a) {Versionsnummer}     ist ein Platzhalter fÃ¼r die Versionsnummer im Format major.minor (z.B. "0.7").
+    b) McCoy                https://developer.mozilla.org/en/McCoy
+    c) HashCheck            http://code.kliu.org/hashcheck/downloads/HashCheckInstall-latest.exe
+
+    ### Version History
 
     v0.1 - 10.10.2007
     v0.2 - 08.05.2008
@@ -42,12 +42,34 @@
     v0.6 - 22.06.2009
     v0.7 - /
     v0.8 - 05.02.2010
+    v0.9 - 12.04.2011
+    v1.0 - 30.06.2011
+    v1.1 - xx.yy.2011 tba
 
-    ### Changelog:
+    ### Changelog
+    
+    v1.1 - xx.yy.2011 tba
+    
+    - ...
+    
+    v1.0 - 01.07.2011
+    
+    - added Duden spelling correction search to searches
+    - added Statsvn to Developer Links
+    - added link to Clansuite@Github to Developer Links
+    - added link to Continuous Integration Server
+    - updated link for code search via krugle.com  
+    - removed XMPP/Jabber Support Conference Link
+    - added more locale placeholders (de, en)
+    - UTF8 without BOM fixes for locale files
 
-    v0.9 - xx.yy.zz
+    v0.9 - 12.04.2011
     - addded github to code search
     - removed phpxref from documentation menu
+    - compatibility update for firefox 4
+    - removed docuwiki links
+    - some minor fixes (for typos etc.)
+    - localization (de, en)
 
     v0.8 - 05.02.2010 (Autor: Florian Wolf)
     - added working- & clansuite-dir jumptos
@@ -74,12 +96,12 @@
     - added link for IRCLogs
 
     06.10.2008:
-    - Änderungen: Es wurde aufgeräumt.
-    * Ungenutzte Menüpunkte entfernt (zB Freunde einladen).
-    * Einige Fehlbenennungen der Menüpunkt und Mouseovers, die durch Copy'n'Paste entstanden waren, wurden berichtigt.
-    * Der Menüpunkt "httpd" wurde verändert: Die direkten Links auf das lokale Clansuite sind nun unter dem Menüpunkt "go to" erreichbar. Unter "httpd" verbleiben die Links für Datenbank und Webserververzeichnisse und -dienste.
+    - Ã„nderungen: Es wurde aufgerÃ¤umt.
+    * Ungenutzte MenÃ¼punkte entfernt (zB Freunde einladen).
+    * Einige Fehlbenennungen der MenÃ¼punkt und Mouseovers, die durch Copy'n'Paste entstanden waren, wurden berichtigt.
+    * Der MenÃ¼punkt "httpd" wurde verÃ¤ndert: Die direkten Links auf das lokale Clansuite sind nun unter dem MenÃ¼punkt "go to" erreichbar. Unter "httpd" verbleiben die Links fÃ¼r Datenbank und Webserververzeichnisse und -dienste.
     * "httpd": Umbenennung der Links "/localhost/work" => "Working Dir" und "/localhost/work/clansuite" => "Clansuite Dir". Beide sind relativ zu den eingestellten Pfaden unter "Options".
-    * Menüpunkt "go to enthält nun auch den Link zum Converter. Zum Release-Zeitpunkt dieser Toolbar ist er jedoch noch nicht verfügbar.
+    * MenÃ¼punkt "go to enthÃ¤lt nun auch den Link zum Converter. Zum Release-Zeitpunkt dieser Toolbar ist er jedoch noch nicht verfÃ¼gbar.
 
     08.05.2008:
     - added SPL-Doc to Search

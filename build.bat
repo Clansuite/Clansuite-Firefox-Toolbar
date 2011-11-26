@@ -11,7 +11,7 @@ set "pathto7zip=C:\Programme\7-Zip\7z.exe"
 @REM  set "pathto7zip=C:\Programme\packer\7-Zip\7z.exe"
 
 @REM Delete prior version
-del clansuite_toolbar.xpi
+del clansuite_toolbar*.xpi
 
 @REM 7zip command line options for clansuite_toolbar.xpi
 @REM a = archiv
@@ -23,7 +23,7 @@ del clansuite_toolbar.xpi
 @REM -x!*.sh = exclude *.sh (the make file)
 @REM -x!*.xhtml = exclude *.xhtml (the update description file for display in FF)
 @REM * all files/dirs
-set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf -x!locale"
+set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf"
 %pathto7zip% a -tzip -r -mx=9 clansuite_toolbar-v.xpi %excludes% *
 
 pause

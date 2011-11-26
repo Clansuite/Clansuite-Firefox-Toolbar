@@ -1,0 +1,28 @@
+<!-- You must save this file as UTF-8 without BOM! -->
+<!ENTITY prefwindow.title           "Clansuite Toolbar Einstellungen">
+<!ENTITY pane1.title                "Clansuite Toolbar Einstellungen">
+
+<!ENTITY tabs.elements              "Elemente der Toolbar">
+<!ENTITY tabs.paths                 "Pfade">
+<!ENTITY tabs.language              "Sprache">
+
+<!ENTITY clansuiteShowElements.label            "Auswahl Toolbar Elemente">
+<!ENTITY clansuiteShowElements.description      "Wähle die anzuzeigenden Menü-Elemente aus.">
+<!ENTITY ClansuiteShowSearch.label              "Zeige Suche">
+<!ENTITY ClansuiteShowDocumentationMenu.label   "Zeige Dokumentation">
+<!ENTITY ClansuiteShowDeveloperMenu.label       "Zeige Developer">
+<!ENTITY ClansuiteShowBugtrackerMenu.label      "Zeige Bugtracker">
+<!ENTITY ClansuiteShowWebserverMenu.label       "Zeige Webserver">
+
+<!ENTITY clansuiteOpenElements.label            "Links öffnen">
+<!ENTITY clansuiteOpenElements.description      "Wähle, ob Links als Tab oder Fenster geöffnet werden.">
+
+<!ENTITY ClansuiteOpenTabs.label                "Öffne Links in neuem Tab">
+<!ENTITY ClansuiteOpenTabsBackground.label      "Öffne Tabs im Hintergrund">
+
+<!ENTITY clansuiteShowWebserverPaths.label         "Pfadeinstellungen">
+<!ENTITY clansuiteShowWebserverPaths.description   "Stelle hier die Pfade zum Webserver ein.">
+
+<!ENTITY clansuiteShowLanguage.label               "Spracheinstellung">
+<!ENTITY clansuiteShowLanguage.description         "Stelle die bevorzugte Sprache ein.">
+<!ENTITY ClansuiteToolbarLanguageField.label       "Sprache der Dokumentation">
