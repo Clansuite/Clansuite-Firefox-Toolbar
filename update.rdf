@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$XVjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.7.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v07.xhtml"
+                   em:updateHash="sha1:CCD7AAA8AAE01CA1D5986786353BBCE89F282FD5" />
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.9"
+                   em:version="0.9">
+    <em:targetApplication RDF:resource="rdf:#$dWjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$OVjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.6.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v06.xhtml"
+                   em:updateHash="sha1:D811225853BAE6D2E9508D751C74346B008A6840" />
+  <RDF:Description RDF:about="rdf:#$dWjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="4.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.9.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v09.xhtml"
+                   em:updateHash="sha1:86ba4cc618fed92ab8e4445f812836b262ca2235" />
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.7"
+                   em:version="0.7">
+    <em:targetApplication RDF:resource="rdf:#$XVjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.6"
+                   em:version="0.6">
+    <em:targetApplication RDF:resource="rdf:#$OVjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.3"
+                   em:version="0.3">
+    <em:targetApplication RDF:resource="rdf:#$nVjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:community-toolbar@clansuite.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAJJrblAWYYRcMuLdQi2nwIEJkAuRr1czCX9/mCMjkntH4iaKek4pORyQz7CspE9ZMAIqG3iElyjca5M8AyfF/Gn1Yw4vmRxbqmE8ybdr6Gk/IuQKQ75GVL1ZykUfNr1wKYreHKeI1Me9Bm2EgWe/UkL+qcWyC87mGdoViDOgBubn">
+    <em:updates RDF:resource="rdf:#$jVjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$4WjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.8.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v08.xhtml"
+                   em:updateHash="sha1:b567130a97b0255e539f81d3809a376773fc1304" />
+  <RDF:Description RDF:about="rdf:#$nVjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v03.xhtml"
+                   em:updateHash="sha1:B99E86F932DB8C414BDD51CD4BC6F47223436C53" />
+  <RDF:Description RDF:about="rdf:#$FVjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.5.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v05.xhtml"
+                   em:updateHash="sha1:E4F30CB3E0F19AF7AF674DBFA6224549E8BB91169" />
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.8"
+                   em:version="0.8">
+    <em:targetApplication RDF:resource="rdf:#$4WjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:1.0"
+                   em:version="1.0">
+    <em:targetApplication RDF:resource="rdf:#$mWjLk3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$wVjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0.*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v0.4.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v04.xhtml"
+                   em:updateHash="sha1:A02786E6D41668CD7869C7AA4ADCF125366741A3" />
+  <RDF:Description RDF:about="rdf:#$mWjLk3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="*"
+                   em:updateLink="http://www.clansuite.com/toolbar/clansuite_toolbar-v1.0.xpi"
+                   em:updateInfoURL="http://www.clansuite.com/toolbar/updateInfo-v10.xhtml"
+                   em:updateHash="sha1:d0b1c240f6c18431652ee4cf2444c4b81c0a5f7a" />
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.4"
+                   em:version="0.4">
+    <em:targetApplication RDF:resource="rdf:#$wVjLk3"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$jVjLk3">
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.3"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.4"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.5"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.6"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.7"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.8"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.9"/>
+    <RDF:li RDF:resource="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:1.0"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="file:///C:/andre/nginx-serverpack/nginx/www/clansuite/subprojects/toolbar/trunk/community-toolbar@clansuite.com:0.5"
+                   em:version="0.5">
+    <em:targetApplication RDF:resource="rdf:#$FVjLk3"/>
+  </RDF:Description>
+</RDF:RDF>
