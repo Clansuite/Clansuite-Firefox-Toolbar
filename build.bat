@@ -1,29 +1,34 @@
-@REM   ,------------------------------------.
-@REM   | Clansuite Toolbar Build-Script w32 |
-@REM   | by Jens-André Koch (jakoch@web.de) |
-@REM   | for clansuite.com                  |
-@REM   | LICENCE: GNU/GPLv2 or any later <3 |
-@REM   `------------------------------------'
-@REM SVN: $Id: build.bat 2330 2008-08-01 15:40:13Z vain $
+::   ,------------------------------------.
+::   | Clansuite Toolbar Build-Script w32 |
+::   | by Jens-André Koch (jakoch@web.de) |
+::   | for clansuite.com                  |
+::   | LICENCE: GNU/GPLv2 or any later <3 |
+::   `------------------------------------'
 
-@REM 7zip is needed as packaging tool
-set "pathto7zip=C:\Programme\7-Zip\7z.exe"
-@REM  set "pathto7zip=C:\Programme\packer\7-Zip\7z.exe"
+:: 7zip is needed as packaging tool
+:: Download CLI Version: http://downloads.sourceforge.net/sevenzip/7za920.zip
+set "7zip=C:\Programme\7-Zip\7z.exe"
 
-@REM Delete prior version
+:: delete any prior version
 del clansuite_toolbar*.xpi
 
-@REM 7zip command line options for clansuite_toolbar.xpi
-@REM a = archiv
-@REM tzip = zip packaging
-@REM r = recurse subdirs
-@REM mx = compression lvl
-@REM -x!.svn = exclude SVN dir
-@REM -x!*.bat = exclude *.bat (the make file)
-@REM -x!*.sh = exclude *.sh (the make file)
-@REM -x!*.xhtml = exclude *.xhtml (the update description file for display in FF)
-@REM * all files/dirs
+:: 7zip command line options for packaging clansuite_toolbar.xpi
+::
+::  a               = archiv
+::  tzip            = zip packaging
+::  r               = recurse into subdirectories
+::  mx              = compression level
+::  archiv name 
+::  -x!.svn         = exclude SVN dir
+::  -x!*.bat        = exclude *.bat (the make file)
+::  -x!*.sh         = exclude *.sh (the make file)
+::  -x!*.xhtml      = exclude *.xhtml (the update description file for display in FF)
+::  -x!*.xpi        = exclude *.xoi (old versions of the toolbar)
+::  -x!update.xml   = exclude single file
+::  -x!update.rdf   = exclude single file
+::  *               = all files & folders
+::
 set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf"
-%pathto7zip% a -tzip -r -mx=9 clansuite_toolbar-v.xpi %excludes% *
+%7zip% a -tzip -r -mx=9 clansuite_toolbar-v.xpi %excludes% *
 
 pause

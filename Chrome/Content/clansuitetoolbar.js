@@ -348,12 +348,6 @@ function Clansuite_Search(event, type)
             else        { URL = "http://"+language+".wikipedia.org/wiki/search?p=" + searchTerms; }
             break;
 
-            // Build up the URL for a google code search
-        case "google_code":
-            if(isEmpty) { URL = "http://www.google.com/codesearch"; }
-            else        { URL = "http://www.google.com/codesearch?q=" + searchTerms + " lang:php"; }
-            break;
-
             // Build up the URL for a koders code search
         case "koders_code":
             if(isEmpty) { URL = "http://www.koders.com/default.aspx?s=&btn=&la=PHP&li=*"; }
@@ -370,6 +364,12 @@ function Clansuite_Search(event, type)
         case "github_code":
             if(isEmpty) { URL = "http://github.com/search/"; }
             else        { URL = "http://github.com/search?type=Everything&language=php&repo=&langOverride=&x=9&y=10&start_value=1&q=" + searchTerms; }
+            break;
+
+            // Build up the URL for a serchco.de search
+        case "search_code": 
+            if(isEmpty) { URL = "http://searchco.de/"; }
+            else        { URL = "http://searchco.de/?q=" + searchTerms; }
             break;
 
         default:

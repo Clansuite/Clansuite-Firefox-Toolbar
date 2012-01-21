@@ -43,14 +43,15 @@
     v0.7 - /
     v0.8 - 05.02.2010
     v0.9 - 12.04.2011
-    v1.0 - 30.06.2011
-    v1.1 - xx.yy.2011 tba
+    v1.0 - 01.07.2011
+    v1.1 - xx.yy.2012 tba
 
     ### Changelog
     
-    v1.1 - xx.yy.2011 tba
+    v1.1 - xx.yy.2012 tba
     
-    - ...
+    - added searchco.de code search
+    - removed Google Code Search, becuase service is shut down as of 16.01.2012.
     
     v1.0 - 01.07.2011
     

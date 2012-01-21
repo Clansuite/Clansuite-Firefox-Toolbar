@@ -214,12 +214,6 @@
 
                     <menuseparator />
 
-                    <menuitem label="Google-Codesuche" class="menuitem-iconic"
-                        tooltiptext="Search with Google"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'google_code'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/google.png" />
-
                     <menuitem label="Koders-Codesuche" class="menuitem-iconic"
                         tooltiptext="Search with Koders"
                         onclick="checkForMiddleClick(this, event)"
@@ -236,6 +230,12 @@
                         tooltiptext="Search with GitHub"
                         onclick="checkForMiddleClick(this, event)"
                         oncommand="Clansuite_Search(event, 'github_code'); event.stopPropagation();"
+                        image="chrome://clansuitetoolbar/skin/git.ico" />
+
+                    <menuitem label="Searchco.de-Codesuche" class="menuitem-iconic"
+                        tooltiptext="Search with Seachco.de"
+                        onclick="checkForMiddleClick(this, event)"
+                        oncommand="Clansuite_Search(event, 'search_code'); event.stopPropagation();"
                         image="chrome://clansuitetoolbar/skin/git.ico" />
 
                 </menupopup>
