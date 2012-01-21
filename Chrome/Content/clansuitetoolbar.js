@@ -366,7 +366,7 @@ function Clansuite_Search(event, type)
             else        { URL = "http://github.com/search?type=Everything&language=php&repo=&langOverride=&x=9&y=10&start_value=1&q=" + searchTerms; }
             break;
 
-            // Build up the URL for a serchco.de search
+            // Build up the URL for a searchco.de search
         case "search_code": 
             if(isEmpty) { URL = "http://searchco.de/"; }
             else        { URL = "http://searchco.de/?q=" + searchTerms; }
