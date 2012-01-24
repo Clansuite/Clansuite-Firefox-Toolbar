@@ -50,6 +50,7 @@ Changelog
 
 v1.1 - xx.yy.2012 tba
 
+- updated links to Doctrine DBAL and ORM manuals
 - added searchco.de code search
 - removed Google Code Search, becuase service is shut down as of 16.01.2012.
 
