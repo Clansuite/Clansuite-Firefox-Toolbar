@@ -52,7 +52,7 @@ v1.1 - xx.yy.2012 tba
 
 - updated links to Doctrine DBAL and ORM manuals
 - added searchco.de code search
-- removed Google Code Search, becuase service is shut down as of 16.01.2012.
+- removed Google Code Search, because service is shut down as of 16.01.2012.
 
 v1.0 - 01.07.2011
 
@@ -60,7 +60,7 @@ v1.0 - 01.07.2011
 - added Statsvn to Developer Links
 - added link to Clansuite@Github to Developer Links
 - added link to Continuous Integration Server
-- updated link for code search via krugle.com  
+- updated link for code search via krugle.com
 - removed XMPP/Jabber Support Conference Link
 - added more locale placeholders (de, en)
 - UTF8 without BOM fixes for locale files
