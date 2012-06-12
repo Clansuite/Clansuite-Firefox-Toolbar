@@ -143,13 +143,6 @@
                         oncommand="Clansuite_Search(event, 'clansuite_dokuwiki'); event.stopPropagation();"
                         image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
-                    <!--
-                    <menuitem label="Search in phpdoc API" class="menuitem-iconic"
-                        tooltiptext="Search in phpdoc API"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'clansuite_phpdoc'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/documentation-quick.png" />
-                    -->
                     <menuseparator />
 
                     <menuitem label="Smarty-Forum" class="menuitem-iconic"
@@ -289,13 +282,6 @@
                                 tooltiptext="Show the Clansuite Application Programming Interface (API)"
                                 onclick="checkForMiddleClick(this, event)"
                                 oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/doxygen/')"
-                                image="chrome://clansuitetoolbar/skin/documentation-classes.png"
-                                class="menuitem-iconic" />
-
-                <menuitem label="Clansuite phpDoc"
-                                tooltiptext="Show the Clansuite phpDocumentation"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/phpdoc/')"
                                 image="chrome://clansuitetoolbar/skin/documentation-classes.png"
                                 class="menuitem-iconic" />
 
@@ -510,7 +496,7 @@
                             oncommand="Clansuite_LoadURL('http://www.doctrine-project.org/projects/dbal/current/docs/en')"
                             image="chrome://clansuitetoolbar/skin/doctrine.ico"
                             class="menuitem-iconic" />
-                
+
                 <menuitem label="Doctrine ORM Manual"
                             tooltiptext="Navigate to the latest version of the Doctrine ORM Manual"
                             onclick="checkForMiddleClick(this, event)"
