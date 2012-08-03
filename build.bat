@@ -21,6 +21,7 @@ del clansuite_toolbar*.xpi
 ::  mx              = compression level
 ::  archiv name
 ::  -x!.svn         = exclude SVN dir
+::  -x!.git         = exclude GIT dir
 ::  -x!*.bat        = exclude *.bat (the make file)
 ::  -x!*.sh         = exclude *.sh (the make file)
 ::  -x!*.xhtml      = exclude *.xhtml (the update description file for display in FF)
@@ -29,7 +30,7 @@ del clansuite_toolbar*.xpi
 ::  -x!update.rdf   = exclude single file
 ::  *               = all files & folders
 ::
-set "excludes=-x!.svn -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf"
+set "excludes=-x!.svn -x!.git -x!*.bat -x!*.sh -x!*.xhtml -x!*.xpi -x!update.xml -x!update.rdf"
 %zipEXE% a -tzip -r -mx=9 clansuite_toolbar-v.xpi %excludes% *
 
 pause
