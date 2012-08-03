@@ -53,6 +53,9 @@ v1.1 - xx.yy.2012 tba
 - updated links to Doctrine DBAL and ORM manuals
 - added searchco.de code search
 - removed Google Code Search, because service is shut down as of 16.01.2012.
+- added link to Jenkins Continuous Integration Server
+- added link to Travis Social Continuous Integration Service
+- modified Developer Menu (grouped SVN items and added Git manuals)
 
 v1.0 - 01.07.2011
 
