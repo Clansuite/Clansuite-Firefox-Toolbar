@@ -662,7 +662,14 @@
                     <menuitem label="Git Magic"
                               tooltiptext="Navigate to the Git Magic Handbook"
                               onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://www-cs-students.stanford.edu/~blynn//gitmagic/')"
+                              oncommand="Clansuite_LoadURL('http://www-cs-students.stanford.edu/~blynn/gitmagic/')"
+                              image="chrome://clansuitetoolbar/skin/git.ico"
+                              class="menuitem-iconic" />
+
+                    <menuitem label="Git Ready"
+                              tooltiptext="Navigate to the Git Ready Manual"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://gitready.com/')"
                               image="chrome://clansuitetoolbar/skin/git.ico"
                               class="menuitem-iconic" />
 
