@@ -680,6 +680,13 @@
                               image="chrome://clansuitetoolbar/skin/git.ico"
                               class="menuitem-iconic" />
 
+                    <menuitem label="Git Reference"
+                              tooltiptext="Navigate to the Git-SCM Book Website"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://git-scm.com/book/')"
+                              image="chrome://clansuitetoolbar/skin/git.ico"
+                              class="menuitem-iconic" />
+
                     <menuitem label="Git CheatSheets"
                               tooltiptext="Navigate to the Git CheatSheets"
                               onclick="checkForMiddleClick(this, event)"
