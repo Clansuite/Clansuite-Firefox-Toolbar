@@ -5,54 +5,53 @@
 
 <!-- Overlay -->
 <overlay id="Clansuite-TB-Overlay"
-        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
         <!-- Javascript -->
-        <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/toolbar.js" />
-        <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/events.js" />
+    <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/toolbar.js" />
+    <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/events.js" />
 
         <!-- toolbars in Firefox live within a toolbox -->
-        <toolbox id="navigator-toolbox">
+    <toolbox id="navigator-toolbox">
 
-            <toolbar id="Clansuite-Toolbar" toolbarname="Clansuite Toolbar" accesskey="C"
-                    class="chromeclass-toolbar" context="toolbar-context-menu"
-                    hidden="false" persist="hidden">
+        <toolbar id="Clansuite-Toolbar" toolbarname="Clansuite Toolbar" accesskey="C"
+                 class="chromeclass-toolbar" context="toolbar-context-menu"
+                 hidden="false" persist="hidden">
 
             <!-- Clansuite Menu Menu -->
-
             <toolbarbutton id="Clansuite-TB-MainMenu" type="menu" tooltiptext="Main Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-            <menupopup>
-                <menuitem label="Clansuite Website" accesskey="c"
-                        tooltiptext="Navigate to the official Clansuite Website (http://www.clansuite.com)"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('http://www.clansuite.com/')"
-                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico"
-                        class="menuitem-iconic" />
+                <menupopup>
+                    <menuitem label="Clansuite Website" accesskey="c"
+                              tooltiptext="Navigate to the official Clansuite Website (http://www.clansuite.com)"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://www.clansuite.com/')"
+                              image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico"
+                              class="menuitem-iconic" />
 
-                <menuseparator />
+                    <menuseparator />
 
-                <menuitem label="Clansuite Forum" accesskey="f"
-                        tooltiptext="Navigate to Clansuite Forum"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('http://forum.clansuite.com/')"
-                        image="chrome://clansuitetoolbar/skin/user_comment.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="Clansuite Forum" accesskey="f"
+                              tooltiptext="Navigate to Clansuite Forum"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://forum.clansuite.com/')"
+                              image="chrome://clansuitetoolbar/skin/user_comment.png"
+                              class="menuitem-iconic" />
 
-                <menuitem label="Clansuite Downloads" accesskey="d"
-                        tooltiptext="Navigate to  Clansuite Downloads"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('http://download.gna.org/clansuite/')"
-                        image="chrome://clansuitetoolbar/skin/disk.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="Clansuite Downloads" accesskey="d"
+                              tooltiptext="Navigate to  Clansuite Downloads"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://download.gna.org/clansuite/')"
+                              image="chrome://clansuitetoolbar/skin/disk.png"
+                              class="menuitem-iconic" />
 
-                <menuitem label="Contact &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
+                    <menuitem label="Contact &amp; Support" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                <menuitem label="Teamspeak"
-                        tooltiptext="Contact the Clansuite Support directly via Teamspeak"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('ts3server://clansuite.com:9987/')"
-                        image="chrome://clansuitetoolbar/skin/teamspeak.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="Teamspeak"
+                              tooltiptext="Contact the Clansuite Support directly via Teamspeak"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('ts3server://clansuite.com:9987/')"
+                              image="chrome://clansuitetoolbar/skin/teamspeak.png"
+                              class="menuitem-iconic" />
 
                 <!--
                 <menuitem label="Jabber Support Konferenz"
@@ -61,19 +60,19 @@
                         oncommand="Clansuite_LoadURL('http://www.clansuite.com/#downloads')" />
                 -->
 
-                <menuitem label="User-Mailingliste"
-                        tooltiptext="Mailingliste: Clansuite User"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('https://mail.gna.org/listinfo/clansuite-user/')"
-                        image="chrome://clansuitetoolbar/skin/email_go.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="User-Mailingliste"
+                              tooltiptext="Mailingliste: Clansuite User"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('https://mail.gna.org/listinfo/clansuite-user/')"
+                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                              class="menuitem-iconic" />
 
-                <menuitem label="IRC: #clansuite @ Qnet"
-                        tooltiptext="Get IRC Support in Quakenet's Channel #clansuite"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_LoadURL('irc://de.quakenet.org/clansuite')"
-                        image="chrome://clansuitetoolbar/skin/mirc.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="IRC: #clansuite @ Qnet"
+                              tooltiptext="Get IRC Support in Quakenet's Channel #clansuite"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('irc://de.quakenet.org/clansuite')"
+                              image="chrome://clansuitetoolbar/skin/mirc.png"
+                              class="menuitem-iconic" />
 
                 <!--
                 <menuitem label="Freunde einladen..."
@@ -84,24 +83,24 @@
                         class="menuitem-iconic" />
                 -->
 
-                <menuseparator />
+                    <menuseparator />
 
-                <menuitem label="Options" accesskey="O"
-                        tooltiptext="Configure this toolbar"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/options.xul','clansuite-options-dialog','centerscreen,chrome,modal,dialog');"
-                        image="chrome://clansuitetoolbar/skin/cog.png"
-                        class="menuitem-iconic"
+                    <menuitem label="Options" accesskey="O"
+                              tooltiptext="Configure this toolbar"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="window.openDialog('chrome://clansuitetoolbar/content/options.xul','clansuite-options-dialog','centerscreen,chrome,modal,dialog');"
+                              image="chrome://clansuitetoolbar/skin/cog.png"
+                              class="menuitem-iconic"
                         />
 
-                <menuitem label="About" accesskey="A"
-                        tooltiptext="Show the About of the Clansuite Toolbar"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/about.xul','clansuite-about-dialog','centerscreen,chrome,modal,dialog');"
-                        image="chrome://clansuitetoolbar/skin/cup.png"
-                        class="menuitem-iconic" />
+                    <menuitem label="About" accesskey="A"
+                              tooltiptext="Show the About of the Clansuite Toolbar"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="window.openDialog('chrome://clansuitetoolbar/content/about.xul','clansuite-about-dialog','centerscreen,chrome,modal,dialog');"
+                              image="chrome://clansuitetoolbar/skin/cup.png"
+                              class="menuitem-iconic" />
 
-            </menupopup>
+                </menupopup>
             </toolbarbutton>
 
             <!-- Search -->
@@ -113,13 +112,13 @@
 
             <toolbaritem id="Clansuite-TB-SearchTerms-TBItem" persist="width">
                 <textbox id="Clansuite-TB-SearchTerms" editable="true"
-                    flex="1" minwidth="90" height="20" width="110"
-                    onkeypress="if(event.which == 13) { Clansuite_Search(event, 'web'); }" />
+                         flex="1" minwidth="90" height="20" width="110"
+                         onkeypress="if(event.which == 13) { Clansuite_Search(event, 'web'); }" />
             </toolbaritem>
 
             <splitter id="Clansuite-TB-ResizeSplitter" state="open" collapse="none"
-                    resizebefore="closest" resizeafter="farthest"
-                    tooltiptext="Resize the Search Box">
+                      resizebefore="closest" resizeafter="farthest"
+                      tooltiptext="Resize the Search Box">
                 <vbox id="Clansuite-TB-ResizeBar" />
             </splitter>
 
@@ -128,724 +127,721 @@
                 <menupopup>
 
                     <menuitem label="Clansuite-Forum" class="menuitem-iconic"
-                        tooltiptext="Search in Clansuite-Forum"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'clansuite_forum'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                              tooltiptext="Search in Clansuite-Forum"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'clansuite_forum'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
                     <menuitem label="Clansuite-Bugtracker" class="menuitem-iconic"
-                        tooltiptext="Search in Clansuite-Forum"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'clansuite_bugtracker'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                              tooltiptext="Search in Clansuite-Forum"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'clansuite_bugtracker'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
                     <menuitem label="Clansuite-Wiki" class="menuitem-iconic"
-                        tooltiptext="Search in Clansuite-Dokuwiki"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'clansuite_dokuwiki'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
+                              tooltiptext="Search in Clansuite-Dokuwiki"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'clansuite_dokuwiki'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/Clansuite-Favicon-16.ico" />
 
                     <menuseparator />
 
                     <menuitem label="Smarty-Forum" class="menuitem-iconic"
-                        tooltiptext="Search in Smarty-Forum"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'smarty_forum'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/smarty.png" />
+                              tooltiptext="Search in Smarty-Forum"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'smarty_forum'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/smarty.png" />
 
                     <menuitem label="Smarty-Documentation" class="menuitem-iconic"
-                        tooltiptext="Search in Smarty-Documentation"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'smarty_docs'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/smarty.png" />
+                              tooltiptext="Search in Smarty-Documentation"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'smarty_docs'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/smarty.png" />
 
                     <menuseparator />
 
                     <menuitem label="PHP-Documentation" class="menuitem-iconic"
-                        tooltiptext="Search in PHP-Documentation"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'php_manual'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/php.png" />
+                              tooltiptext="Search in PHP-Documentation"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'php_manual'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/php.png" />
 
                     <menuitem label="PHP-SPL-Documentation" class="menuitem-iconic"
-                        tooltiptext="Search in PHP-SPL-Documentation"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'php_spl_manual'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/php.png" />
+                              tooltiptext="Search in PHP-SPL-Documentation"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'php_spl_manual'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/php.png" />
 
                     <menuseparator />
 
                     <menuitem label="SelfHTML Befehlsreferenz" class="menuitem-iconic"
-                        tooltiptext="Search in Selfhtml-Befehlsreferenz"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'selfhtml_search'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/selfhtml.png" />
+                              tooltiptext="Search in Selfhtml-Befehlsreferenz"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'selfhtml_search'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/selfhtml.png" />
 
                     <menuitem label="SelfHTML(CSS) Befehlsreferenz" class="menuitem-iconic"
-                        tooltiptext="Search in SelfHTML(CSS)-Befehlsreferenz"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'selfhtml_css_search'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/selfhtml.png" />
+                              tooltiptext="Search in SelfHTML(CSS)-Befehlsreferenz"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'selfhtml_css_search'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/selfhtml.png" />
 
                     <menuseparator />
 
                     <menuitem label="Google-Suche" class="menuitem-iconic"
-                        tooltiptext="Search with Google"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'google'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/google.png" />
+                              tooltiptext="Search with Google"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'google'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/google.png" />
 
                     <menuitem label="Yahoo!-Suche" class="menuitem-iconic"
-                        tooltiptext="Search with Yahoo"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'yahoo'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/yahoo.png" />
+                              tooltiptext="Search with Yahoo"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'yahoo'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/yahoo.png" />
 
                     <menuitem label="Wikipedia-Suche (de)" class="menuitem-iconic"
-                        tooltiptext="Search in Wikipedia"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'wikipedia'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/wikipedia.png" />
+                              tooltiptext="Search in Wikipedia"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'wikipedia'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/wikipedia.png" />
 
                     <menuseparator />
 
                     <menuitem label="Koders-Codesuche" class="menuitem-iconic"
-                        tooltiptext="Search with Koders"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'koders_code'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/koders.png" />
+                              tooltiptext="Search with Koders"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'koders_code'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/koders.png" />
 
                     <menuitem label="Krugle-Codesuche" class="menuitem-iconic"
-                        tooltiptext="Search with Krugle"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'krugle_code'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/krugle.png" />
+                              tooltiptext="Search with Krugle"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'krugle_code'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/krugle.png" />
 
                     <menuitem label="GitHub-Codesuche" class="menuitem-iconic"
-                        tooltiptext="Search with GitHub"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'github_code'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/git.ico" />
+                              tooltiptext="Search with GitHub"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'github_code'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/git.ico" />
 
                     <menuitem label="Searchco.de-Codesuche" class="menuitem-iconic"
-                        tooltiptext="Search with Seachco.de"
-                        onclick="checkForMiddleClick(this, event)"
-                        oncommand="Clansuite_Search(event, 'search_code'); event.stopPropagation();"
-                        image="chrome://clansuitetoolbar/skin/git.ico" />
+                              tooltiptext="Search with Seachco.de"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_Search(event, 'search_code'); event.stopPropagation();"
+                              image="chrome://clansuitetoolbar/skin/git.ico" />
 
                 </menupopup>
             </toolbarbutton>
 
             <!-- Documentation -->
-
             <toolbarbutton label="Dokumentation" id="Clansuite-TB-DocumentationMenu" type="menu" tooltiptext="Documentation Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-            <menupopup>
+                <menupopup>
 
-                <menuitem label="Overview"
-                                tooltiptext="Show the Documentation Overview"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/')"
-                                image="chrome://clansuitetoolbar/skin/report.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="Overview"
+                              tooltiptext="Show the Documentation Overview"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/')"
+                              image="chrome://clansuitetoolbar/skin/report.png"
+                              class="menuitem-iconic" />
 
-            <menuseparator />
+                    <menuseparator />
 
-            <menuitem label="Users" id="clansuite-menuitem" class="clansuite-menuitem" />
+                    <menuitem label="Users" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                <menuitem label="Install-Guide"
-                                tooltiptext="Show the Quick-Guide"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/quickguide/')"
-                                image="chrome://clansuitetoolbar/skin/report.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="Install-Guide"
+                              tooltiptext="Show the Quick-Guide"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/quickguide/')"
+                              image="chrome://clansuitetoolbar/skin/report.png"
+                              class="menuitem-iconic" />
 
-                <menuitem label="User-Manual"
-                                tooltiptext="Show the Clansuite User-Manual"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/manual/')"
-                                image="chrome://clansuitetoolbar/skin/report_user.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="User-Manual"
+                              tooltiptext="Show the Clansuite User-Manual"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/user/manual/')"
+                              image="chrome://clansuitetoolbar/skin/report_user.png"
+                              class="menuitem-iconic" />
 
-            <menuseparator />
+                    <menuseparator />
 
-                <menuitem label="Developers" id="clansuite-menuitem" class="clansuite-menuitem" />
+                    <menuitem label="Developers" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                <menuitem label="Developer-Manual"
-                                tooltiptext="Show the Clansuite Developer Manual"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/developer/manual/')"
-                                image="chrome://clansuitetoolbar/skin/documentation-manual.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="Developer-Manual"
+                              tooltiptext="Show the Clansuite Developer Manual"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadDocumentationURL('http://www.clansuite.com/documentation/developer/manual/')"
+                              image="chrome://clansuitetoolbar/skin/documentation-manual.png"
+                              class="menuitem-iconic" />
 
-            <menuseparator />
+                    <menuseparator />
 
-                <menuitem label="API" id="clansuite-menuitem" class="clansuite-menuitem" />
+                    <menuitem label="API" id="clansuite-menuitem" class="clansuite-menuitem" />
 
-                <menuitem label="Clansuite Doxygen"
-                                tooltiptext="Show the Clansuite Application Programming Interface (API)"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/doxygen/')"
-                                image="chrome://clansuitetoolbar/skin/documentation-classes.png"
-                                class="menuitem-iconic" />
+                    <menuitem label="Clansuite Doxygen"
+                              tooltiptext="Show the Clansuite Application Programming Interface (API)"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://www.clansuite.com/documentation/developer/doxygen/')"
+                              image="chrome://clansuitetoolbar/skin/documentation-classes.png"
+                              class="menuitem-iconic" />
 
-            </menupopup>
+                </menupopup>
             </toolbarbutton>
 
             <toolbarseparator />
 
             <!-- Developer Links -->
-
             <toolbarbutton label="Developer Links" id="Clansuite-TB-DeveloperMenu" type="menu" tooltiptext="Developer Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-
-            <menuitem label="Travis CI"
-                            tooltiptext="Travis CI - Social Continuous Integration Service"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://travis-ci.org/#!/jakoch/Clansuite/')"
-                            image="chrome://clansuitetoolbar/skin/travis-ci.png"
-                            class="menuitem-iconic" />
-
-            <menuitem label="Jenkins CI"
-                            tooltiptext="Jenkins CI - Continuous Integration Server"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://ci.clansuite.com/')"
-                            image="chrome://clansuitetoolbar/skin/jenkins-ci.png"
-                            class="menuitem-iconic" />
-
-            <menuitem label="IRC Logs"
-                            tooltiptext="IRC-Logs of #clansuite @ Quakenet"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://irclogs.clansuite.com/')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png"
-                            class="menuitem-iconic" />
-
-            <menuseparator />
-
-            <menu label="Projectwatchers" value="sub" id="clansuite-at-projectwatchers">
                 <menupopup>
 
-                    <menuitem label="Clansuite @ Ohloh.com"
-                            tooltiptext="Hauptseite Ohloh"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.ohloh.net/projects/5526')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png"
-                            class="menuitem-iconic" />
+                    <menuitem label="Travis CI"
+                              tooltiptext="Travis CI - Social Continuous Integration Service"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://travis-ci.org/#!/jakoch/Clansuite')"
+                              image="chrome://clansuitetoolbar/skin/travis-ci.png"
+                              class="menuitem-iconic" />
 
-                    <menuitem label="Clansuite @ CIA.vc"
-                            tooltiptext="Hauptseite CIA.vc Broadcasting"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://cia.vc/stats/project/clansuite')"
-                            image="chrome://clansuitetoolbar/skin/magnifier.png"
-                            class="menuitem-iconic" />
+                    <menuitem label="Jenkins CI"
+                              tooltiptext="Jenkins CI - Continuous Integration Server"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://ci.clansuite.com/')"
+                              image="chrome://clansuitetoolbar/skin/jenkins-ci.png"
+                              class="menuitem-iconic" />
 
-                </menupopup>
-            </menu>
-
-            <menuseparator />
-
-            <menuitem label="SVN Repo (deprecated)" id="clansuite-menuitem" class="clansuite-menuitem" />
-
-            <menupopup>
-            <menu label="Clansuite @ GNA!" value="sub" id="clansuite-at-gna">
-                <menupopup>
-                    <menuitem label="GNA Projektseite"
-                            tooltiptext="Hauptseite GNA!"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://gna.org/projects/clansuite/')"
-                            image="chrome://clansuitetoolbar/skin/homepage.png"
-                            class="menuitem-iconic" />
+                    <menuitem label="IRC Logs"
+                              tooltiptext="IRC-Logs of #clansuite @ Quakenet"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://irclogs.clansuite.com/')"
+                              image="chrome://clansuitetoolbar/skin/magnifier.png"
+                              class="menuitem-iconic" />
 
                     <menuseparator />
 
-                    <menuitem label="Members"
-                            tooltiptext="Show Project Members"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://gna.org/project/memberlist.php?group=clansuite')"
-                            image="chrome://clansuitetoolbar/skin/group.png"
-                            class="menuitem-iconic" />
+                    <menu label="Projectwatchers" value="sub" id="clansuite-at-projectwatchers">
+                        <menupopup>
 
-                    <menuitem label="SVN-Archiv Viewer"
-                            tooltiptext="SVN-Archiv Viewer"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://svn.gna.org/viewcvs/clansuite/')"
-                            image="chrome://clansuitetoolbar/skin/group.png"
-                            class="menuitem-iconic" />
+                            <menuitem label="Clansuite @ Ohloh.com"
+                                      tooltiptext="Hauptseite Ohloh"
+                                      onclick="checkForMiddleClick(this, event)"
+                                      oncommand="Clansuite_LoadURL('http://www.ohloh.net/projects/5526')"
+                                      image="chrome://clansuitetoolbar/skin/magnifier.png"
+                                      class="menuitem-iconic" />
 
-                    <menuseparator />
+                            <menuitem label="Clansuite @ CIA.vc"
+                                      tooltiptext="Hauptseite CIA.vc Broadcasting"
+                                      onclick="checkForMiddleClick(this, event)"
+                                      oncommand="Clansuite_LoadURL('http://cia.vc/stats/project/clansuite')"
+                                      image="chrome://clansuitetoolbar/skin/magnifier.png"
+                                      class="menuitem-iconic" />
 
-                    <menuitem label="Mailinglists Overview"
-                            tooltiptext="Mailingliste: Mailinglists Overview"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://gna.org/mail/?group=clansuite')"
-                            image="chrome://clansuitetoolbar/skin/email_go.png"
-                            class="menuitem-iconic" />
-
-                    <menuitem label="Mailingliste: Clansuite Commits"
-                            tooltiptext="Mailingliste: Clansuite Commits"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-commits/')"
-                            image="chrome://clansuitetoolbar/skin/email_go.png"
-                            class="menuitem-iconic" />
-
-                    <menuitem label="Mailingliste: Clansuite Developers"
-                            tooltiptext="Mailingliste: Clansuite Developers"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-dev/')"
-                            image="chrome://clansuitetoolbar/skin/email_go.png"
-                            class="menuitem-iconic" />
-
-                     <menuitem label="Mailingliste: Clansuite Users"
-                            tooltiptext="Mailingliste: Clansuite Developers"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-user/')"
-                            image="chrome://clansuitetoolbar/skin/email_go.png"
-                            class="menuitem-iconic" />
-
-                     <menuitem label="Mailingliste: Clansuite Tickets"
-                            tooltiptext="Mailingliste: Clansuite Developers"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-tickets/')"
-                            image="chrome://clansuitetoolbar/skin/email_go.png"
-                            class="menuitem-iconic" />
+                        </menupopup>
+                    </menu>
 
                     <menuseparator />
 
-                    <menuitem label="Homepage Usage Statistics"
-                            tooltiptext="Homepage Usage Statistics"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://stats.gna.org/homepage.gna.org/clansuite/')"
-                            image="chrome://clansuitetoolbar/skin/chart_line.png"
-                            class="menuitem-iconic" />
+                    <menu label="SVN Repo (deprecated)" id="clansuite-menuitem" class="clansuite-menuitem">
+                        <menupopup>
+
+                            <menu label="Clansuite @ GNA!" value="sub" id="clansuite-at-gna">
+                                <menupopup>
+                                    <menuitem label="GNA Projektseite"
+                                              tooltiptext="Hauptseite GNA!"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://gna.org/projects/clansuite/')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuseparator />
+
+                                    <menuitem label="Members"
+                                              tooltiptext="Show Project Members"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://gna.org/project/memberlist.php?group=clansuite')"
+                                              image="chrome://clansuitetoolbar/skin/group.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="SVN-Archiv Viewer"
+                                              tooltiptext="SVN-Archiv Viewer"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('http://svn.gna.org/viewcvs/clansuite/')"
+                                              image="chrome://clansuitetoolbar/skin/group.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuseparator />
+
+                                    <menuitem label="Mailinglists Overview"
+                                              tooltiptext="Mailingliste: Mailinglists Overview"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://gna.org/mail/?group=clansuite')"
+                                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="Mailingliste: Clansuite Commits"
+                                              tooltiptext="Mailingliste: Clansuite Commits"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-commits/')"
+                                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="Mailingliste: Clansuite Developers"
+                                              tooltiptext="Mailingliste: Clansuite Developers"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-dev/')"
+                                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="Mailingliste: Clansuite Users"
+                                              tooltiptext="Mailingliste: Clansuite Developers"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-user/')"
+                                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="Mailingliste: Clansuite Tickets"
+                                              tooltiptext="Mailingliste: Clansuite Developers"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://mail.gna.org/public/clansuite-tickets/')"
+                                              image="chrome://clansuitetoolbar/skin/email_go.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuseparator />
+
+                                    <menuitem label="Homepage Usage Statistics"
+                                              tooltiptext="Homepage Usage Statistics"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('http://stats.gna.org/homepage.gna.org/clansuite/')"
+                                              image="chrome://clansuitetoolbar/skin/chart_line.png"
+                                              class="menuitem-iconic" />
+
+                                    <menuitem label="Download Usage Statistics"
+                                              tooltiptext="Download Usage Statistics"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('http://stats.gna.org/download.gna.org/clansuite/')"
+                                              image="chrome://clansuitetoolbar/skin/chart_line.png"
+                                              class="menuitem-iconic" />
+
+                                </menupopup>
+                             </menu>
+                            </menupopup>
+                        </menu>
+
+                        <menuseparator />
+
+                        <menuitem label="Clansuite Libraries" id="clansuite-menuitem" class="clansuite-menuitem" />
+
+                <!-- <menuitem label=" Render Engines" id="clansuite-menuitem" class="clansuite-menuitem" /> -->
+
+                        <menu label="Smarty" value="sub" id="clansuite-at-devlinks-smarty">
+                            <menupopup >
+
+                                <menuitem label="Smarty Website"
+                                          tooltiptext="Navigate to Smarty Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.smarty.net/')"
+                                          image="chrome://clansuitetoolbar/skin/smarty.png"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Smarty Wiki"
+                                          tooltiptext="Navigate to Smarty Wiki"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://smarty.incutio.com/')"
+                                          image="chrome://clansuitetoolbar/skin/smarty.png"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Smarty Documentation (de)"
+                                          tooltiptext="Navigate to Smarty Documentation"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.smarty.net/manual/de/')"
+                                          image="chrome://clansuitetoolbar/skin/smarty.png"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Smarty Dev Mailingliste"
+                                          tooltiptext="Navigate to Smarty Dev Mailingliste"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://groups.google.com/group/smarty-developers/')"
+                                          image="chrome://clansuitetoolbar/skin/smarty.png"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
+
+                        <menu label="PHPTAL" value="sub" id="clansuite-at-devlinks-smarty">
+                            <menupopup>
+
+                                <menuitem label="PHPTAL Website"
+                                          tooltiptext="Navigate to Smarty Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/')"
+                                          image="chrome://clansuitetoolbar/skin/phptal.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="PHPTAL Documentation (de)"
+                                          tooltiptext="Navigate to PHPTAL Documentation (de)"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/de/')"
+                                          image="chrome://clansuitetoolbar/skin/phptal.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="PHPTAL Documentation (en)"
+                                          tooltiptext="Navigate to PHPTAL Documentation (en)"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/en/')"
+                                          image="chrome://clansuitetoolbar/skin/phptal.ico"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
+
+                        <menu label="Doctrine" value="sub" id="clansuite-at-devlinks-doctrine">
+                            <menupopup>
+
+                                <menuitem label="Doctrine Website"
+                                          tooltiptext="Navigate to Doctrine Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.doctrine-project.org')"
+                                          image="chrome://clansuitetoolbar/skin/doctrine.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Doctrine DBAL Manual"
+                                          tooltiptext="Navigate to the latest version of the Doctrine DBAL Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.doctrine-project.org/projects/dbal/current/docs/en')"
+                                          image="chrome://clansuitetoolbar/skin/doctrine.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Doctrine ORM Manual"
+                                          tooltiptext="Navigate to the latest version of the Doctrine ORM Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.doctrine-project.org/projects/orm/current/docs/en')"
+                                          image="chrome://clansuitetoolbar/skin/doctrine.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Doctrine User Mailingliste"
+                                          tooltiptext="Navigate to Doctrine Users Mailingliste"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-user/')"
+                                          image="chrome://clansuitetoolbar/skin/doctrine.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Doctrine Dev Mailingliste"
+                                          tooltiptext="Navigate to Doctrine Dev Mailingliste"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-dev/')"
+                                          image="chrome://clansuitetoolbar/skin/doctrine.ico"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
+
+                        <menu label="Swiftmailer" value="sub" id="clansuite-at-devlinks-swiftmailer">
+                            <menupopup>
+                                <menuitem label="Swiftmailer Website"
+                                          tooltiptext="Navigate to Swiftmailer Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.swiftmailer.org/')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Swiftmailer Documentation"
+                                          tooltiptext="Navigate to Swiftmailer Documentation"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.swiftmailer.org/wikidocs/')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Swiftmailer Forum"
+                                          tooltiptext="Navigate to Swiftmailer Forum"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://forums.devnetwork.net/viewforum.php?f=52')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+                            </menupopup>
+                        </menu>
+
+                        <menu label="GeSHi" value="sub" id="clansuite-at-devlinks-geshi">
+                            <menupopup>
+                                <menuitem label="GeSHi Documentation"
+                                          tooltiptext="Navigate to GeSHi Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://qbnz.com/highlighter/geshi-doc.html')"
+                                          image="chrome://clansuitetoolbar/skin/geshi.ico"
+                                          class="menuitem-iconic" />
+                            </menupopup>
+                        </menu>
+
+                        <menuseparator />
+
+                        <menuitem label="Project Tools" id="clansuite-menuitem" class="clansuite-menuitem" />
+
+                        <menu label="Phing" value="sub" id="clansuite-at-devlinks-phing">
+                            <menupopup>
+                                <menuitem label="Phing Website"
+                                          tooltiptext="Navigate to Phing Trac"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://phing.info/trac/')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Phing Documentation"
+                                          tooltiptext="Navigate to Phing Documentation"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://phing.info/docs/guide/current/')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+                            </menupopup>
+                        </menu>
+
+                        <menu label="AsciiDoc" value="sub" id="clansuite-at-devlinks-asciidoc">
+                            <menupopup>
+                                <menuitem label="AsciiDoc Website"
+                                          tooltiptext="Navigate to AsciiDoc Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.methods.co.nz/asciidoc/')"
+                                          image="chrome://clansuitetoolbar/skin/asciidoc.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="AsciiDoc UserGuide"
+                                          tooltiptext="Navigate to AsciiDoc UserGuide"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www.methods.co.nz/asciidoc/userguide.html')"
+                                          image="chrome://clansuitetoolbar/skin/asciidoc.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="AsciiDoc CheatSheet"
+                                          tooltiptext="Navigate to AsciiDoc CheatSheet"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc')"
+                                          image="chrome://clansuitetoolbar/skin/asciidoc.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="AsciiDoc Compact CheatSheet"
+                                          tooltiptext="Navigate to AsciiDoc Compact CheatSheet"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc-compact')"
+                                          image="chrome://clansuitetoolbar/skin/asciidoc.ico"
+                                          class="menuitem-iconic" />
+                            </menupopup>
+                        </menu>
+
+                        <menu label="Subversion" value="sub" id="clansuite-at-devlinks-subversion">
+                            <menupopup>
+
+                                <menuitem label="Subversion Manual"
+                                          tooltiptext="Navigate to Subversion Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://svnbook.red-bean.com/nightly/en/index.html')"
+                                          image="chrome://clansuitetoolbar/skin/none.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="TortoiseSVN Manual"
+                                          tooltiptext="Navigate to TortoiseSVN Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html')"
+                                          image="chrome://clansuitetoolbar/skin/tortoisesvn.png"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="TortoiseSVN Mailingliste"
+                                          tooltiptext="Navigate to TortoiseSVN Mailinglist"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://groups.google.com/group/tortoisesvn/topics/')"
+                                          image="chrome://clansuitetoolbar/skin/tortoisesvn.png"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
+
+                        <menu label="Git" value="sub" id="clansuite-at-devlinks-git">
+                            <menupopup>
+
+                                <menuitem label="Git Magic"
+                                          tooltiptext="Navigate to the Git Magic Handbook"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://www-cs-students.stanford.edu/~blynn/gitmagic/')"
+                                          image="chrome://clansuitetoolbar/skin/git.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Git Ready"
+                                          tooltiptext="Navigate to the Git Ready Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://gitready.com/')"
+                                          image="chrome://clansuitetoolbar/skin/git.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Git Reference"
+                                          tooltiptext="Navigate to the Git Reference Handbook"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://gitref.org/')"
+                                          image="chrome://clansuitetoolbar/skin/git.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Git Reference"
+                                          tooltiptext="Navigate to the Git-SCM Book Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://git-scm.com/book/')"
+                                          image="chrome://clansuitetoolbar/skin/git.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Git CheatSheets"
+                                          tooltiptext="Navigate to the Git CheatSheets"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://cheat.errtheblog.com/s/git/')"
+                                          image="chrome://clansuitetoolbar/skin/git.ico"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
+
+                        <menu label="Trac" value="sub" id="clansuite-at-devlinks-trac">
+                            <menupopup>
+
+                                <menuitem label="Trac Website"
+                                          tooltiptext="Navigate to Trac Website"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://trac.edgewall.org/')"
+                                          image="chrome://clansuitetoolbar/skin/trac.ico"
+                                          class="menuitem-iconic" />
+
+                                <menuitem label="Trac Manual"
+                                          tooltiptext="Navigate to Trac Manual"
+                                          onclick="checkForMiddleClick(this, event)"
+                                          oncommand="Clansuite_LoadURL('http://trac.edgewall.org/wiki/TracGuide/')"
+                                          image="chrome://clansuitetoolbar/skin/trac.ico"
+                                          class="menuitem-iconic" />
+
+                            </menupopup>
+                        </menu>
 
 
-                    <menuitem label="Download Usage Statistics"
-                            tooltiptext="Download Usage Statistics"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://stats.gna.org/download.gna.org/clansuite/')"
-                            image="chrome://clansuitetoolbar/skin/chart_line.png"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
-            <menuseparator />
-
-            <menuitem label="Clansuite Libraries" id="clansuite-menuitem" class="clansuite-menuitem" />
-
-            <!-- <menuitem label=" Render Engines" id="clansuite-menuitem" class="clansuite-menuitem" /> -->
-
-            <menu label="Smarty" value="sub" id="clansuite-at-devlinks-smarty">
-                <menupopup >
-
-                <menuitem label="Smarty Website"
-                            tooltiptext="Navigate to Smarty Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.smarty.net/')"
-                            image="chrome://clansuitetoolbar/skin/smarty.png"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Smarty Wiki"
-                            tooltiptext="Navigate to Smarty Wiki"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://smarty.incutio.com/')"
-                            image="chrome://clansuitetoolbar/skin/smarty.png"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Smarty Documentation (de)"
-                            tooltiptext="Navigate to Smarty Documentation"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.smarty.net/manual/de/')"
-                            image="chrome://clansuitetoolbar/skin/smarty.png"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Smarty Dev Mailingliste"
-                            tooltiptext="Navigate to Smarty Dev Mailingliste"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/smarty-developers/')"
-                            image="chrome://clansuitetoolbar/skin/smarty.png"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-            </menu>
-
-            <menu label="PHPTAL" value="sub" id="clansuite-at-devlinks-smarty">
-                <menupopup >
-
-                <menuitem label="PHPTAL Website"
-                            tooltiptext="Navigate to Smarty Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/')"
-                            image="chrome://clansuitetoolbar/skin/phptal.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="PHPTAL Documentation (de)"
-                            tooltiptext="Navigate to PHPTAL Documentation (de)"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/de/')"
-                            image="chrome://clansuitetoolbar/skin/phptal.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="PHPTAL Documentation (en)"
-                            tooltiptext="Navigate to PHPTAL Documentation (en)"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://phptal.motion-twin.com/manual/en/')"
-                            image="chrome://clansuitetoolbar/skin/phptal.ico"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-            </menu>
-
-            <menu label="Doctrine" value="sub" id="clansuite-at-devlinks-doctrine">
-                <menupopup>
-
-                <menuitem label="Doctrine Website"
-                            tooltiptext="Navigate to Doctrine Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.doctrine-project.org')"
-                            image="chrome://clansuitetoolbar/skin/doctrine.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Doctrine DBAL Manual"
-                            tooltiptext="Navigate to the latest version of the Doctrine DBAL Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.doctrine-project.org/projects/dbal/current/docs/en')"
-                            image="chrome://clansuitetoolbar/skin/doctrine.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Doctrine ORM Manual"
-                            tooltiptext="Navigate to the latest version of the Doctrine ORM Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.doctrine-project.org/projects/orm/current/docs/en')"
-                            image="chrome://clansuitetoolbar/skin/doctrine.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Doctrine User Mailingliste"
-                            tooltiptext="Navigate to Doctrine Users Mailingliste"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-user/')"
-                            image="chrome://clansuitetoolbar/skin/doctrine.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Doctrine Dev Mailingliste"
-                            tooltiptext="Navigate to Doctrine Dev Mailingliste"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/doctrine-dev/')"
-                            image="chrome://clansuitetoolbar/skin/doctrine.ico"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-            </menu>
-
-                <menu label="Swiftmailer" value="sub" id="clansuite-at-devlinks-swiftmailer">
-                <menupopup>
-
-                <menuitem label="Swiftmailer Website"
-                            tooltiptext="Navigate to Swiftmailer Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.swiftmailer.org/')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Swiftmailer Documentation"
-                            tooltiptext="Navigate to Swiftmailer Documentation"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.swiftmailer.org/wikidocs/')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Swiftmailer Forum"
-                            tooltiptext="Navigate to Swiftmailer Forum"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://forums.devnetwork.net/viewforum.php?f=52')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-                </menupopup>
-                </menu>
-
-                <menu label="GeSHi" value="sub" id="clansuite-at-devlinks-geshi">
-                <menupopup>
-                <menuitem label="GeSHi Documentation"
-                            tooltiptext="Navigate to GeSHi Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://qbnz.com/highlighter/geshi-doc.html')"
-                            image="chrome://clansuitetoolbar/skin/geshi.ico"
-                            class="menuitem-iconic" />
-                </menupopup>
-                </menu>
-
-                <menuseparator />
-
-                <menuitem label="Project Tools" id="clansuite-menuitem" class="clansuite-menuitem" />
-
-                <menu label="Phing" value="sub" id="clansuite-at-devlinks-phing">
-                <menupopup>
-
-                <menuitem label="Phing Website"
-                            tooltiptext="Navigate to Phing Trac"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://phing.info/trac/')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Phing Documentation"
-                            tooltiptext="Navigate to Phing Documentation"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://phing.info/docs/guide/current/')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-                </menupopup>
-                </menu>
-
-                <menu label="AsciiDoc" value="sub" id="clansuite-at-devlinks-asciidoc">
-                <menupopup>
-
-                <menuitem label="AsciiDoc Website"
-                            tooltiptext="Navigate to AsciiDoc Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.methods.co.nz/asciidoc/')"
-                            image="chrome://clansuitetoolbar/skin/asciidoc.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="AsciiDoc UserGuide"
-                            tooltiptext="Navigate to AsciiDoc UserGuide"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://www.methods.co.nz/asciidoc/userguide.html')"
-                            image="chrome://clansuitetoolbar/skin/asciidoc.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="AsciiDoc CheatSheet"
-                            tooltiptext="Navigate to AsciiDoc CheatSheet"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc')"
-                            image="chrome://clansuitetoolbar/skin/asciidoc.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="AsciiDoc Compact CheatSheet"
-                            tooltiptext="Navigate to AsciiDoc Compact CheatSheet"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://powerman.name/doc/asciidoc-compact')"
-                            image="chrome://clansuitetoolbar/skin/asciidoc.ico"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
-                <menu label="Subversion" value="sub" id="clansuite-at-devlinks-subversion">
-                <menupopup>
-
-                <menuitem label="Subversion Manual"
-                            tooltiptext="Navigate to Subversion Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://svnbook.red-bean.com/nightly/en/index.html')"
-                            image="chrome://clansuitetoolbar/skin/none.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="TortoiseSVN Manual"
-                            tooltiptext="Navigate to TortoiseSVN Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html')"
-                            image="chrome://clansuitetoolbar/skin/tortoisesvn.png"
-                            class="menuitem-iconic" />
-
-                <menuitem label="TortoiseSVN Mailingliste"
-                            tooltiptext="Navigate to TortoiseSVN Mailinglist"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://groups.google.com/group/tortoisesvn/topics/')"
-                            image="chrome://clansuitetoolbar/skin/tortoisesvn.png"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
-                <menu label="Git" value="sub" id="clansuite-at-devlinks-git">
-                <menupopup>
-
-                    <menuitem label="Git Magic"
-                              tooltiptext="Navigate to the Git Magic Handbook"
-                              onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://www-cs-students.stanford.edu/~blynn/gitmagic/')"
-                              image="chrome://clansuitetoolbar/skin/git.ico"
-                              class="menuitem-iconic" />
-
-                    <menuitem label="Git Ready"
-                              tooltiptext="Navigate to the Git Ready Manual"
-                              onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://gitready.com/')"
-                              image="chrome://clansuitetoolbar/skin/git.ico"
-                              class="menuitem-iconic" />
-
-                    <menuitem label="Git Reference"
-                              tooltiptext="Navigate to the Git Reference Handbook"
-                              onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://gitref.org/')"
-                              image="chrome://clansuitetoolbar/skin/git.ico"
-                              class="menuitem-iconic" />
-
-                    <menuitem label="Git Reference"
-                              tooltiptext="Navigate to the Git-SCM Book Website"
-                              onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://git-scm.com/book/')"
-                              image="chrome://clansuitetoolbar/skin/git.ico"
-                              class="menuitem-iconic" />
-
-                    <menuitem label="Git CheatSheets"
-                              tooltiptext="Navigate to the Git CheatSheets"
-                              onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://cheat.errtheblog.com/s/git/')"
-                              image="chrome://clansuitetoolbar/skin/git.ico"
-                              class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
-                <menu label="Trac" value="sub" id="clansuite-at-devlinks-trac">
-                <menupopup>
-
-                 <menuitem label="Trac Website"
-                            tooltiptext="Navigate to Trac Website"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org/')"
-                            image="chrome://clansuitetoolbar/skin/trac.ico"
-                            class="menuitem-iconic" />
-
-                <menuitem label="Trac Manual"
-                            tooltiptext="Navigate to Trac Manual"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.edgewall.org/wiki/TracGuide/')"
-                            image="chrome://clansuitetoolbar/skin/trac.ico"
-                            class="menuitem-iconic" />
-
-                </menupopup>
-                </menu>
-
-                </menupopup>
-            </toolbarbutton>
+                    </menupopup>
+                </toolbarbutton>
 
             <!-- httpd -->
-            <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-            <menupopup>
+                <toolbarbutton label="httpd" id="Clansuite-TB-WebserverMenu" type="menu" tooltiptext="Webserver Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
+                    <menupopup>
 
                         <menuitem label="Database" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                         <menuitem label="phpMyAdmin"
-                                tooltiptext="phpMyAdmin - MySQL Management"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://localhost/phpmyadmin/')"
-                                image="chrome://clansuitetoolbar/skin/database.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="phpMyAdmin - MySQL Management"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://localhost/phpmyadmin/')"
+                              image="chrome://clansuitetoolbar/skin/database.png"
+                              class="menuitem-iconic" />
 
                         <menuseparator />
 
                         <menuitem label="Webserver" id="clansuite-menuitem" class="clansuite-menuitem" />
 
                         <menuitem label="Working Dir"
-                                tooltiptext="Webserver Working Dir"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverWorkingDir')"
-                                image="chrome://clansuitetoolbar/skin/folder.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="Webserver Working Dir"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverWorkingDir')"
+                              image="chrome://clansuitetoolbar/skin/folder.png"
+                              class="menuitem-iconic" />
 
                         <menuitem label="Clansuite Dir"
-                                tooltiptext="Clansuite Working Dir"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverClansuiteDir')"
-                                image="chrome://clansuitetoolbar/skin/folder.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="Clansuite Working Dir"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/','ClansuiteWebserverClansuiteDir')"
+                              image="chrome://clansuitetoolbar/skin/folder.png"
+                              class="menuitem-iconic" />
 
                         <menuseparator />
 
                         <menuitem label="Server-Status"
-                                tooltiptext="Webserver Server-Status"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://localhost/server-status/')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="Webserver Server-Status"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://localhost/server-status/')"
+                              image="chrome://clansuitetoolbar/skin/server_chart.png"
+                              class="menuitem-iconic" />
 
                         <menuitem label="Server-Info"
-                                tooltiptext="Webserver Server-Info"
-                                onclick="checkForMiddleClick(this, event)"
-                                oncommand="Clansuite_LoadURL('http://localhost/server-info/')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="Webserver Server-Info"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://localhost/server-info/')"
+                              image="chrome://clansuitetoolbar/skin/server_chart.png"
+                              class="menuitem-iconic" />
 
                         <menuseparator />
 
                         <menuitem label="Clansuite - ErrorLog"
-                                tooltiptext="www.clansuite-dev.com-error.log"
-                                oncommand="Clansuite_OpenWithNotepad('errorlog')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="www.clansuite-dev.com-error.log"
+                              oncommand="Clansuite_OpenWithNotepad('errorlog')"
+                              image="chrome://clansuitetoolbar/skin/server_chart.png"
+                              class="menuitem-iconic" />
 
                         <menuitem label="Clansuite - AccessLog"
-                                tooltiptext="www.clansuite-dev.com-access.log"
-                                oncommand="Clansuite_OpenWithNotepad('accesslog')"
-                                image="chrome://clansuitetoolbar/skin/server_chart.png"
-                                class="menuitem-iconic" />
+                              tooltiptext="www.clansuite-dev.com-access.log"
+                              oncommand="Clansuite_OpenWithNotepad('accesslog')"
+                              image="chrome://clansuitetoolbar/skin/server_chart.png"
+                              class="menuitem-iconic" />
 
-                </menupopup>
-            </toolbarbutton>
+                    </menupopup>
+                </toolbarbutton>
 
             <!-- Bugtracker -->
-            <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-                <menupopup>
+                <toolbarbutton label="Bugtracker" id="Clansuite-TB-BugtrackerMenu" type="menu" tooltiptext="Bugtracker Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
+                    <menupopup>
 
-                    <menuitem label="My Tasks"
-                            tooltiptext="Navigate to the tasks assigned to you in the bugtracker"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/7')"
-                            image="chrome://clansuitetoolbar/skin/exclamation.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="My Tasks"
+                              tooltiptext="Navigate to the tasks assigned to you in the bugtracker"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/7')"
+                              image="chrome://clansuitetoolbar/skin/exclamation.png"
+                              class="menuitem-iconic" />
 
-                    <menuseparator />
+                        <menuseparator />
 
-                    <menuitem label="All Tasks"
-                            tooltiptext="Navigate to task overview in the bugtracker"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/18')"
-                            image="chrome://clansuitetoolbar/skin/exclamation.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="All Tasks"
+                              tooltiptext="Navigate to task overview in the bugtracker"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://trac.clansuite.com/report/18')"
+                              image="chrome://clansuitetoolbar/skin/exclamation.png"
+                              class="menuitem-iconic" />
 
-                    <menuitem label="Roadmap"
-                            tooltiptext="Navigate to Bugtracker Roadmap"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/roadmap/')"
-                            image="chrome://clansuitetoolbar/skin/flag_green.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="Roadmap"
+                              tooltiptext="Navigate to Bugtracker Roadmap"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://trac.clansuite.com/roadmap/')"
+                              image="chrome://clansuitetoolbar/skin/flag_green.png"
+                              class="menuitem-iconic" />
 
-                     <menuitem label="New Ticket"
-                            tooltiptext="Navigate to Bugtracker to create a new ticket"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadURL('http://trac.clansuite.com/newticket/')"
-                            image="chrome://clansuitetoolbar/skin/bug.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="New Ticket"
+                              tooltiptext="Navigate to Bugtracker to create a new ticket"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadURL('http://trac.clansuite.com/newticket/')"
+                              image="chrome://clansuitetoolbar/skin/bug.png"
+                              class="menuitem-iconic" />
 
-                </menupopup>
-            </toolbarbutton>
+                    </menupopup>
+                </toolbarbutton>
 
             <!-- goto -->
-            <toolbarbutton id="Clansuite-TB-ClansuiteGoto" type="menu" tooltiptext="Clansuite Goto Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
-                <menupopup>
-                    <menuitem label="Frontend @ localhost"
-                            tooltiptext="Navigate to Mainpage on Localhost"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadGotoURL('/', 'ClansuiteVhost')"
-                            image="chrome://clansuitetoolbar/skin/bullet_green.png"
-                            class="menuitem-iconic" />
+                <toolbarbutton id="Clansuite-TB-ClansuiteGoto" type="menu" tooltiptext="Clansuite Goto Menu" onmouseover="Clansuite_OpenToolbarButton(this)">
+                    <menupopup>
+                        <menuitem label="Frontend @ localhost"
+                              tooltiptext="Navigate to Mainpage on Localhost"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/', 'ClansuiteVhost')"
+                              image="chrome://clansuitetoolbar/skin/bullet_green.png"
+                              class="menuitem-iconic" />
 
-                    <menuitem label="Control Center"
-                            tooltiptext="Navigate to Clansuite Control Center on Localhost"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadGotoURL('/index.php?mod=controlcenter', 'ClansuiteVhost')"
-                            image="chrome://clansuitetoolbar/skin/bullet_red.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="Control Center"
+                              tooltiptext="Navigate to Clansuite Control Center on Localhost"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/index.php?mod=controlcenter', 'ClansuiteVhost')"
+                              image="chrome://clansuitetoolbar/skin/bullet_red.png"
+                              class="menuitem-iconic" />
 
-                <menuseparator />
+                        <menuseparator />
 
-                    <menuitem label="Installation"
-                            tooltiptext="Navigate to Installer on Localhost"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadGotoURL('/installation/','ClansuiteVhost')"
-                            image="chrome://clansuitetoolbar/skin/bullet_blue.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="Installation"
+                              tooltiptext="Navigate to Installer on Localhost"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/installation/','ClansuiteVhost')"
+                              image="chrome://clansuitetoolbar/skin/bullet_blue.png"
+                              class="menuitem-iconic" />
 
                     <!-- to be removed
                     <menuitem label="Web-Installation"
@@ -856,7 +852,7 @@
                             class="menuitem-iconic" />
                     -->
 
-                <menuseparator />
+                        <menuseparator />
 
                     <!-- to be removed
                     <menuitem label="Converter"
@@ -867,17 +863,17 @@
                             class="menuitem-iconic" />
                     -->
 
-                    <menuitem label="Tests"
-                            tooltiptext="Navigate to Tests on Localhost"
-                            onclick="checkForMiddleClick(this, event)"
-                            oncommand="Clansuite_LoadGotoURL('/tests','ClansuiteVhost')"
-                            image="chrome://clansuitetoolbar/skin/bullet_orange.png"
-                            class="menuitem-iconic" />
+                        <menuitem label="Tests"
+                              tooltiptext="Navigate to Tests on Localhost"
+                              onclick="checkForMiddleClick(this, event)"
+                              oncommand="Clansuite_LoadGotoURL('/tests','ClansuiteVhost')"
+                              image="chrome://clansuitetoolbar/skin/bullet_orange.png"
+                              class="menuitem-iconic" />
 
-            </menupopup>
-            </toolbarbutton>
+                    </menupopup>
+                </toolbarbutton>
 
-            <toolbarspring />
+                <toolbarspring />
             </toolbar>
         </toolbox>
-</overlay>
+    </overlay>

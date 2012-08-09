@@ -17,7 +17,7 @@
             <hbox>
 
                 <vbox>
-                    <description class="heading">Clansuite Community Toolbar</description>
+                    <description class="heading">Clansuite Toolbar</description>
 
                     <separator class="thin" style="background-color: #CCC; margin: 5px; height: 2px;"/>
 
