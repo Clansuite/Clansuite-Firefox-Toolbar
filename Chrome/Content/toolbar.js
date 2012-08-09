@@ -1,36 +1,26 @@
-   /**
-    * Clansuite - just an eSports CMS
-    * Jens-André Koch © 2005 - onwards
-    * http://www.clansuite.com/
-    *
-    * This file is part of "Clansuite - just an eSports CMS".
-    *
-    * LICENSE:
-    *
-    *    This program is free software; you can redistribute it and/or modify
-    *    it under the terms of the GNU General Public License as published by
-    *    the Free Software Foundation; either version 2 of the License, or
-    *    (at your option) any later version.
-    *
-    *    This program is distributed in the hope that it will be useful,
-    *    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    *    GNU General Public License for more details.
-    *
-    *    You should have received a copy of the GNU General Public License
-    *    along with this program; if not, write to the Free Software
-    *    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-    *
-    * @license    GNU/GPL v2 or (at your option) any later version, see "/doc/LICENSE".
-    *
-    * @author     Jens-André Koch <vain@clansuite.com>
-    * @copyright  Jens-André Koch (2005 - onwards)
-    *
-    * @link       http://www.clansuite.com
-    * @link       http://gna.org/projects/clansuite
-    *
-    * @version    SVN: $Id$
-    */
+/**
+ * Clansuite - just an eSports CMS
+ * Jens-André Koch © 2005 - onwards
+ * http://www.clansuite.com/
+ *
+ * This file is part of "Clansuite - just an eSports CMS".
+ *
+ * License: GNU/GPL v2 or any later version, see LICENSE file.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
 
 var preferences = new Array();
 
@@ -93,8 +83,7 @@ function setDefaults()
 */
 function ClansuiteGetPreferences(pref)
 {
-    var prefs = Components.classes["@mozilla.org/preferences-service;1"].
-            getService(Components.interfaces.nsIPrefService);
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
     prefs = prefs.getBranch("extensions.clansuitetoolbar.");
 
     var retValue;
@@ -367,7 +356,7 @@ function Clansuite_Search(event, type)
             break;
 
             // Build up the URL for a searchco.de search
-        case "search_code": 
+        case "search_code":
             if(isEmpty) { URL = "http://searchco.de/"; }
             else        { URL = "http://searchco.de/?q=" + searchTerms; }
             break;
@@ -474,8 +463,7 @@ var myPrefObserver =
 {
     register: function()
     {
-        var prefService = Components.classes["@mozilla.org/preferences-service;1"]
-                    .getService(Components.interfaces.nsIPrefService);
+        var prefService = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
         this._branch = prefService.getBranch("extensions.clansuitetoolbar.");
         this._branch.QueryInterface(Components.interfaces.nsIPrefBranch2);
         this._branch.addObserver("", this, false);

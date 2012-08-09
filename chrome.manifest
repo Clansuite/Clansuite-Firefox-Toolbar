@@ -4,5 +4,5 @@ skin     clansuitetoolbar   classic/1.0   chrome/skin/
 locale   clansuitetoolbar   de-DE         chrome/locale/de-DE/
 locale   clansuitetoolbar   en-US         chrome/locale/en-US/
 
-overlay chrome://browser/content/browser.xul           chrome://clansuitetoolbar/content/clansuitetoolbar.xul
-style   chrome://global/content/customizeToolbar.xul   chrome://clansuitetoolbar/skin/clansuitetoolbar.css
+overlay chrome://browser/content/browser.xul           chrome://clansuitetoolbar/content/toolbar.xul
+style   chrome://global/content/customizeToolbar.xul   chrome://clansuitetoolbar/skin/toolbar.css

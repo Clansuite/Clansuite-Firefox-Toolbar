@@ -8,7 +8,7 @@ Eine neue Version veröffentlichen
 
 Ausgangspunkt: Es wurde eine Änderung am Sourcecode vorgenommen.
 
-1.  Versionnummer in "install.rdf" und "/chrome/content/clansuite_about.xul" (Zeile 40 ff.) erhöhen
+1.  Versionnummer in "install.rdf" und "/chrome/content/about.xul" (Zeile 40 ff.) erhöhen
 2.  Mit McCoy das Kommando "Install" auf install.rdf ausführen
 3.  Builden mittels build.bat
 4.  clansuite-toolbar-v.xpi in clansuite-toolbar-v{Versionsnummer}.xpi umbenennen
@@ -43,12 +43,15 @@ v0.7 - /
 v0.8 - 05.02.2010
 v0.9 - 12.04.2011
 v1.0 - 01.07.2011
-v1.1 - xx.yy.2012 tba
+v1.1 - 07.08.2012
+v1.2 - tba
 
 Changelog
 ---------
 
-v1.1 - xx.yy.2012 tba
+v1.2 - xx.yy.2013 tba
+
+v1.1 - 07.08.2012
 
 - updated links to Doctrine DBAL and ORM manuals
 - added searchco.de code search

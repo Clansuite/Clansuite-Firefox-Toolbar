@@ -14,6 +14,7 @@
         <RDF:li resource="community-toolbar@clansuite.com:0.8"/>
         <RDF:li resource="community-toolbar@clansuite.com:0.9"/>
         <RDF:li resource="community-toolbar@clansuite.com:1.0"/>
+         <RDF:li resource="community-toolbar@clansuite.com:1.1"/>
       </RDF:Seq>
     </em:updates>
   <em:signature>___ POPULATED BY McCoy ___</em:signature>
@@ -26,8 +27,8 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                <em:maxVersion>3.0.*</em:maxVersion>
-                <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi</em:updateLink>
-                <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v03.xhtml</em:updateInfoURL>
+                <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.3.xpi</em:updateLink>
+                <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v03.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:B99E86F932DB8C414BDD51CD4BC6F47223436C53</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
@@ -40,8 +41,8 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>3.0.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.4.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v04.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.4.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v04.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:A02786E6D41668CD7869C7AA4ADCF125366741A3</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
@@ -54,8 +55,8 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>3.0.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.5.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v05.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.5.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v05.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:E4F30CB3E0F19AF7AF674DBFA6224549E8BB91169</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
@@ -68,13 +69,13 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>3.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.6.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v06.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.6.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v06.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:D811225853BAE6D2E9508D751C74346B008A6840</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
        </RDF:Description>
-       
+
        <RDF:Description about="community-toolbar@clansuite.com:0.7">
             <em:version>0.7</em:version>
             <em:targetApplication>
@@ -82,13 +83,13 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>3.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.7.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v07.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.7.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v07.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:CCD7AAA8AAE01CA1D5986786353BBCE89F282FD5</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
        </RDF:Description>
-       
+
        <RDF:Description about="community-toolbar@clansuite.com:0.8">
             <em:version>0.8</em:version>
             <em:targetApplication>
@@ -96,13 +97,13 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>3.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.8.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v08.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.8.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v08.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:b567130a97b0255e539f81d3809a376773fc1304</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
        </RDF:Description>
-       
+
        <RDF:Description about="community-toolbar@clansuite.com:0.9">
             <em:version>0.9</em:version>
             <em:targetApplication>
@@ -110,8 +111,8 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>4.0.*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v0.9.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v09.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v0.9.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v09.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:86ba4cc618fed92ab8e4445f812836b262ca2235</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
@@ -124,11 +125,27 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>2.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
-               <em:updateLink>http://www.clansuite.com/toolbar/clansuite_toolbar-v1.0.xpi</em:updateLink>
-               <em:updateInfoURL>http://www.clansuite.com/toolbar/updateInfo-v10.xhtml</em:updateInfoURL>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v1.0.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v10.xhtml</em:updateInfoURL>
                 <em:updateHash>sha1:d0b1c240f6c18431652ee4cf2444c4b81c0a5f7a</em:updateHash>
               </RDF:Description>
             </em:targetApplication>
-       </RDF:Description>       
-       
+       </RDF:Description>
+
+        <RDF:Description about="community-toolbar@clansuite.com:1.0">
+            <em:version>1.0</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>2.0</em:minVersion>
+                <em:maxVersion>*</em:maxVersion>
+               <em:updateLink>http://clansuite.com/toolbar/clansuite_toolbar-v1.1.xpi</em:updateLink>
+               <em:updateInfoURL>http://clansuite.com/toolbar/updateInfo-v11.xhtml</em:updateInfoURL>
+                <em:updateHash>sha1:D8586024F1C97997F68D7103E36EC06E22A689B6 </em:updateHash>
+              </RDF:Description>
+            </em:targetApplication>
+       </RDF:Description>
+
+
+
 </RDF:RDF>

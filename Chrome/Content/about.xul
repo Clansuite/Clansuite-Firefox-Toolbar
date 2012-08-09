@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://clansuitetoolbar/skin/clansuite_about.css" type="text/css"?>
+<?xml-stylesheet href="chrome://clansuitetoolbar/skin/about.css" type="text/css"?>
 <dialog id="clansuite-about-dialog"
         title="About - Clansuite Toolbar"
         orient="vertical"
@@ -9,7 +9,7 @@
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
     <!-- Javascript -->
-    <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/clansuitetoolbar.js" />
+    <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/toolbar.js" />
     <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/events.js" />
 
     <groupbox align="center" orient="horizontal">
@@ -39,10 +39,10 @@
 
                 <vbox>
                     <label id="ClansuiteToolbarVersion" class="strong" value="Version"/>
-                    <description class="clansuiteVersion">0.8</description>
+                    <description class="clansuiteVersion">1.1</description>
 
                     <label id="ClansuiteToolbarReleaseDate" class="strong" value="Released"/>
-                    <description class="clansuiteVersion">08.03.2010</description>
+                    <description class="clansuiteVersion">07.08.2012</description>
                 </vbox>
 
                 <spacer flex="1"/>

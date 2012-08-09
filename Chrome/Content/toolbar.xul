@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
 <!-- CSS -->
-<?xml-stylesheet type="text/css" href="chrome://clansuitetoolbar/skin/clansuitetoolbar.css"?>
+<?xml-stylesheet type="text/css" href="chrome://clansuitetoolbar/skin/toolbar.css"?>
 
 <!-- Overlay -->
 <overlay id="Clansuite-TB-Overlay"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
         <!-- Javascript -->
-        <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/clansuitetoolbar.js" />
+        <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/toolbar.js" />
         <script type="application/x-javascript" src="chrome://clansuitetoolbar/content/events.js" />
 
         <!-- toolbars in Firefox live within a toolbox -->
@@ -89,7 +89,7 @@
                 <menuitem label="Options" accesskey="O"
                         tooltiptext="Configure this toolbar"
                         onclick="checkForMiddleClick(this, event)"
-                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/clansuite_options.xul','clansuite-options-dialog','centerscreen,chrome,modal,dialog');"
+                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/options.xul','clansuite-options-dialog','centerscreen,chrome,modal,dialog');"
                         image="chrome://clansuitetoolbar/skin/cog.png"
                         class="menuitem-iconic"
                         />
@@ -97,7 +97,7 @@
                 <menuitem label="About" accesskey="A"
                         tooltiptext="Show the About of the Clansuite Toolbar"
                         onclick="checkForMiddleClick(this, event)"
-                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/clansuite_about.xul','clansuite-about-dialog','centerscreen,chrome,modal,dialog');"
+                        oncommand="window.openDialog('chrome://clansuitetoolbar/content/about.xul','clansuite-about-dialog','centerscreen,chrome,modal,dialog');"
                         image="chrome://clansuitetoolbar/skin/cup.png"
                         class="menuitem-iconic" />
 
