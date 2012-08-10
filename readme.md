@@ -43,7 +43,7 @@ v0.7 - /
 v0.8 - 05.02.2010
 v0.9 - 12.04.2011
 v1.0 - 01.07.2011
-v1.1 - 07.08.2012
+v1.1 - 10.08.2012
 v1.2 - tba
 
 Changelog
@@ -51,8 +51,9 @@ Changelog
 
 v1.2 - xx.yy.2013 tba
 
-v1.1 - 07.08.2012
+v1.1 - 10.08.2012
 
+- several fixes to support Firefox 14.0.1+
 - updated links to Doctrine DBAL and ORM manuals
 - added searchco.de code search
 - removed Google Code Search, because service is shut down as of 16.01.2012.
