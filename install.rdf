@@ -7,7 +7,7 @@
                    em:minVersion="2.0"
                    em:maxVersion="*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="community-toolbar@clansuite.com"
+                   em:id="toolbar@clansuite.com"
                    em:version="1.1"
                    em:type="2"
                    em:name="Clansuite Toolbar"

@@ -3,24 +3,24 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-<RDF:Description about="urn:mozilla:extension:community-toolbar@clansuite.com">
+<RDF:Description about="urn:mozilla:extension:toolbar@clansuite.com">
     <em:updates>
       <RDF:Seq>
-        <RDF:li resource="community-toolbar@clansuite.com:0.3"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.4"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.5"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.6"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.7"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.8"/>
-        <RDF:li resource="community-toolbar@clansuite.com:0.9"/>
-        <RDF:li resource="community-toolbar@clansuite.com:1.0"/>
-         <RDF:li resource="community-toolbar@clansuite.com:1.1"/>
+        <RDF:li resource="toolbar@clansuite.com:0.3"/>
+        <RDF:li resource="toolbar@clansuite.com:0.4"/>
+        <RDF:li resource="toolbar@clansuite.com:0.5"/>
+        <RDF:li resource="toolbar@clansuite.com:0.6"/>
+        <RDF:li resource="toolbar@clansuite.com:0.7"/>
+        <RDF:li resource="toolbar@clansuite.com:0.8"/>
+        <RDF:li resource="toolbar@clansuite.com:0.9"/>
+        <RDF:li resource="toolbar@clansuite.com:1.0"/>
+         <RDF:li resource="toolbar@clansuite.com:1.1"/>
       </RDF:Seq>
     </em:updates>
   <em:signature>___ POPULATED BY McCoy ___</em:signature>
 </RDF:Description>
 
-        <RDF:Description about="community-toolbar@clansuite.com:0.3">
+        <RDF:Description about="toolbar@clansuite.com:0.3">
             <em:version>0.3</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -34,7 +34,7 @@
             </em:targetApplication>
           </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.4">
+       <RDF:Description about="toolbar@clansuite.com:0.4">
             <em:version>0.4</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -48,7 +48,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.5">
+       <RDF:Description about="toolbar@clansuite.com:0.5">
             <em:version>0.5</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -62,7 +62,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.6">
+       <RDF:Description about="toolbar@clansuite.com:0.6">
             <em:version>0.6</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -76,7 +76,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.7">
+       <RDF:Description about="toolbar@clansuite.com:0.7">
             <em:version>0.7</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -90,7 +90,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.8">
+       <RDF:Description about="toolbar@clansuite.com:0.8">
             <em:version>0.8</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -104,7 +104,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:0.9">
+       <RDF:Description about="toolbar@clansuite.com:0.9">
             <em:version>0.9</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -118,7 +118,7 @@
             </em:targetApplication>
        </RDF:Description>
 
-       <RDF:Description about="community-toolbar@clansuite.com:1.0">
+       <RDF:Description about="toolbar@clansuite.com:1.0">
             <em:version>1.0</em:version>
             <em:targetApplication>
               <RDF:Description>
@@ -132,8 +132,8 @@
             </em:targetApplication>
        </RDF:Description>
 
-        <RDF:Description about="community-toolbar@clansuite.com:1.0">
-            <em:version>1.0</em:version>
+        <RDF:Description about="toolbar@clansuite.com:1.1">
+            <em:version>1.1</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
