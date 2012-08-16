@@ -298,7 +298,7 @@
                     <menuitem label="Travis CI"
                               tooltiptext="Travis CI - Social Continuous Integration Service"
                               onclick="checkForMiddleClick(this, event)"
-                              oncommand="Clansuite_LoadURL('http://travis-ci.org/#!/jakoch/Clansuite')"
+                              oncommand="Clansuite_LoadURL('http://travis-ci.org/#!/Clansuite/Clansuite')"
                               image="chrome://clansuitetoolbar/skin/travis-ci.png"
                               class="menuitem-iconic" />
 
