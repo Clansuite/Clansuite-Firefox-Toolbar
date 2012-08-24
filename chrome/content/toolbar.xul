@@ -358,6 +358,8 @@
                                               image="chrome://clansuitetoolbar/skin/github.ico"
                                               class="menuitem-iconic" />
 
+                          <menuseparator />
+
                           <menuitem label="Clansuite"
                                               tooltiptext="Clansuite"
                                               onclick="checkForMiddleClick(this, event)"
@@ -390,11 +392,9 @@
                     </menu>
 
 
-                    <menu label="SVN (deprecated)" value="sub" id="clansuite-at-projectwatchers">
+                    <menu label="SVN@GNA (deprecated)" value="sub" id="clansuite-at-projectwatchers">
                         <menupopup>
 
-                            <menu label="Clansuite @ GNA!" value="sub" id="clansuite-at-gna">
-                                <menupopup>
                                     <menuitem label="GNA Projektseite"
                                               tooltiptext="Hauptseite GNA!"
                                               onclick="checkForMiddleClick(this, event)"
@@ -470,9 +470,6 @@
                                               oncommand="Clansuite_LoadURL('http://stats.gna.org/download.gna.org/clansuite/')"
                                               image="chrome://clansuitetoolbar/skin/chart_line.png"
                                               class="menuitem-iconic" />
-
-                                </menupopup>
-                             </menu>
 
                             </menupopup>
                         </menu>
