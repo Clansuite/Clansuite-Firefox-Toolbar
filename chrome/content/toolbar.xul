@@ -340,7 +340,49 @@
 
                     <menuseparator />
 
-                    <menu label="SVN Repo (deprecated)" id="clansuite-menuitem" class="clansuite-menuitem">
+                    <menu label="Repositories" id="clansuite-menuitem" class="clansuite-menuitem">
+
+                    <menu label="Git" value="sub" id="clansuite-at-projectwatchers">
+                        <menupopup>
+                          <menuitem label="Github Projektseite"
+                                              tooltiptext="Hauptseite Github!"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://github.com/Clansuite')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                          <menuitem label="Clansuite"
+                                              tooltiptext="Clansuite"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://github.com/Clansuite/Clansuite')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                          <menuitem label="IRC-Logbot"
+                                              tooltiptext="IRC Logbot"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://github.com/Clansuite/IRC-Logbot')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                          <menuitem label="Clansuite Firefox Toolbar"
+                                              tooltiptext="Clansuite FirefoxToolbar"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://github.com/Clansuite/Clansuite-Firefox-Toolbar')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                          <menuitem label="website-clansuite.com"
+                                              tooltiptext="website-clansuite.com"
+                                              onclick="checkForMiddleClick(this, event)"
+                                              oncommand="Clansuite_LoadURL('https://github.com/Clansuite/website-clansuite.com')"
+                                              image="chrome://clansuitetoolbar/skin/homepage.png"
+                                              class="menuitem-iconic" />
+
+                        </menupopup>
+                    </menu>
+
+                    <menu label="SVN (deprecated)" value="sub" id="clansuite-at-projectwatchers">
                         <menupopup>
 
                             <menu label="Clansuite @ GNA!" value="sub" id="clansuite-at-gna">
@@ -675,7 +717,7 @@
                                           image="chrome://clansuitetoolbar/skin/git.ico"
                                           class="menuitem-iconic" />
 
-                                <menuitem label="Git Reference"
+                                <menuitem label="Git-SCM Book"
                                           tooltiptext="Navigate to the Git-SCM Book Website"
                                           onclick="checkForMiddleClick(this, event)"
                                           oncommand="Clansuite_LoadURL('http://git-scm.com/book/')"
